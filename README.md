@@ -86,6 +86,64 @@ Die Menschheitsgedächtniskarte versteht sich als **offenes Forschungsgerüst**,
 
 ---
 
+## Technische Struktur
+
+- `architecture/` - Architektur- und Designprinzipien (Meta-Rahmen für Interface-Entscheidungen)
+- `interface/` - UI-View-Spezifikationen (MapView, GraphView, ResonancePanel)
+- `modules/` - Enthält alle thematischen Module
+- `knowledge/` - Wissens-Schema und Daten (epistemische Layer, Resonanz-Layer, Nodes)
+- `shared/` - Gemeinsame Ressourcen (Schemas, Vokabulare, Querverweise)
+- `tooling/` - Dokumentation und Hinweise für die Arbeit mit den Daten
+
+## Architektur-Prinzip
+
+Das Projekt basiert auf der **Anthropologischen Erkenntnisarchitektur** (DP-001):
+
+- **Körper-Ebene** (MapView): Räumliche Verkörperung von Wissen
+- **Geist-Ebene** (GraphView): Strukturelle Vernetzung von Wissen
+- **Seele-Ebene** (ResonancePanel): Sinnliche Resonanz und individuelle Sinnbildung
+
+Siehe `architecture/DP-001-anthropologische-erkenntnisarchitektur.json` für Details.
+
+## Prinzipien
+
+- Keine Business-Logik
+- Keine Datenvalidierung oder -normalisierung
+- Reine Datensammlung in JSON-Form
+- Modular und erweiterbar
+- Trennung von Erkenntnisarchitektur und Wissensschema
+
+## Verwendung
+
+Fügen Sie neue JSON-Dateien in die entsprechenden Module ein. Diese können von anderen Modulen (Analyse, Visualisierung, KI-Agenten) gelesen werden.
+
+## Licensing
+
+Dieses Projekt verwendet eine **Dual-Lizenz**:
+
+- **MIT License** für Code und Software-Komponenten (.json-Dateien, Schemas, UI-Spezifikationen)
+- **Creative Commons Attribution 4.0 International (CC BY 4.0)** für Dokumentation und Inhalt (.md-Dateien, Wissensmodule, historische/mythologische Inhalte)
+
+### Lizenzdetails
+
+- **Code-Bereich**: Freie Nutzung, Modifikation und Distribution unter MIT-Lizenzbedingungen
+- **Content-Bereich**: Freies Teilen und Anpassen unter Namensnennung (Attribution)
+- **Attribution**: Bei Nutzung von Content bitte "Menschheitsgedächtniskarte by Emanuel" mit Projekt-Link angeben
+
+Vollständige Lizenzdetails siehe [LICENSE](LICENSE) Datei.
+
+### Design & Architektur
+
+Detaillierte Design-Prinzipien und Architektur-Dokumentation finden Sie im `/architecture/` Verzeichnis:
+- Anthropologische Erkenntnisarchitektur (Körper-Geist-Seele Modell)
+- UI-View-Spezifikationen für Map-, Graph- und Resonance-Views
+
+### Neue Architektur-Dokumente
+
+Architektur- und Interface-Dokumente folgen dem Muster:
+- Designprinzipien: `architecture/DP-XXX-name.json`
+- UI-Spezifikationen: `interface/views/XXX_view_spec.json`
+
 ---
 
 # Humanity Memory Map
@@ -106,7 +164,7 @@ The focus lies not on judgment or ideology, but on:
 ## Concept
 
 Many societal phenomena appear isolated or purely contemporary.  
-This project is based on the assumption that certain human patterns recur:
+This project is based on assumption that certain human patterns recur:
 
 - loss of orientation
 - initiation and transition phases

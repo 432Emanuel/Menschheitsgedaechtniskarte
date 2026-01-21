@@ -1,0 +1,93 @@
+{
+  "index_id": "IDX-CANDIDATES-0001",
+  "scope": "shared/candidates",
+  "version": "0.1.0",
+  "updated_at": "2026-01-21",
+  "rubric_id": "RUB-URKNOTEN-PATTERNS-0001",
+  "counts": {
+    "total": 15,
+    "by_status": {
+      "candidate": 15,
+      "shortlisted": 0,
+      "promoted": 0,
+      "rejected": 0
+    }
+  },
+  "candidates": [
+    {
+      "id": "CAND-ENUMAELISH-0001",
+      "title": "Enuma Elish (Babylonisches Schöpfungsepos)",
+      "status": "candidate"
+    },
+    {
+      "id": "CAND-MARDUK-THRONE-0001",
+      "title": "Marduk-Thronbesteigung",
+      "status": "candidate"
+    },
+    {
+      "id": "CAND-OSIRIS-0001",
+      "title": "Osiris-Mythos",
+      "status": "candidate"
+    },
+    {
+      "id": "CAND-ISIS-OSIRIS-0001",
+      "title": "Isis und Osiris",
+      "status": "candidate"
+    },
+    {
+      "id": "CAND-HERAKLES-0001",
+      "title": "Herakles-Mythos",
+      "status": "candidate"
+    },
+    {
+      "id": "CAND-THESEUS-0001",
+      "title": "Theseus und Minotauros",
+      "status": "candidate"
+    },
+    {
+      "id": "CAND-YU-GREAT-0001",
+      "title": "Yu der Große (Xia-Dynastie)",
+      "status": "candidate"
+    },
+    {
+      "id": "CAND-QUYUAN-0001",
+      "title": "Qu Yuan (Chu Yuan)",
+      "status": "candidate"
+    },
+    {
+      "id": "CAND-BHAGAVAD-ARJUNA-0001",
+      "title": "Bhagavad Gita (Arjuna)",
+      "status": "candidate"
+    },
+    {
+      "id": "CAND-MAHABHARATA-0001",
+      "title": "Mahabharata",
+      "status": "candidate"
+    },
+    {
+      "id": "CAND-POPOLVUH-0001",
+      "title": "Popol Vuh (Hunahpu und Xbalanque)",
+      "status": "candidate"
+    },
+    {
+      "id": "CAND-INKARRI-0001",
+      "title": "Inkarri-Mythos (Inka)",
+      "status": "candidate"
+    },
+    {
+      "id": "CAND-SUNDIATA-0001",
+      "title": "Sundiata Epos (Mali-Reich)",
+      "status": "candidate"
+    },
+    {
+      "id": "CAND-BALDUR-0001",
+      "title": "Baldur-Tod",
+      "status": "candidate"
+    },
+    {
+      "id": "CAND-HIAWATHA-0001",
+      "title": "Hiawatha-Legende (Irokesen)",
+      "status": "candidate"
+    }
+  ]
+}
