@@ -46,9 +46,16 @@
     }
   ],
   "status": "candidate",
+  "linked_patterns": [
+    {
+      "pattern_id": "MUV-PAT-DUTY-DESTINY-0001",
+      "pattern_name": "duty_destiny",
+      "match_strength": "high"
+    }
+  ],
   "meta": {
     "created_by": "agent",
     "created_at": "2026-01-21",
-    "notes": "Großes Epos mit ausgeprägter mortality_confrontation-Thematik. Kann mit CAND-BHAGAVAD-ARJUNA-0001 zusammengeführt werden."
+    "notes": "Mahabharata als indisches Epos mit duty_destiny Elementen."
   }
 }

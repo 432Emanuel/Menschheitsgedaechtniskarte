@@ -1,13 +1,13 @@
 {
   "module_id": "mythos_und_verwaltung",
-  "index_version": "0.1.0",
+  "index_version": "0.2.0",
   "last_updated": "2026-01-21",
   "root_path": "modules/mythos_und_verwaltung",
   "entity_count": {
     "narratives": 2,
     "institutions": 1,
     "documents": 1,
-    "patterns": 1
+    "patterns": 4
   },
   "entities": {
     "narratives": [
@@ -38,6 +38,30 @@
     ],
     "patterns": [
       {
+        "file": "patterns/MUV-PAT-HERO-ASCENSION-0001.json",
+        "status": "active",
+        "meta": {
+          "id": "MUV-PAT-HERO-ASCENSION-0001",
+          "name": "hero_ascension"
+        }
+      },
+      {
+        "file": "patterns/MUV-PAT-DEATH-TRANSFORMATION-0001.json",
+        "status": "active",
+        "meta": {
+          "id": "MUV-PAT-DEATH-TRANSFORMATION-0001",
+          "name": "death_transformation"
+        }
+      },
+      {
+        "file": "patterns/MUV-PAT-DUTY-DESTINY-0001.json",
+        "status": "active",
+        "meta": {
+          "id": "MUV-PAT-DUTY-DESTINY-0001",
+          "name": "duty_destiny"
+        }
+      },
+      {
         "file": "patterns/example_pattern.json",
         "status": "example"
       }
@@ -53,5 +77,5 @@
       "status": "active"
     }
   },
-  "notes": "Alle Entity-Dateien sind derzeit Beispiel-Dateien. Keine echten mythologischen oder institutionellen Daten vorhanden."
+  "notes": "Drei Kern-Pattern (hero_ascension, death_transformation, duty_destiny) hinzugefügt. Diese Pattern dienen zur Strukturierung der 15 Kandidaten für das Mythos-Modul. Beispiel-Dateien als Referenz beibehalten."
 }

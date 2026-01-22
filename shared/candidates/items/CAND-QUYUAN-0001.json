@@ -45,9 +45,16 @@
     }
   ],
   "status": "candidate",
+  "linked_patterns": [
+    {
+      "pattern_id": "MUV-PAT-DUTY-DESTINY-0001",
+      "pattern_name": "duty_destiny",
+      "match_strength": "high"
+    }
+  ],
   "meta": {
     "created_by": "agent",
     "created_at": "2026-01-21",
-    "notes": "Historisch belegte Figur mit mortality_confrontation-Motiv. Relevanter kultureller Kandidat."
+    "notes": "Qu Yuan als chinesisches Beispiel für duty_destiny."
   }
 }

@@ -45,9 +45,16 @@
     }
   ],
   "status": "candidate",
+  "linked_patterns": [
+    {
+      "pattern_id": "MUV-PAT-DEATH-TRANSFORMATION-0001",
+      "pattern_name": "death_transformation",
+      "match_strength": "high"
+    }
+  ],
   "meta": {
     "created_by": "agent",
     "created_at": "2026-01-21",
-    "notes": "Ergänzt den Osiris-Mythos aus der Perspektive von Isis. Kann ggf. mit CAND-OSIRIS-0001 zusammengeführt werden."
+    "notes": "Isis und Osiris als ergänzendes Narrativ zu death_transformation."
   }
 }

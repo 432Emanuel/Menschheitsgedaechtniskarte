@@ -45,9 +45,16 @@
     }
   ],
   "status": "candidate",
+  "linked_patterns": [
+    {
+      "pattern_id": "MUV-PAT-HERO-ASCENSION-0001",
+      "pattern_name": "hero_ascension",
+      "match_strength": "medium"
+    }
+  ],
   "meta": {
     "created_by": "agent",
     "created_at": "2026-01-21",
-    "notes": "Hero-Ascension mit weniger ausgeprägter Vergöttlichung als Herakles. Relevanter Gründungsmythos Athens."
+    "notes": "Theseus-Mythos mit hero_ascension und Herrschaftsübernahme."
   }
 }

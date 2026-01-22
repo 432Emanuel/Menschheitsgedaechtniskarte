@@ -46,9 +46,16 @@
     }
   ],
   "status": "candidate",
+  "linked_patterns": [
+    {
+      "pattern_id": "MUV-PAT-HERO-ASCENSION-0001",
+      "pattern_name": "hero_ascension",
+      "match_strength": "high"
+    }
+  ],
   "meta": {
     "created_by": "agent",
     "created_at": "2026-01-21",
-    "notes": "Historisch überliefertes Epos mit hero_ascension-Thematik. Relevanter afrikanischer Kandidat."
+    "notes": "Sundiata-Mythos als westafrikanisches Beispiel für hero_ascension."
   }
 }
