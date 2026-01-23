@@ -1,0 +1,230 @@
+{
+  "module": {
+    "id": "meta_patterns",
+    "version": "0.1.0",
+    "title": "Meta-Patterns",
+    "purpose": "Wiederkehrende Meta-Muster über Domains hinweg (Hero's Journey, Threshold Crossing, Memory Resonance, Ritual Core Loop, Initiation Cycle)"
+  },
+  "patterns": [
+    {
+      "id": "META-PAT-001",
+      "name": "The Hero's Cycle",
+      "description": "Das universelle Muster des Hero's Journey, das sich in verschiedenen Kontexten zeigt (Mythos, historische Biografien, moderne narratives)",
+      "type": "recurrence",
+      "domains": [
+        "mythology",
+        "history",
+        "literature",
+        "psychology"
+      ],
+      "phases": [
+        {
+          "name": "Call to Adventure",
+          "description": "Einladung zum Abenteuer, Brechen des Status Quo"
+        },
+        {
+          "name": "Departure",
+          "description": "Verlassen der bekannten Welt"
+        },
+        {
+          "name": "Initiation",
+          "description": "Prüfungen und Transformation"
+        },
+        {
+          "name": "Return",
+          "description": "Rückkehr mit neuer Erkenntnis"
+        }
+      ],
+      "examples": [
+        "Gilgamesch-Epos",
+        "Odyssee",
+        "Beowulf",
+        "Moderne: Star Wars, Matrix"
+      ],
+      "cross_references": [
+        {
+          "target": "META-PAT-004",
+          "type": "related_to",
+          "comment": "Threshold Crossing als Phase im Hero's Cycle"
+        }
+      ],
+      "metadata": {
+        "created": "2026-01-22",
+        "status": "active",
+        "version": "0.1.0"
+      }
+    },
+    {
+      "id": "META-PAT-002",
+      "name": "Civilization Resonance Loop",
+      "description": "Muster, wie Zivilisationen ihre Vorgänger transformieren und gleichzeitig Resonanzen mit ihnen bilden",
+      "type": "transformation",
+      "domains": [
+        "history",
+        "archaeology",
+        "cultural_studies"
+      ],
+      "phases": [
+        {
+          "name": "Encounter",
+          "description": "Auseinandersetzung mit älteren Kulturen"
+        },
+        {
+          "name": "Adaptation",
+          "description": "Anpassung und Integration"
+        },
+        {
+          "name": "Transformation",
+          "description": "Veränderung des eigenen Systems"
+        },
+        {
+          "name": "Resonance",
+          "description": "Bleibende Resonanz mit dem Vorgänger"
+        }
+      ],
+      "examples": [
+        "Römische Übernahme griechischer Kultur",
+        "Islamische Übernahme byzantinischer Strukturen",
+        "Renaissance als Wiederaufnahme antiker Werte"
+      ],
+      "cross_references": [
+        {
+          "target": "META-PAT-003",
+          "type": "implements",
+          "comment": "Civilization Resonance Loop als Ausprägung von Memory Resonance"
+        }
+      ],
+      "metadata": {
+        "created": "2026-01-22",
+        "status": "active",
+        "version": "0.1.0"
+      }
+    },
+    {
+      "id": "META-PAT-003",
+      "name": "Memory Resonance",
+      "description": "Muster kollektiver Erinnerung, das sich über Generationen und Kulturen hinweg manifestiert",
+      "type": "transcultural",
+      "domains": [
+        "anthropology",
+        "cultural_studies",
+        "psychology"
+      ],
+      "aspects": [
+        {
+          "name": "Intergenerational Transmission",
+          "description": "Übertragung von Erinnerungen über Generationen"
+        },
+        {
+          "name": "Ritual Encoding",
+          "description": "Verschaltung von Erinnerungen in Ritualen"
+        },
+        {
+          "name": "Spatial Anchoring",
+          "description": "Verankerung von Erinnerungen an Orten"
+        },
+        {
+          "name": "Narrative Persistence",
+          "description": "Fortbestehen von Narrativen über Zeit hinweg"
+        }
+      ],
+      "examples": [
+        "Trauma-Kontinuität in Familien",
+        "Kulturelle Erinnerung an Verlust",
+        "Archäoastronomische Orte als Erinnerungsorte"
+      ],
+      "metadata": {
+        "created": "2026-01-22",
+        "status": "active",
+        "version": "0.1.0"
+      }
+    },
+    {
+      "id": "META-PAT-004",
+      "name": "Threshold Crossing",
+      "description": "Das universelle Muster des Schwellenübergangs - von einem Zustand in einen anderen",
+      "type": "transition",
+      "domains": [
+        "anthropology",
+        "psychology",
+        "ritual_studies"
+      ],
+      "phases": [
+        {
+          "name": "Pre-Threshold",
+          "description": "Vorbereitung und Antizipation"
+        },
+        {
+          "name": "Crossing",
+          "description": "Der eigentliche Übergangsmoment"
+        },
+        {
+          "name": "Post-Threshold",
+          "description": "Integration und neue Perspektive"
+        }
+      ],
+      "examples": [
+        "Pubertätsrituale",
+        "Lebensübergänge (Hochzeit, Tod)",
+        "Migrationsphasen",
+        "Politische Übergänge"
+      ],
+      "metadata": {
+        "created": "2026-01-22",
+        "status": "active",
+        "version": "0.1.0"
+      }
+    },
+    {
+      "id": "META-PAT-005",
+      "name": "Ritual Core Loop",
+      "description": "Grundlegende Struktur von Ritualen über Kulturen hinweg - von mikroskopischen Handlungen bis zu gesellschaftlichen Zeremonien",
+      "type": "structural",
+      "domains": [
+        "anthropology",
+        "psychology",
+        "sociology"
+      ],
+      "phases": [
+        {
+          "name": "Separation",
+          "description": "Ausscheiden aus dem Alltag"
+        },
+        {
+          "name": "Liminality",
+          "description": "Schwellenzustand, Ambivalenz"
+        },
+        {
+          "name": "Reintegration",
+          "description": "Rückkehr mit verändertem Status"
+        }
+      ],
+      "cross_references": [
+        {
+          "target": "META-PAT-004",
+          "type": "related_to",
+          "comment": "Ritual Core Loop als Form von Threshold Crossing"
+        }
+      ],
+      "examples": [
+        "Initiationsrituale",
+        "Jahresfeste",
+        "Übergangsrituale (Hochzeit, Beerdigung)",
+        "Moderne: Sportzeremonien, politische Rituale"
+      ],
+      "metadata": {
+        "created": "2026-01-22",
+        "status": "active",
+        "version": "0.1.0"
+      }
+    }
+  ],
+  "metadata": {
+    "module": "meta_patterns",
+    "file": "patterns",
+    "version": "0.1.0",
+    "created": "2026-01-22",
+    "description": "Wiederkehrende Meta-Patterns über Domains hinweg",
+    "schema_version": "1.0.0"
+  }
+}

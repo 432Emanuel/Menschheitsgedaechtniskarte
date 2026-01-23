@@ -88,12 +88,18 @@ Die Menschheitsgedächtniskarte versteht sich als **offenes Forschungsgerüst**,
 
 ## Technische Struktur
 
+- `data/` - **NEU**: Neue Datenstruktur mit analytischen Modulen
+  - `data/modules/build_on_old/` - Analytische Lenses und Konzepte für Legacy-Integration
+  - `data/human_cartography/` - Overlay/Reader Model für individuelle Perspektiven
+- `src/` - **NEU**: Standard-Tooling und Validierung (Legacy-Adapter enthalten)
+  - `src/validate/` - JSON-Validierung mit Legacy-Support
+  - `src/tools/` - Hilfsscripte (add_individual, link_nodes)
 - `architecture/` - Architektur- und Designprinzipien (Meta-Rahmen für Interface-Entscheidungen)
 - `interface/` - UI-View-Spezifikationen (MapView, GraphView, ResonancePanel)
-- `modules/` - Enthält alle thematischen Module
+- `modules/` - Enthält alle thematischen Module (Legacy)
 - `knowledge/` - Wissens-Schema und Daten (epistemische Layer, Resonanz-Layer, Nodes)
 - `shared/` - Gemeinsame Ressourcen (Schemas, Vokabulare, Querverweise)
-- `tooling/` - Dokumentation und Hinweise für die Arbeit mit den Daten
+- `tooling/` - **LEGACY**: Wird schrittweise durch `src/` abgelöst (siehe tooling/LEGACY.md)
 
 ## Architektur-Prinzip
 

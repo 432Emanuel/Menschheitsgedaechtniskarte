@@ -1,0 +1,17 @@
+{
+  "description": "Technische Übersicht aller Marker. Enthält keine Ordnung, keine Gewichtung und keine implizite Struktur. Die einzelnen Marker-JSONs sind konzeptionell primär.",
+  "markers": [
+    {
+      "id": "MARK-000001",
+      "file": "items/MARK-000001.json"
+    },
+    {
+      "id": "MARK-000002",
+      "file": "items/MARK-000002.json"
+    },
+    {
+      "id": "MARK-000003",
+      "file": "items/MARK-000003.json"
+    }
+  ]
+}

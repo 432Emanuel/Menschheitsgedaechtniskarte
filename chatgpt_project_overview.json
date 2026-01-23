@@ -1,0 +1,393 @@
+{
+  "meta": {
+    "project_name": "Menschheitsgedächtniskarte",
+    "project_name_en": "Humanity Memory Map",
+    "description": "Ein interdisziplinäres, modular aufgebautes Forschungs- und Strukturprojekt zur kollektiven Erinnerung der Menschheit. Ziel ist die systematische Erfassung, der Vergleich und die Dokumentation wiederkehrender Muster menschlicher Erfahrung über Zeiträume, Kulturen und Kontexte hinweg.",
+    "description_en": "A modular, interdisciplinary research project on collective human memory. Systematic identification, comparison, and documentation of recurring human experience patterns across time, cultures, and contexts.",
+    "focus": "Strukturen, Übergänge, Bruchlinien, Resonanzen (keine Bewertungen)",
+    "focus_en": "Structures, transitions, ruptures, resonance patterns (no judgments)",
+    "license": {
+      "code": "MIT License",
+      "content": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "attribution": "Menschheitsgedächtniskarte by Emanuel"
+    },
+    "repository": {
+      "url": "https://github.com/432Emanuel/Menschheitsged-chtniskarte.git",
+      "latest_commit": "486a8d45a6ddaea68836d1ec4d78236c51d2f5cf"
+    },
+    "last_updated": "2026-01-22",
+    "version": "1.0.0",
+    "language": "de/en (bilingual project)"
+  },
+  "project_status": {
+    "current_phase": "Strukturphase & Inhaltserstellung",
+    "status_indicators": {
+      "structure": "🟢 Strukturphase abgeschlossen",
+      "content": "🟡 Inhalte im Aufbau",
+      "international": "🔵 Internationale Perspektiven geplant"
+    },
+    "focus_areas": [
+      "Zeitgeist-Module für zeitgenössische Phänomene",
+      "Familienmodul als anthropologische Konstante",
+      "Mythos & Verwaltung als Strukturierungs-Pattern",
+      "Knowledge-Base mit archäoastronomischen Orten",
+      "Human Cartography für individuelle Perspektiven"
+    ],
+    "principles": [
+      "Keine Business-Logik",
+      "Keine Datenvalidierung in JSON",
+      "Reine Datensammlung",
+      "Modular und erweiterbar",
+      "Trennung von Erkenntnisarchitektur und Wissensschema"
+    ]
+  },
+  "modules": {
+    "zeitgeist_module": {
+      "description": "Analytische Raster für zeitgenössische Muster und Phänomene",
+      "index_file": "zeitgeist_module/Zeitgeist_index.json",
+      "module_count": 5,
+      "status": "active",
+      "modules": [
+        {
+          "id": "ZG-001-memory-loss",
+          "title": "Erinnerungsverlust & Ersatzrituale",
+          "core_tension": ["Erfahrung ↔ Abstraktion", "Erinnerung ↔ Simulation"],
+          "linked_sites": ["Goseck (DE)"],
+          "maturity": "draft"
+        },
+        {
+          "id": "ZG-002-order-powerlessness",
+          "title": "Ohnmacht & Ordnung",
+          "core_tension": ["Ohnmacht ↔ Kontrolle", "Chaos ↔ Struktur"],
+          "linked_sites": ["Stonehenge (GB)", "Newgrange (IE)"],
+          "maturity": "draft"
+        },
+        {
+          "id": "ZG-003-ritual-relief",
+          "title": "Ritual & Entlastung",
+          "core_tension": ["Überforderung ↔ Entlastung", "Komplexität ↔ Wiederholung"],
+          "linked_sites": ["Göbekli Tepe (TR)", "Carnac (FR)"],
+          "maturity": "draft"
+        },
+        {
+          "id": "ZG-004-transition-initiation",
+          "title": "Übergang & Initiation",
+          "core_tension": ["Alt ↔ Neu", "Unsicherheit ↔ Zugehörigkeit"],
+          "linked_sites": ["Lascaux (FR)", "Silbury Hill (GB)"],
+          "maturity": "draft"
+        },
+        {
+          "id": "ZG-005-mythos-administration",
+          "title": "Mythos & Verwaltung",
+          "core_tension": ["Sinn ↔ Regel", "Erzählung ↔ Struktur"],
+          "linked_sites": ["Uruk (IQ)", "Akkadian Empire (IQ)"],
+          "maturity": "draft"
+        }
+      ],
+      "contemporary_cases": {
+        "description": "Zeitgenössische Fallbeispiele (Contemporary Cases)",
+        "schema": "zeitgeist_module/ZG-CB-contemporary-cases/schema/ZG-CB_case.schema.json",
+        "template": "zeitgeist_module/ZG-CB-contemporary-cases/ZG-CB_template.md",
+        "example_case": "knowledge/contemporary_cases/ZG-CB-DE-2020-01.md"
+      }
+    },
+    "family_module": {
+      "description": "Familie als anthropologische Konstante, Stabilitätsfaktor und Bruchlinie",
+      "index_file": "family_module/index.json",
+      "module_count": 1,
+      "status": "active",
+      "modules": [
+        {
+          "id": "FM-001-family-core",
+          "title": "Familie als Gedächtnisknoten",
+          "aspects": ["Funktionsübersicht", "Historischer Kontext (Neolithikum)", "Moderne Kontexte", "Bruchlinien", "Resilienz-Vektoren"],
+          "maturity": "draft"
+        }
+      ]
+    },
+    "modules_imperium": {
+      "description": "Historische Reiche und Imperien als Strukturierungs-Pattern",
+      "index_file": "modules/imperium/index.json",
+      "status": "prototype",
+      "entity_types": ["persons", "empires", "places", "patterns", "timelines", "comparisons"],
+      "note": "Alle Entity-Dateien sind derzeit Beispiel-Dateien. Keine echten historischen Daten vorhanden."
+    },
+    "modules_mythos_und_verwaltung": {
+      "description": "Mythos, Narrative und Verwaltungsstrukturen",
+      "index_file": "modules/mythos_und_verwaltung/index.json",
+      "status": "active",
+      "active_patterns": [
+        "MUV-PAT-HERO-ASCENSION-0001 (hero_ascension)",
+        "MUV-PAT-DEATH-TRANSFORMATION-0001 (death_transformation)",
+        "MUV-PAT-DUTY-DESTINY-0001 (duty_destiny)"
+      ],
+      "active_narratives": [
+        "MUV-NAR-GILGAMESH-0001 (Gilgamesh Epic - Urknoten)"
+      ],
+      "note": "Drei Kern-Pattern dienen zur Strukturierung der 15 Kandidaten im shared/candidates Verzeichnis"
+    }
+  },
+  "data_structure": {
+    "data": {
+      "description": "NEUE Datenstruktur mit analytischen Modulen",
+      "subdirectories": {
+        "human_cartography": {
+          "description": "Overlay/Reader Model für individuelle Perspektiven",
+          "files": [
+            "humanity_potential_space.json",
+            "individuals/DE-EMANUEL-1989.json (Beispiel)",
+            "edges/human_world_edges.json",
+            "overlays/onkel_resonance_profile.json"
+          ]
+        },
+        "lenses": {
+          "description": "Analytische Lenses und Meta-Patterns",
+          "files": [
+            "meta_patterns/patterns.json"
+          ]
+        },
+        "modules/build_on_old": {
+          "description": "Analytische Lenses und Konzepte für Legacy-Integration",
+          "files": [
+            "concepts.json",
+            "concepts_onkel.json",
+            "patterns_onkel.json",
+            "rules.json"
+          ]
+        },
+        "schema": {
+          "description": "Schema-Definitionen für Datenstruktur",
+          "files": [
+            "node_schema.json",
+            "edge_schema.json"
+          ]
+        }
+      }
+    },
+    "knowledge": {
+      "description": "Wissens-Schema und strukturierte Daten",
+      "subdirectories": {
+        "schema": {
+          "files": [
+            "node_schema_v2.json"
+          ]
+        },
+        "layers": {
+          "files": [
+            "epistemic_layers.json",
+            "resonance_layers.json"
+          ]
+        },
+        "places": {
+          "description": "Archäoastronomische Orte und Kandidaten",
+          "files": [
+            "places_archaeoastronomy.json",
+            "candidates_archaeoastronomy.json",
+            "integration_report_newgrange.md",
+            "expansion_report.md"
+          ]
+        },
+        "contemporary_cases": {
+          "files": [
+            "ZG-CB-DE-2020-01.md (Beispiel)"
+          ]
+        }
+      }
+    }
+  },
+  "architecture_and_interface": {
+    "architecture": {
+      "description": "Architektur- und Designprinzipien",
+      "file": "architecture/DP-001-anthropologische-erkenntnisarchitektur.json",
+      "principle": "Anthropologische Erkenntnisarchitektur (Körper-Geist-Seele Modell)",
+      "levels": [
+        "Körper-Ebene (MapView): Räumliche Verkörperung von Wissen",
+        "Geist-Ebene (GraphView): Strukturelle Vernetzung von Wissen",
+        "Seele-Ebene (ResonancePanel): Sinnliche Resonanz und individuelle Sinnbildung"
+      ]
+    },
+    "interface": {
+      "description": "UI-View-Spezifikationen",
+      "directory": "interface/views/",
+      "views": [
+        {
+          "name": "MapView",
+          "file": "map_view_spec.json",
+          "purpose": "Räumliche Visualisierung"
+        },
+        {
+          "name": "GraphView",
+          "file": "graph_view_spec.json",
+          "purpose": "Netzwerk-Visualisierung"
+        },
+        {
+          "name": "ResonancePanel",
+          "file": "resonance_panel_spec.json",
+          "purpose": "Resonanz-Visualisierung"
+        }
+      ]
+    }
+  },
+  "shared_resources": {
+    "candidates": {
+      "description": "15 mythologische Kandidaten für das Mythos-Modul",
+      "directory": "shared/candidates/items/",
+      "count": 15,
+      "index": "shared/candidates/candidate_index.json",
+      "template": "shared/candidates/template_candidate.json",
+      "examples": [
+        "CAND-ENUMAELISH-0001 (Enuma Elish)",
+        "CAND-OSIRIS-0001 (Osiris)",
+        "CAND-HERAKLES-0001 (Herakles)",
+        "CAND-THESEUS-0001 (Theseus)",
+        "CAND-YU-GREAT-0001 (Yu the Great)",
+        "CAND-QUYUAN-0001 (Qu Yuan)",
+        "CAND-BHAGAVAD-ARJUNA-0001 (Arjuna - Bhagavad Gita)",
+        "CAND-MAHABHARATA-0001 (Mahabharata)",
+        "CAND-POPOLVUH-0001 (Popol Vuh)",
+        "CAND-INKARRI-0001 (Inkarri)",
+        "CAND-SUNDIATA-0001 (Sundiata)",
+        "CAND-BALDUR-0001 (Baldur)",
+        "CAND-HIAWATHA-0001 (Hiawatha)"
+      ]
+    },
+    "rubrics": {
+      "description": "Bewertungsrubriken",
+      "directory": "shared/rubrics/",
+      "files": [
+        "rubrics_index.json",
+        "RUB-URKNOTEN-PATTERNS-0001.json"
+      ]
+    },
+    "crosslinks": {
+      "description": "Querverweise zwischen Modulen",
+      "directory": "shared/crosslinks/",
+      "files": [
+        "example_link.json"
+      ]
+    },
+    "schemas": {
+      "description": "Gemeinsame Schema-Definitionen",
+      "directory": "shared/schemas/"
+    },
+    "vocabularies": {
+      "description": "Gemeinsame Vokabulare und Tags",
+      "directory": "shared/vocabularies/",
+      "files": [
+        "tags.json"
+      ]
+    }
+  },
+  "tooling": {
+    "src": {
+      "description": "NEU: Standard-Tooling und Validierung",
+      "status": "active",
+      "subdirectories": {
+        "validate": {
+          "description": "JSON-Validierung mit Legacy-Support",
+          "files": [
+            "validate_json.py"
+          ]
+        },
+        "tools": {
+          "description": "Hilfsscripte",
+          "files": [
+            "add_individual.py",
+            "link_nodes.py"
+          ]
+        }
+      }
+    },
+    "tooling": {
+      "description": "LEGACY: Wird schrittweise durch src/ abgelöst",
+      "status": "deprecated",
+      "files": [
+        "README.md",
+        "repo_status.md",
+        "notes.md",
+        "LEGACY.md"
+      ],
+      "note": "Siehe tooling/LEGACY.md für Migrationshinweise"
+    }
+  },
+  "update_rules": {
+    "when_to_update": [
+      "Bei Hinzufügen neuer Module",
+      "Bei Änderung an Modul-Indizes (index.json Dateien)",
+      "Bei Strukturänderungen an Hauptverzeichnissen",
+      "Bei Änderung der Lizenz oder Repository-Informationen",
+      "Regelmäßig bei großen Projekt-Updates"
+    ],
+    "fields_to_update": {
+      "meta.last_updated": "Automatisch mit aktuellem Datum aktualisieren",
+      "modules.*.module_count": "Anzahl der Module aktualisieren",
+      "modules.*.modules": "Modul-Listen aktualisieren",
+      "data_structure.*": "Neue Dateien/Verzeichnisse hinzufügen",
+      "shared_resources.candidates.count": "Anzahl der Kandidaten aktualisieren"
+    },
+    "maintenance_notes": [
+      "Diese Datei sollte immer auf dem neuesten Stand gehalten werden",
+      "Änderungen sollten konsistent mit den index.json Dateien sein",
+      "Bei Unsicherheiten die index.json Dateien als Referenz nutzen"
+    ]
+  },
+  "file_structure_overview": {
+    "root_level": [
+      "README.md",
+      "LICENSE",
+      "chatgpt_project_overview.json (diese Datei)",
+      "architecture/",
+      "data/",
+      "family_module/",
+      "interface/",
+      "knowledge/",
+      "modules/",
+      "shared/",
+      "src/",
+      "tooling/",
+      "zeitgeist_module/"
+    ]
+  },
+  "usage_for_chatgpt": {
+    "purpose": "Diese Datei dient ChatGPT als Referenz für alle Gespräche über dieses Projekt",
+    "how_to_use": [
+      "Diese Datei zuerst lesen, um Projektstruktur zu verstehen",
+      "Bei Fragen zu Modulen die entsprechenden index.json Dateien konsultieren",
+      "Für detaillierte Architektur-Infos architecture/DP-001-anthropologische-erkenntnisarchitektur.json lesen",
+      "Für spezifische Module die jeweiligen README.md Dateien prüfen",
+      "Für offene Forschungsfragen research_questions.json konsultieren"
+    ],
+    "conversation_starters": [
+      "Wie kann ich das Projekt erweitern?",
+      "Welche Module sind derzeit aktiv?",
+      "Wie ist die Datenstruktur aufgebaut?",
+      "Wie füge ich einen neuen Kandidaten hinzu?",
+      "Wie werden die Zeitgeist-Module verwendet?",
+      "Welche offenen Forschungsfragen gibt es?"
+    ],
+    "related_files": {
+      "research_questions": "research_questions.json",
+      "description": "Systematische Sammlung offener Forschungsfragen und Entscheidungsprotokolle"
+    }
+  },
+  "delta_since_last_update": {
+    "last_update_date": "2026-01-22",
+    "update_description": "Ersteinrichtung der Projektübersicht mit Forschungsfragen-Tracking",
+    "new_modules": [],
+    "updated_modules": ["modules_mythos_und_verwaltung"],
+    "new_questions": [
+      "Wo genau liegt die Grenze zwischen Mythos-Modul und Zeitgeist-Modul?",
+      "meta_patterns: Lens oder eigenes Modul?"
+    ],
+    "decisions_made": [
+      "build_on_old wird strikt als Legacy-Lens behandelt"
+    ],
+    "open_tensions": [
+      "meta_patterns: Lens oder eigenes Modul?"
+    ],
+    "new_files_added": [
+      "chatgpt_project_overview.json",
+      "research_questions.json"
+    ]
+  }
+}
