@@ -24,6 +24,10 @@
     {
       "id": "LM_CORONA_KI_001",
       "file": "items/LM_CORONA_KI_001.json"
+    },
+    {
+      "id": "MARK-000006",
+      "file": "items/MARK-000006.json"
     }
   ]
 }

@@ -266,6 +266,24 @@
       "text_scaling": "Flexible Schriftgrößen",
       "language_support": "Multilingual (basierend auf Node-Sprache)"
     },
+    "featured_nodes": [
+      {
+        "id": "ZG-CB-DE-2026-01",
+        "title": "Wenn Alufolie zum UFO wird",
+        "type": "contemporary_case",
+        "eyecatcher": true,
+        "description": "Nicht das Objekt ist das Thema – sondern die Modellgrenze des Beobachters. Ein Alltagsereignis demonstriert ontologie-offen, wie Wahrnehmungssysteme ohne verfügbares Modell Stimuli als 'autonom/extern/intelligent' deuten.",
+        "path": "zeitgeist_module/ZG-CB-contemporary-cases/cases/DE/ZG-CB-DE-2026-01.md",
+        "linked_markers": ["MARK-000006"],
+        "linked_lenses": ["META-PAT-004", "LENS-THRESHOLD-UNKNOWN", "LENS-NARRATIVE-LIMITS"],
+        "recommended_resonance_layers": ["R0", "R1", "R3", "R4"],
+        "metadata": {
+          "created_at": "2026-01-24",
+          "status": "featured",
+          "priority": 1
+        }
+      }
+    ],
     "metadata": {
       "language": "de",
       "version": "1.0.0",
