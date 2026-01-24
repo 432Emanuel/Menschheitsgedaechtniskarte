@@ -210,6 +210,36 @@
         "Eliten handeln reaktiv, nicht gestaltend",
         "Systeme wirken nach außen stabil, innen hohl"
       ]
+    },
+    {
+      "id": "M12",
+      "title": "INITIATIVE–REACTION LOOP (Agenda-Setting-Asymmetrie)",
+      "description": "Strukturelle Asymmetrie im politischen und medialen Ablauf: Eine Seite setzt permanent die Agenda, die andere reagiert nur. Der Setzer definiert Frames und Tempo, der Reagierer verliert Zeit in Abstimmung und Rechtfertigung.",
+      "type": "pattern",
+      "layer": "L2",
+      "status": "candidate",
+      "confidence_signal": "stark",
+      "trajectory": "politikübergreifend beobachtbar",
+      "recurrence": {
+        "count": 0,
+        "contexts": []
+      },
+      "connections": ["zeitgeist_module", "modules/imperium"],
+      "sources": [],
+      "observations": [],
+      "gatekeeping_reason": "Weitere historische Beispiele sammeln, um epochenübergreifende Dichte zu bestätigen.",
+      "notes": "Erklärt permanente Agenda-Setting-Asymmetrie in Politik und Medien. Der Setzer definiert Frames und Tempo, der Reagierer verliert in Rechtfertigung.",
+      "key_features": [
+        "Setzen ↔ Antworten",
+        "Frame ↔ Rechtfertigung",
+        "Tempo ↔ Trägheit",
+        "Handlungsfähigkeit ↔ Ohnmacht"
+      ],
+      "markers": [
+        "Eine Seite erzeugt ständig neue 'Objekte' (Skandale, Drohungen, Deals, Forderungen)",
+        "Die andere Seite verliert Zeit in: Abstimmung, Empörung, Prüfung, Kompromiss",
+        "Öffentlichkeit nimmt 'Handlung' beim Setzer wahr, 'Zögern' beim Reagierer"
+      ]
     }
   ],
   "threshold_subtypes": [
@@ -234,15 +264,15 @@
     }
   ],
   "summary": {
-    "total_candidates": 11,
+    "total_candidates": 12,
     "by_status": {
-      "candidate": 11,
+      "candidate": 12,
       "promoted": 0,
       "archived": 0
     },
     "by_confidence": {
       "sehr stark": 4,
-      "stark": 4,
+      "stark": 5,
       "mittel-stark": 1,
       "optional": 1,
       "beobachten": 1

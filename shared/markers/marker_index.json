@@ -12,6 +12,18 @@
     {
       "id": "MARK-000003",
       "file": "items/MARK-000003.json"
+    },
+    {
+      "id": "MARK-000004",
+      "file": "items/MARK-000004.json"
+    },
+    {
+      "id": "MARK-000005",
+      "file": "items/MARK-000005.json"
+    },
+    {
+      "id": "LM_CORONA_KI_001",
+      "file": "items/LM_CORONA_KI_001.json"
     }
   ]
 }
