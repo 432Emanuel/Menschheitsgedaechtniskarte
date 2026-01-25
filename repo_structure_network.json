@@ -1,10 +1,10 @@
 {
   "meta": {
     "project_name": "Menschheitsgedächtniskarte",
-    "version": "1.0.0",
-    "generated": "2026-01-23",
+    "version": "1.1.0",
+    "generated": "2026-01-25",
     "visualization_type": "file_and_directory_structure",
-    "description": "Netzwerk-Repräsentation der Datei- und Verzeichnisstruktur für Visualisierung"
+    "description": "Netzwerk-Repräsentation der Datei- und Verzeichnisstruktur für Visualisierung (Gephi-kompatibel)"
   },
   "nodes": [
     {
@@ -142,6 +142,15 @@
       "description": "Architektur-Dokumentation"
     },
     {
+      "id": "architecture_dp002",
+      "label": "DP-002-epistemische-haltung.json",
+      "type": "file",
+      "file_type": "json",
+      "level": 2,
+      "parent": "architecture",
+      "description": "Epistemische Haltung"
+    },
+    {
       "id": "architecture_readme",
       "label": "README.md",
       "type": "file",
@@ -173,6 +182,13 @@
     {
       "id": "data_schema",
       "label": "schema/",
+      "type": "directory",
+      "level": 2,
+      "parent": "data"
+    },
+    {
+      "id": "data_crisis_analysis",
+      "label": "crisis_analysis/",
       "type": "directory",
       "level": 2,
       "parent": "data"
@@ -247,8 +263,53 @@
       "parent": "data_hc_overlays"
     },
     {
+      "id": "data_hc_overlays_resonance_strands",
+      "label": "resonance_strands/",
+      "type": "directory",
+      "level": 4,
+      "parent": "data_hc_overlays"
+    },
+    {
+      "id": "data_hc_rs_readme",
+      "label": "README.md",
+      "type": "file",
+      "file_type": "md",
+      "level": 5,
+      "parent": "data_hc_overlays_resonance_strands"
+    },
+    {
+      "id": "data_hc_rs_index",
+      "label": "index.json",
+      "type": "file",
+      "file_type": "json",
+      "level": 5,
+      "parent": "data_hc_overlays_resonance_strands"
+    },
+    {
+      "id": "data_hc_rs_overlay",
+      "label": "RSO-DE-EMANUEL-1989-0001.json",
+      "type": "file",
+      "file_type": "json",
+      "level": 5,
+      "parent": "data_hc_overlays_resonance_strands"
+    },
+    {
       "id": "data_lenses_meta_patterns",
       "label": "meta_patterns/",
+      "type": "directory",
+      "level": 3,
+      "parent": "data_lenses"
+    },
+    {
+      "id": "data_lenses_resonance_strands",
+      "label": "resonance_strands/",
+      "type": "directory",
+      "level": 3,
+      "parent": "data_lenses"
+    },
+    {
+      "id": "data_lenses_lens_sketches",
+      "label": "lens_sketches/",
       "type": "directory",
       "level": 3,
       "parent": "data_lenses"
@@ -270,12 +331,66 @@
       "parent": "data_lenses_meta_patterns"
     },
     {
+      "id": "data_lenses_ml_truth",
+      "label": "ML_TRUTH_EMERGENCE_001.json",
+      "type": "file",
+      "file_type": "json",
+      "level": 4,
+      "parent": "data_lenses_meta_patterns"
+    },
+    {
       "id": "data_lenses_readme",
       "label": "README.md",
       "type": "file",
       "file_type": "md",
       "level": 4,
       "parent": "data_lenses_meta_patterns"
+    },
+    {
+      "id": "data_lenses_resonance_strands_readme",
+      "label": "README.md",
+      "type": "file",
+      "file_type": "md",
+      "level": 4,
+      "parent": "data_lenses_resonance_strands"
+    },
+    {
+      "id": "data_lenses_rs_strands",
+      "label": "strands/",
+      "type": "directory",
+      "level": 4,
+      "parent": "data_lenses_resonance_strands"
+    },
+    {
+      "id": "data_lenses_rs_emanuel",
+      "label": "RS-IRS-EMANUEL-ARCHASTRO-0001.json",
+      "type": "file",
+      "file_type": "json",
+      "level": 5,
+      "parent": "data_lenses_rs_strands"
+    },
+    {
+      "id": "data_lenses_lens_sketches_resonanz",
+      "label": "resonanzbasierte_intelligenzkopplung.json",
+      "type": "file",
+      "file_type": "json",
+      "level": 4,
+      "parent": "data_lenses_lens_sketches"
+    },
+    {
+      "id": "data_lenses_lens_sketches_drafts",
+      "label": "drafts/",
+      "type": "directory",
+      "level": 4,
+      "parent": "data_lenses_lens_sketches"
+    },
+    {
+      "id": "data_lenses_drafts_readme",
+      "label": "README.md",
+      "type": "file",
+      "file_type": "md",
+      "level": 5,
+      "parent": "data_lenses_lens_sketches_drafts"
     },
     {
       "id": "data_modules_build_on_old",
@@ -347,6 +462,156 @@
       "file_type": "md",
       "level": 3,
       "parent": "data_schema"
+    },
+    {
+      "id": "data_crisis_covid_2020",
+      "label": "covid_2020/",
+      "type": "directory",
+      "level": 3,
+      "parent": "data_crisis_analysis"
+    },
+    {
+      "id": "data_crisis_index",
+      "label": "index.json",
+      "type": "file",
+      "file_type": "json",
+      "category": "index",
+      "level": 3,
+      "parent": "data_crisis_analysis"
+    },
+    {
+      "id": "data_crisis_tw",
+      "label": "time_witness/",
+      "type": "directory",
+      "level": 4,
+      "parent": "data_crisis_covid_2020"
+    },
+    {
+      "id": "data_crisis_sm",
+      "label": "structure_markers/",
+      "type": "directory",
+      "level": 4,
+      "parent": "data_crisis_covid_2020"
+    },
+    {
+      "id": "data_crisis_rm",
+      "label": "resonance_markers/",
+      "type": "directory",
+      "level": 4,
+      "parent": "data_crisis_covid_2020"
+    },
+    {
+      "id": "data_crisis_tw_readme",
+      "label": "README.md",
+      "type": "file",
+      "file_type": "md",
+      "category": "documentation",
+      "level": 5,
+      "parent": "data_crisis_tw"
+    },
+    {
+      "id": "data_crisis_tw_index",
+      "label": "index.json",
+      "type": "file",
+      "file_type": "json",
+      "category": "index",
+      "level": 5,
+      "parent": "data_crisis_tw"
+    },
+    {
+      "id": "data_crisis_tw_zg_ki",
+      "label": "ZG-KI-2026-001.json",
+      "type": "file",
+      "file_type": "json",
+      "level": 5,
+      "parent": "data_crisis_tw"
+    },
+    {
+      "id": "data_crisis_tw_zg_krise",
+      "label": "ZG-KRISE-2026-001.json",
+      "type": "file",
+      "file_type": "json",
+      "level": 5,
+      "parent": "data_crisis_tw"
+    },
+    {
+      "id": "data_crisis_sm_readme",
+      "label": "README.md",
+      "type": "file",
+      "file_type": "md",
+      "category": "documentation",
+      "level": 5,
+      "parent": "data_crisis_sm"
+    },
+    {
+      "id": "data_crisis_sm_raw",
+      "label": "raw/",
+      "type": "directory",
+      "level": 5,
+      "parent": "data_crisis_sm"
+    },
+    {
+      "id": "data_crisis_sm_raw_gitkeep",
+      "label": ".gitkeep",
+      "type": "file",
+      "file_type": "config",
+      "level": 6,
+      "parent": "data_crisis_sm_raw"
+    },
+    {
+      "id": "data_crisis_sm_lausen_structures",
+      "label": "ZB_CORONA_LAUSEN_001_structures.json",
+      "type": "file",
+      "file_type": "json",
+      "level": 6,
+      "parent": "data_crisis_sm_raw"
+    },
+    {
+      "id": "data_crisis_rm_readme",
+      "label": "README.md",
+      "type": "file",
+      "file_type": "md",
+      "category": "documentation",
+      "level": 5,
+      "parent": "data_crisis_rm"
+    },
+    {
+      "id": "data_crisis_rm_raw",
+      "label": "raw/",
+      "type": "directory",
+      "level": 5,
+      "parent": "data_crisis_rm"
+    },
+    {
+      "id": "data_crisis_rm_raw_gitkeep",
+      "label": ".gitkeep",
+      "type": "file",
+      "file_type": "config",
+      "level": 6,
+      "parent": "data_crisis_rm_raw"
+    },
+    {
+      "id": "data_crisis_tw_raw",
+      "label": "raw/",
+      "type": "directory",
+      "level": 5,
+      "parent": "data_crisis_tw"
+    },
+    {
+      "id": "data_crisis_tw_raw_gitkeep",
+      "label": ".gitkeep",
+      "type": "file",
+      "file_type": "config",
+      "level": 6,
+      "parent": "data_crisis_tw_raw"
+    },
+    {
+      "id": "data_crisis_tw_lausen",
+      "label": "ZB_CORONA_LAUSEN_001.json",
+      "type": "file",
+      "file_type": "json",
+      "level": 6,
+      "parent": "data_crisis_tw_raw"
     },
     {
       "id": "family_index",
@@ -854,6 +1119,71 @@
       "parent": "shared_marker_items"
     },
     {
+      "id": "shared_marker_004",
+      "label": "MARK-000004.json",
+      "type": "file",
+      "file_type": "json",
+      "level": 4,
+      "parent": "shared_marker_items"
+    },
+    {
+      "id": "shared_marker_005",
+      "label": "MARK-000005.json",
+      "type": "file",
+      "file_type": "json",
+      "level": 4,
+      "parent": "shared_marker_items"
+    },
+    {
+      "id": "shared_marker_006",
+      "label": "MARK-000006.json",
+      "type": "file",
+      "file_type": "json",
+      "level": 4,
+      "parent": "shared_marker_items"
+    },
+    {
+      "id": "shared_marker_corona_ki",
+      "label": "LM_CORONA_KI_001.json",
+      "type": "file",
+      "file_type": "json",
+      "level": 4,
+      "parent": "shared_marker_items"
+    },
+    {
+      "id": "shared_schemas_resonance_strands",
+      "label": "resonance_strands/",
+      "type": "directory",
+      "level": 3,
+      "parent": "shared_schemas"
+    },
+    {
+      "id": "shared_rs_overlay_schema",
+      "label": "resonance_strands_overlay.schema.json",
+      "type": "file",
+      "file_type": "json",
+      "category": "schema",
+      "level": 4,
+      "parent": "shared_schemas_resonance_strands"
+    },
+    {
+      "id": "shared_rs_strand_schema",
+      "label": "RS_strand.schema.json",
+      "type": "file",
+      "file_type": "json",
+      "category": "schema",
+      "level": 4,
+      "parent": "shared_schemas_resonance_strands"
+    },
+    {
+      "id": "shared_rs_vocab",
+      "label": "strand_vocab.json",
+      "type": "file",
+      "file_type": "json",
+      "level": 4,
+      "parent": "shared_schemas_resonance_strands"
+    },
+    {
       "id": "shared_rubric_index",
       "label": "rubrics_index.json",
       "type": "file",
@@ -899,6 +1229,21 @@
       "type": "directory",
       "level": 2,
       "parent": "src"
+    },
+    {
+      "id": "src_tools_pattern_lenses",
+      "label": "pattern_lenses/",
+      "type": "directory",
+      "level": 3,
+      "parent": "src_tools"
+    },
+    {
+      "id": "src_pattern_lenses_readme",
+      "label": "README.md",
+      "type": "file",
+      "file_type": "md",
+      "level": 4,
+      "parent": "src_tools_pattern_lenses"
     },
     {
       "id": "src_validate_script",
@@ -1082,8 +1427,38 @@
       "type": "directory_structure"
     },
     {
+      "source": "root",
+      "target": "license",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "root",
+      "target": "research_questions_json",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "root",
+      "target": "konzept_struktur_json",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "root",
+      "target": "gitignore",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
       "source": "architecture",
       "target": "architecture_dp001",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "architecture",
+      "target": "architecture_dp002",
       "label": "contains",
       "type": "directory_structure"
     },
@@ -1114,6 +1489,12 @@
     {
       "source": "data",
       "target": "data_schema",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "data",
+      "target": "data_crisis_analysis",
       "label": "contains",
       "type": "directory_structure"
     },
@@ -1172,8 +1553,44 @@
       "type": "directory_structure"
     },
     {
+      "source": "data_hc_overlays",
+      "target": "data_hc_overlays_resonance_strands",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "data_hc_overlays_resonance_strands",
+      "target": "data_hc_rs_readme",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "data_hc_overlays_resonance_strands",
+      "target": "data_hc_rs_index",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "data_hc_overlays_resonance_strands",
+      "target": "data_hc_rs_overlay",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
       "source": "data_lenses",
       "target": "data_lenses_meta_patterns",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "data_lenses",
+      "target": "data_lenses_resonance_strands",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "data_lenses",
+      "target": "data_lenses_lens_sketches",
       "label": "contains",
       "type": "directory_structure"
     },
@@ -1191,7 +1608,49 @@
     },
     {
       "source": "data_lenses_meta_patterns",
+      "target": "data_lenses_ml_truth",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "data_lenses_meta_patterns",
       "target": "data_lenses_readme",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "data_lenses_resonance_strands",
+      "target": "data_lenses_resonance_strands_readme",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "data_lenses_resonance_strands",
+      "target": "data_lenses_rs_strands",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "data_lenses_rs_strands",
+      "target": "data_lenses_rs_emanuel",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "data_lenses_lens_sketches",
+      "target": "data_lenses_lens_sketches_resonanz",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "data_lenses_lens_sketches",
+      "target": "data_lenses_lens_sketches_drafts",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "data_lenses_lens_sketches_drafts",
+      "target": "data_lenses_drafts_readme",
       "label": "contains",
       "type": "directory_structure"
     },
@@ -1248,6 +1707,150 @@
       "target": "data_schema_readme",
       "label": "contains",
       "type": "directory_structure"
+    },
+    {
+      "source": "data_crisis_analysis",
+      "target": "data_crisis_covid_2020",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "data_crisis_analysis",
+      "target": "data_crisis_index",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "data_crisis_covid_2020",
+      "target": "data_crisis_tw",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "data_crisis_covid_2020",
+      "target": "data_crisis_sm",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "data_crisis_covid_2020",
+      "target": "data_crisis_rm",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "data_crisis_tw",
+      "target": "data_crisis_tw_readme",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "data_crisis_tw",
+      "target": "data_crisis_tw_index",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "data_crisis_tw",
+      "target": "data_crisis_tw_zg_ki",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "data_crisis_tw",
+      "target": "data_crisis_tw_zg_krise",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "data_crisis_tw",
+      "target": "data_crisis_tw_raw",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "data_crisis_sm",
+      "target": "data_crisis_sm_readme",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "data_crisis_sm",
+      "target": "data_crisis_sm_raw",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "data_crisis_sm_raw",
+      "target": "data_crisis_sm_raw_gitkeep",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "data_crisis_sm_raw",
+      "target": "data_crisis_sm_lausen_structures",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "data_crisis_rm",
+      "target": "data_crisis_rm_readme",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "data_crisis_rm",
+      "target": "data_crisis_rm_raw",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "data_crisis_rm_raw",
+      "target": "data_crisis_rm_raw_gitkeep",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "data_crisis_tw_raw",
+      "target": "data_crisis_tw_raw_gitkeep",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "data_crisis_tw_raw",
+      "target": "data_crisis_tw_lausen",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "data_crisis_tw_zg_ki",
+      "target": "shared_marker_corona_ki",
+      "label": "references",
+      "type": "schema_reference"
+    },
+    {
+      "source": "data_crisis_tw_zg_krise",
+      "target": "architecture_dp002",
+      "label": "references",
+      "type": "schema_reference"
+    },
+    {
+      "source": "data_crisis_index",
+      "target": "data_crisis_tw",
+      "label": "references",
+      "type": "index_reference"
+    },
+    {
+      "source": "data_crisis_index",
+      "target": "data_crisis_sm",
+      "label": "references",
+      "type": "index_reference"
+    },
+    {
+      "source": "data_crisis_index",
+      "target": "data_crisis_rm",
+      "label": "references",
+      "type": "index_reference"
     },
     {
       "source": "family_module",
@@ -1640,6 +2243,54 @@
       "type": "directory_structure"
     },
     {
+      "source": "shared_marker_items",
+      "target": "shared_marker_004",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "shared_marker_items",
+      "target": "shared_marker_005",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "shared_marker_items",
+      "target": "shared_marker_006",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "shared_marker_items",
+      "target": "shared_marker_corona_ki",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "shared_schemas",
+      "target": "shared_schemas_resonance_strands",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "shared_schemas_resonance_strands",
+      "target": "shared_rs_overlay_schema",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "shared_schemas_resonance_strands",
+      "target": "shared_rs_strand_schema",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "shared_schemas_resonance_strands",
+      "target": "shared_rs_vocab",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
       "source": "shared_rubrics",
       "target": "shared_rubric_index",
       "label": "contains",
@@ -1672,6 +2323,18 @@
     {
       "source": "src",
       "target": "src_tools",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "src_tools",
+      "target": "src_tools_pattern_lenses",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "src_tools_pattern_lenses",
+      "target": "src_pattern_lenses_readme",
       "label": "contains",
       "type": "directory_structure"
     },
@@ -1799,39 +2462,41 @@
   "groups": {
     "by_type": {
       "root": ["root"],
-      "directories": ["architecture", "data", "family_module", "interface", "knowledge", "modules", "shared", "src", "tooling", "zeitgeist_module", "data_human_cartography", "data_lenses", "data_modules", "data_schema", "family_fm001", "family_fm001_ancient", "knowledge_schema", "knowledge_layers", "knowledge_places", "knowledge_contemporary", "modules_imperium", "modules_mythos", "imperium_entities", "imperium_patterns", "imperium_timelines", "imperium_comparisons", "imperium_crosslinks", "imperium_meta", "mythos_narratives", "mythos_institutions", "mythos_documents", "mythos_patterns", "mythos_meta", "shared_candidates", "shared_markers", "shared_rubrics", "shared_crosslinks", "shared_schemas", "shared_vocabularies", "shared_candidate_items", "shared_marker_items", "src_validate", "src_tools", "zg_zg001", "zg_zg002", "zg_zg003", "zg_zg004", "zg_zg005", "zg_cb_contemporary", "data_modules_build_on_old", "data_lenses_meta_patterns", "data_hc_individuals", "data_hc_edges", "data_hc_overlays", "interface_views"],
-      "files": ["chatgpt_project_overview_json", "readme", "license", "research_questions_json", "konzept_struktur_json", "gitignore", "architecture_dp001", "architecture_readme", "data_readme", "data_hc_readme", "data_hc_potential_space", "data_hc_emanuel", "data_hc_world_edges", "data_hc_onkel", "data_lenses_patterns", "data_lenses_node_candidates", "data_lenses_readme", "data_modules_build_concepts_onkel", "data_modules_build_concepts", "data_modules_build_patterns_onkel", "data_modules_build_rules", "data_modules_build_readme", "data_schema_node", "data_schema_edge", "data_schema_readme", "family_index", "family_fm001_readme", "family_fm001_meta", "family_fm001_function", "family_fm001_modern", "family_fm001_fractures", "family_fm001_resilience", "family_fm001_perspective", "family_fm001_neolithic", "interface_readme", "interface_map", "interface_graph", "interface_resonance", "knowledge_node_schema_v2", "knowledge_epistemic_layers", "knowledge_resonance_layers", "knowledge_places_archaeoastronomy", "knowledge_places_candidates", "knowledge_places_integration", "knowledge_places_expansion", "knowledge_places_bewertung", "knowledge_cb_de", "imperium_readme", "imperium_index", "mythos_readme", "mythos_index", "mythos_gilgamesh", "mythos_hero_ascension", "mythos_death_transformation", "mythos_duty_destiny", "shared_candidate_index", "shared_candidate_template", "shared_marker_index", "shared_marker_template", "shared_marker_001", "shared_marker_002", "shared_marker_003", "shared_rubric_index", "shared_rubric_patterns", "shared_tags", "src_readme", "src_validate_script", "src_add_individual", "src_link_nodes", "tooling_readme", "tooling_notes", "tooling_legacy", "tooling_status", "zg_index"]
+      "directories": ["architecture", "data", "family_module", "interface", "knowledge", "modules", "shared", "src", "tooling", "zeitgeist_module", "data_human_cartography", "data_lenses", "data_modules", "data_schema", "data_crisis_analysis", "family_fm001", "family_fm001_ancient", "knowledge_schema", "knowledge_layers", "knowledge_places", "knowledge_contemporary", "modules_imperium", "modules_mythos", "imperium_entities", "imperium_patterns", "imperium_timelines", "imperium_comparisons", "imperium_crosslinks", "imperium_meta", "mythos_narratives", "mythos_institutions", "mythos_documents", "mythos_patterns", "mythos_meta", "shared_candidates", "shared_markers", "shared_rubrics", "shared_crosslinks", "shared_schemas", "shared_vocabularies", "shared_candidate_items", "shared_marker_items", "shared_schemas_resonance_strands", "src_validate", "src_tools", "zg_zg001", "zg_zg002", "zg_zg003", "zg_zg004", "zg_zg005", "zg_cb_contemporary", "data_modules_build_on_old", "data_lenses_meta_patterns", "data_lenses_resonance_strands", "data_lenses_lens_sketches", "data_hc_individuals", "data_hc_edges", "data_hc_overlays", "data_crisis_covid_2020", "data_lenses_rs_strands", "data_lenses_lens_sketches_drafts", "data_hc_overlays_resonance_strands", "data_crisis_tw", "data_crisis_sm", "data_crisis_rm", "data_crisis_tw_raw", "data_crisis_sm_raw", "data_crisis_rm_raw", "src_tools_pattern_lenses"],
+      "files": ["chatgpt_project_overview_json", "readme", "license", "research_questions_json", "konzept_struktur_json", "gitignore", "architecture_dp001", "architecture_dp002", "architecture_readme", "data_readme", "data_hc_readme", "data_hc_potential_space", "data_hc_emanuel", "data_hc_world_edges", "data_hc_onkel", "data_hc_rs_readme", "data_hc_rs_index", "data_hc_rs_overlay", "data_lenses_patterns", "data_lenses_node_candidates", "data_lenses_ml_truth", "data_lenses_readme", "data_lenses_resonance_strands_readme", "data_lenses_rs_emanuel", "data_lenses_lens_sketches_resonanz", "data_lenses_drafts_readme", "data_modules_build_concepts_onkel", "data_modules_build_concepts", "data_modules_build_patterns_onkel", "data_modules_build_rules", "data_modules_build_readme", "data_schema_node", "data_schema_edge", "data_schema_readme", "data_crisis_index", "data_crisis_tw_readme", "data_crisis_tw_index", "data_crisis_tw_zg_ki", "data_crisis_tw_zg_krise", "data_crisis_sm_readme", "data_crisis_sm_raw_gitkeep", "data_crisis_sm_lausen_structures", "data_crisis_rm_readme", "data_crisis_rm_raw_gitkeep", "data_crisis_tw_raw_gitkeep", "data_crisis_tw_lausen", "family_index", "family_fm001_readme", "family_fm001_meta", "family_fm001_function", "family_fm001_modern", "family_fm001_fractures", "family_fm001_resilience", "family_fm001_perspective", "family_fm001_neolithic", "interface_readme", "interface_map", "interface_graph", "interface_resonance", "knowledge_node_schema_v2", "knowledge_epistemic_layers", "knowledge_resonance_layers", "knowledge_places_archaeoastronomy", "knowledge_places_candidates", "knowledge_places_integration", "knowledge_places_expansion", "knowledge_places_bewertung", "knowledge_cb_de", "imperium_readme", "imperium_index", "mythos_readme", "mythos_index", "mythos_gilgamesh", "mythos_hero_ascension", "mythos_death_transformation", "mythos_duty_destiny", "shared_candidate_index", "shared_candidate_template", "shared_marker_index", "shared_marker_template", "shared_marker_001", "shared_marker_002", "shared_marker_003", "shared_marker_004", "shared_marker_005", "shared_marker_006", "shared_marker_corona_ki", "shared_rs_overlay_schema", "shared_rs_strand_schema", "shared_rs_vocab", "shared_rubric_index", "shared_rubric_patterns", "shared_tags", "src_readme", "src_validate_script", "src_add_individual", "src_link_nodes", "src_pattern_lenses_readme", "tooling_readme", "tooling_notes", "tooling_legacy", "tooling_status", "zg_index"]
     },
     "by_category": {
-      "index": ["family_index", "zg_index", "imperium_index", "mythos_index", "shared_candidate_index", "shared_marker_index", "shared_rubric_index"],
-      "schema": ["architecture_dp001", "knowledge_node_schema_v2", "data_schema_node", "data_schema_edge", "interface_map", "interface_graph", "interface_resonance"],
-      "data": ["knowledge_places_archaeoastronomy", "knowledge_places_candidates", "knowledge_epistemic_layers", "knowledge_resonance_layers", "data_hc_potential_space", "data_hc_emanuel", "data_hc_world_edges", "data_hc_onkel", "data_lenses_patterns", "data_lenses_node_candidates", "data_modules_build_concepts_onkel", "data_modules_build_concepts", "data_modules_build_patterns_onkel", "data_modules_build_rules", "shared_rubric_patterns", "mythos_gilgamesh", "mythos_hero_ascension", "mythos_death_transformation", "mythos_duty_destiny", "shared_marker_001", "shared_marker_002", "shared_marker_003"],
+      "index": ["family_index", "zg_index", "imperium_index", "mythos_index", "shared_candidate_index", "shared_marker_index", "shared_rubric_index", "data_crisis_tw_index", "data_crisis_index"],
+      "schema": ["architecture_dp001", "architecture_dp002", "knowledge_node_schema_v2", "data_schema_node", "data_schema_edge", "interface_map", "interface_graph", "interface_resonance", "shared_rs_overlay_schema", "shared_rs_strand_schema"],
+      "data": ["knowledge_places_archaeoastronomy", "knowledge_places_candidates", "knowledge_epistemic_layers", "knowledge_resonance_layers", "data_hc_potential_space", "data_hc_emanuel", "data_hc_world_edges", "data_hc_onkel", "data_hc_rs_overlay", "data_lenses_patterns", "data_lenses_node_candidates", "data_lenses_ml_truth", "data_modules_build_concepts_onkel", "data_modules_build_concepts", "data_modules_build_patterns_onkel", "data_modules_build_rules", "shared_rubric_patterns", "mythos_gilgamesh", "mythos_hero_ascension", "mythos_death_transformation", "mythos_duty_destiny", "shared_marker_001", "shared_marker_002", "shared_marker_003", "shared_marker_004", "shared_marker_005", "shared_marker_006", "shared_marker_corona_ki", "data_lenses_rs_emanuel", "data_crisis_tw_zg_ki", "data_crisis_tw_zg_krise", "data_crisis_tw_lausen", "data_crisis_sm_lausen_structures", "data_lenses_lens_sketches_resonanz"],
       "template": ["shared_candidate_template", "shared_marker_template"],
-      "documentation": ["readme", "architecture_readme", "data_readme", "data_hc_readme", "data_modules_build_readme", "data_lenses_readme", "data_schema_readme", "family_fm001_readme", "family_fm001_function", "family_fm001_modern", "family_fm001_fractures", "family_fm001_resilience", "family_fm001_perspective", "family_fm001_neolithic", "interface_readme", "knowledge_places_integration", "knowledge_places_expansion", "knowledge_cb_de", "imperium_readme", "mythos_readme", "src_readme", "tooling_readme", "tooling_notes", "tooling_legacy", "tooling_status"],
+      "documentation": ["readme", "architecture_readme", "data_readme", "data_hc_readme", "data_modules_build_readme", "data_lenses_readme", "data_lenses_resonance_strands_readme", "data_crisis_tw_readme", "data_crisis_sm_readme", "data_crisis_rm_readme", "data_hc_rs_readme", "data_lenses_drafts_readme", "family_fm001_readme", "family_fm001_function", "family_fm001_modern", "family_fm001_fractures", "family_fm001_resilience", "family_fm001_perspective", "family_fm001_neolithic", "interface_readme", "knowledge_places_integration", "knowledge_places_expansion", "knowledge_cb_de", "imperium_readme", "mythos_readme", "src_readme", "src_pattern_lenses_readme", "tooling_readme", "tooling_notes", "tooling_legacy", "tooling_status"],
       "code": ["src_validate_script", "src_add_individual", "src_link_nodes"],
-      "config": ["gitignore", "license", "research_questions_json", "konzept_struktur_json", "knowledge_places_bewertung"],
+      "config": ["gitignore", "license", "research_questions_json", "konzept_struktur_json", "knowledge_places_bewertung", "data_crisis_tw_raw_gitkeep", "data_crisis_sm_raw_gitkeep", "data_crisis_rm_raw_gitkeep"],
       "module": ["zg_zg001", "zg_zg002", "zg_zg003", "zg_zg004", "zg_zg005", "zg_cb_contemporary", "family_fm001", "modules_imperium", "modules_mythos"]
     },
     "by_level": {
       "level_0": ["root"],
       "level_1": ["architecture", "data", "family_module", "interface", "knowledge", "modules", "shared", "src", "tooling", "zeitgeist_module", "chatgpt_project_overview_json", "readme", "license", "research_questions_json", "konzept_struktur_json", "gitignore"],
-      "level_2": ["architecture_dp001", "architecture_readme", "data_human_cartography", "data_lenses", "data_modules", "data_schema", "data_readme", "family_index", "family_fm001", "interface_readme", "interface_views", "knowledge_schema", "knowledge_layers", "knowledge_places", "knowledge_contemporary", "modules_imperium", "modules_mythos", "shared_candidates", "shared_markers", "shared_rubrics", "shared_crosslinks", "shared_schemas", "shared_vocabularies", "src_readme", "src_validate", "src_tools", "tooling_readme", "tooling_notes", "tooling_legacy", "tooling_status", "zg_index"],
-      "level_3": ["data_hc_readme", "data_hc_individuals", "data_hc_edges", "data_hc_overlays", "data_hc_potential_space", "data_lenses_meta_patterns", "data_modules_build_on_old", "data_schema_node", "data_schema_edge", "data_schema_readme", "family_fm001_readme", "family_fm001_meta", "family_fm001_function", "family_fm001_modern", "family_fm001_fractures", "family_fm001_resilience", "family_fm001_perspective", "family_fm001_ancient", "interface_map", "interface_graph", "interface_resonance", "knowledge_node_schema_v2", "knowledge_epistemic_layers", "knowledge_resonance_layers", "knowledge_places_archaeoastronomy", "knowledge_places_candidates", "knowledge_places_integration", "knowledge_places_expansion", "knowledge_places_bewertung", "knowledge_cb_de", "imperium_readme", "imperium_index", "imperium_entities", "imperium_patterns", "imperium_timelines", "imperium_comparisons", "imperium_crosslinks", "imperium_meta", "mythos_readme", "mythos_index", "mythos_narratives", "mythos_institutions", "mythos_documents", "mythos_patterns", "mythos_meta", "shared_candidate_index", "shared_candidate_template", "shared_candidate_items", "shared_marker_index", "shared_marker_template", "shared_marker_items", "shared_rubric_index", "shared_rubric_patterns", "shared_tags", "src_validate_script", "src_add_individual", "src_link_nodes", "zg_zg001", "zg_zg002", "zg_zg003", "zg_zg004", "zg_zg005", "zg_cb_contemporary"],
-      "level_4": ["data_hc_emanuel", "data_hc_world_edges", "data_hc_onkel", "data_lenses_patterns", "data_lenses_node_candidates", "data_lenses_readme", "data_modules_build_concepts_onkel", "data_modules_build_concepts", "data_modules_build_patterns_onkel", "data_modules_build_rules", "data_modules_build_readme", "family_fm001_neolithic", "mythos_gilgamesh", "mythos_hero_ascension", "mythos_death_transformation", "mythos_duty_destiny", "shared_marker_001", "shared_marker_002", "shared_marker_003"]
+      "level_2": ["architecture_dp001", "architecture_dp002", "architecture_readme", "data_human_cartography", "data_lenses", "data_modules", "data_schema", "data_crisis_analysis", "data_readme", "family_index", "family_fm001", "interface_readme", "interface_views", "knowledge_schema", "knowledge_layers", "knowledge_places", "knowledge_contemporary", "modules_imperium", "modules_mythos", "shared_candidates", "shared_markers", "shared_rubrics", "shared_crosslinks", "shared_schemas", "shared_vocabularies", "src_readme", "src_validate", "src_tools", "tooling_readme", "tooling_notes", "tooling_legacy", "tooling_status", "zg_index"],
+      "level_3": ["data_hc_readme", "data_hc_individuals", "data_hc_edges", "data_hc_overlays", "data_hc_potential_space", "data_lenses_meta_patterns", "data_lenses_resonance_strands", "data_lenses_lens_sketches", "data_lenses_patterns", "data_lenses_node_candidates", "data_lenses_ml_truth", "data_lenses_readme", "data_modules_build_on_old", "data_modules_build_concepts_onkel", "data_modules_build_concepts", "data_modules_build_patterns_onkel", "data_modules_build_rules", "data_modules_build_readme", "data_schema_node", "data_schema_edge", "data_schema_readme", "data_crisis_covid_2020", "data_crisis_index", "family_fm001_readme", "family_fm001_meta", "family_fm001_function", "family_fm001_modern", "family_fm001_fractures", "family_fm001_resilience", "family_fm001_perspective", "family_fm001_ancient", "interface_map", "interface_graph", "interface_resonance", "knowledge_node_schema_v2", "knowledge_epistemic_layers", "knowledge_resonance_layers", "knowledge_places_archaeoastronomy", "knowledge_places_candidates", "knowledge_places_integration", "knowledge_places_expansion", "knowledge_places_bewertung", "knowledge_cb_de", "imperium_readme", "imperium_index", "imperium_entities", "imperium_patterns", "imperium_timelines", "imperium_comparisons", "imperium_crosslinks", "imperium_meta", "mythos_readme", "mythos_index", "mythos_narratives", "mythos_institutions", "mythos_documents", "mythos_patterns", "mythos_meta", "shared_candidate_index", "shared_candidate_template", "shared_candidate_items", "shared_marker_index", "shared_marker_template", "shared_marker_items", "shared_schemas_resonance_strands", "shared_rubric_index", "shared_rubric_patterns", "shared_tags", "src_validate_script", "src_add_individual", "src_link_nodes", "src_tools_pattern_lenses", "zg_zg001", "zg_zg002", "zg_zg003", "zg_zg004", "zg_zg005", "zg_cb_contemporary"],
+      "level_4": ["data_hc_emanuel", "data_hc_world_edges", "data_hc_onkel", "data_hc_overlays_resonance_strands", "data_lenses_rs_strands", "data_lenses_resonance_strands_readme", "data_lenses_lens_sketches_resonanz", "data_lenses_lens_sketches_drafts", "family_fm001_neolithic", "mythos_gilgamesh", "mythos_hero_ascension", "mythos_death_transformation", "mythos_duty_destiny", "shared_marker_001", "shared_marker_002", "shared_marker_003", "shared_marker_004", "shared_marker_005", "shared_marker_006", "shared_marker_corona_ki", "shared_rs_overlay_schema", "shared_rs_strand_schema", "shared_rs_vocab", "data_crisis_tw", "data_crisis_sm", "data_crisis_rm", "data_crisis_tw_raw", "data_crisis_sm_raw", "data_crisis_rm_raw"],
+      "level_5": ["data_hc_rs_readme", "data_hc_rs_index", "data_hc_rs_overlay", "data_lenses_rs_emanuel", "data_lenses_drafts_readme", "data_crisis_tw_readme", "data_crisis_tw_index", "data_crisis_tw_zg_ki", "data_crisis_tw_zg_krise", "data_crisis_sm_readme", "data_crisis_sm_raw", "data_crisis_rm_readme", "data_crisis_rm_raw"],
+      "level_6": ["data_crisis_sm_raw_gitkeep", "data_crisis_sm_lausen_structures", "data_crisis_rm_raw_gitkeep", "data_crisis_tw_raw_gitkeep", "data_crisis_tw_lausen"]
     }
   },
   "statistics": {
-    "total_nodes": 138,
-    "total_edges": 127,
-    "max_depth": 4,
-    "directories": 59,
-    "files": 79,
-    "index_files": 6,
-    "data_files": 21,
-    "schema_files": 5,
-    "documentation_files": 25,
+    "total_nodes": 169,
+    "total_edges": 197,
+    "max_depth": 6,
+    "directories": 76,
+    "files": 93,
+    "index_files": 8,
+    "data_files": 27,
+    "schema_files": 9,
+    "documentation_files": 29,
     "code_files": 3,
-    "config_files": 4,
+    "config_files": 7,
     "template_files": 2,
     "module_directories": 10
   }

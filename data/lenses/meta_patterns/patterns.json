@@ -217,14 +217,322 @@
         "status": "active",
         "version": "0.1.0"
       }
+    },
+    {
+      "id": "META-PAT-006",
+      "lens_id": "LENS-MP-QUIET-PERSISTENCE-001",
+      "slug": "quiet_integration_vs_loud_disruption",
+      "name": "Leise Integration vs. laute Disruption",
+      "aka": ["Quiet Persistence", "Loud Flash / Quiet Stick"],
+      "version": "0.1.0",
+      "status": "draft",
+      "created_at": "2026-01-25",
+      "updated_at": "2026-01-25",
+      "type": "lens",
+      "subtype": "meta_pattern_lens",
+      "scope": {
+        "applicability": [
+          "technology_adoption",
+          "cultural_persistence",
+          "institutional_change",
+          "media_narratives",
+          "religious_forms"
+        ],
+        "levels": ["individual", "family", "public_space"]
+      },
+      "core_claim": {
+        "statement": "Phänomene, die sehr laut als 'Thema' auftreten, verlieren häufig schnell an Präsenz; Phänomene, die leise in den Alltag einsickern, werden oft dauerhaft.",
+        "notes": [
+          "Heuristik/Meta-Muster, kein Naturgesetz.",
+          "Kann durch Gegenbeispiele und Kontextfaktoren gebrochen werden."
+        ]
+      },
+      "axes": [
+        {
+          "axis_id": "AX-LOUD-QUIET",
+          "name": "Auftretensmodus",
+          "left": {
+            "label": "laut",
+            "description": "hohe mediale Intensität, starke Narrative, schnelle Politisierung, sichtbarer Hype/Schock"
+          },
+          "right": {
+            "label": "leise",
+            "description": "schleichende Einbettung, unspektakuläre Alltagsintegration, geringe Initial-Sichtbarkeit"
+          }
+        },
+        {
+          "axis_id": "AX-FLEETING-PERSISTENT",
+          "name": "Zeitprofil",
+          "left": {
+            "label": "kurzlebig",
+            "description": "schneller Peak, rascher Themenabfall, Ersatz durch nächste Aufregung"
+          },
+          "right": {
+            "label": "dauerhaft",
+            "description": "langsame Sättigung, stabile Präsenz, infrastrukturelle/rituelle Verankerung"
+          }
+        }
+      ],
+      "markers": {
+        "loud_indicators": [
+          "hohe Schlagzeilen-Dichte",
+          "moralische Polarisierung (gut/böse)",
+          "starker politischer Verwertungsdruck",
+          "kurze Erklärzyklen (Slogans statt Praxis)",
+          "schnelle Ermüdung / 'Thema durch'"
+        ],
+        "quiet_indicators": [
+          "Feature-by-Feature-Einsickern (kleine Helferlein)",
+          "Wird als Komfort/Standard wahrgenommen (nicht als Debatte)",
+          "Integration in Tools/Alltagsgeräte",
+          "schrittweise Normalisierung ohne Abschlussmoment",
+          "veränderte Praxis vor veränderter Meinung"
+        ],
+        "persistence_indicators": [
+          "Infrastruktur-/Ökosystem-Aufbau (Standards, Geräte, Skills)",
+          "Lock-in durch Gewohnheit/Bequemlichkeit",
+          "Ritualisierung (regelmäßige Nutzung, kulturelle Einbettung)",
+          "Weitergabe über Familie/Peers (Lernen durch Nachahmung)"
+        ],
+        "fleeting_indicators": [
+          "abhängig von Skandal/Empörung",
+          "keine stabile Praxis nach dem Hype",
+          "fehlt Anschlussfähigkeit im Alltag",
+          "ersetzbar durch nächstes Narrativ"
+        ]
+      },
+      "mechanisms": [
+        {
+          "mechanism_id": "MECH-01",
+          "name": "Aufmerksamkeitsökonomie",
+          "description": "Laute Themen konkurrieren in kurzen Zyklen; leise Features umgehen die Debatten-Arena und werden durch Nutzung stabil."
+        },
+        {
+          "mechanism_id": "MECH-02",
+          "name": "Alltags-Embedding",
+          "description": "Was in Routinen eingebettet ist, benötigt weniger Zustimmung/Ideologie und wird resilient gegen Meinungsschwankungen."
+        },
+        {
+          "mechanism_id": "MECH-03",
+          "name": "Kopplungsdichte Familie",
+          "description": "Familie wirkt als Verstärker/Filter: Praktiken werden dort normalisiert, weitergegeben oder blockiert; dadurch entsteht Dauerwirkung."
+        }
+      ],
+      "contra_patterns": [
+        {
+          "label": "Laute Themen, die dauerhaft wurden",
+          "examples": [
+            "Kriege/Bedrohungslagen mit langem Verlauf",
+            "Migration als dauerpolitisierter Komplex",
+            "langfristige Ideologiekonflikte"
+          ],
+          "notes": "Hier greifen oft institutionelle Verstetigung, materielles Interesse oder dauerhafte Konfliktlinien."
+        },
+        {
+          "label": "Leise Themen, die wieder verschwanden",
+          "examples": [
+            "Nischen-Features ohne Nutzen",
+            "kurzlebige Plattformen ohne Ökosystem"
+          ],
+          "notes": "Fehlende Anschlussfähigkeit/Ökosystem verhindert Verankerung."
+        }
+      ],
+      "application_prompts": [
+        "Beschreibe das Auftreten: laut oder leise? Woran erkennt man das?",
+        "Welche Alltagspraktik verändert sich (oder nicht)?",
+        "Gibt es infrastrukturelle/rituelle Verankerung?",
+        "Welche Rolle spielt Familie/Peer-Group bei Normalisierung oder Abwehr?",
+        "Welche Gegenbeispiele sprechen gegen die Heuristik in diesem Fall?"
+      ],
+      "links": {
+        "related_lenses": ["data/lenses/meta_patterns"],
+        "related_research_questions": ["RQ-010"],
+        "suggested_overlays": ["resonance_strands_overlay"],
+        "suggested_tools": ["src/tools/pattern_lenses"]
+      },
+      "evidence": [
+        {
+          "grade": "reported",
+          "source_ref": "Zeitzeugen-Transcript 2026-01-25 (Interview)",
+          "extract": "Muster: 'Wenn etwas sehr laut daherkommt, wird es schnell weniger; leise Einschleichen bleibt.'",
+          "notes": "Als Zeitzeugenbeobachtung/Heuristik aufgenommen; weitere Fallprüfung vorgesehen."
+        }
+      ],
+      "tags": [
+        "meta_patterns",
+        "attention_economy",
+        "adoption",
+        "normalization",
+        "infrastructure",
+        "family_coupling"
+      ],
+      "metadata": {
+        "created": "2026-01-25",
+        "status": "draft",
+        "version": "0.1.0"
+      }
     }
   ],
+  {
+    "id": "META-PAT-006",
+    "lens_id": "LENS-MP-QUIET-PERSISTENCE-001",
+    "slug": "quiet_integration_vs_loud_disruption",
+    "name": "Leise Integration vs. laute Disruption",
+    "aka": ["Quiet Persistence", "Loud Flash / Quiet Stick"],
+    "version": "0.1.0",
+    "status": "draft",
+    "created_at": "2026-01-25",
+    "updated_at": "2026-01-25",
+    "type": "lens",
+    "subtype": "meta_pattern_lens",
+    "scope": {
+      "applicability": [
+        "technology_adoption",
+        "cultural_persistence",
+        "institutional_change",
+        "media_narratives",
+        "religious_forms"
+      ],
+      "levels": ["individual", "family", "public_space"]
+    },
+    "core_claim": {
+      "statement": "Phänomene, die sehr laut als 'Thema' auftreten, verlieren häufig schnell an Präsenz; Phänomene, die leise in den Alltag einsickern, werden oft dauerhaft.",
+      "notes": [
+        "Heuristik/Meta-Muster, kein Naturgesetz.",
+        "Kann durch Gegenbeispiele und Kontextfaktoren gebrochen werden."
+      ]
+    },
+    "axes": [
+      {
+        "axis_id": "AX-LOUD-QUIET",
+        "name": "Auftretensmodus",
+        "left": {
+          "label": "laut",
+          "description": "hohe mediale Intensität, starke Narrative, schnelle Politisierung, sichtbarer Hype/Schock"
+        },
+        "right": {
+          "label": "leise",
+          "description": "schleichende Einbettung, unspektakuläre Alltagsintegration, geringe Initial-Sichtbarkeit"
+        }
+      },
+      {
+        "axis_id": "AX-FLEETING-PERSISTENT",
+        "name": "Zeitprofil",
+        "left": {
+          "label": "kurzlebig",
+          "description": "schneller Peak, rascher Themenabfall, Ersatz durch nächste Aufregung"
+        },
+        "right": {
+          "label": "dauerhaft",
+          "description": "langsame Sättigung, stabile Präsenz, infrastrukturelle/rituelle Verankerung"
+        }
+      }
+    ],
+    "markers": {
+      "loud_indicators": [
+        "hohe Schlagzeilen-Dichte",
+        "moralische Polarisierung (gut/böse)",
+        "starker politischer Verwertungsdruck",
+        "kurze Erklärzyklen (Slogans statt Praxis)",
+        "schnelle Ermüdung / 'Thema durch'"
+      ],
+      "quiet_indicators": [
+        "Feature-by-Feature-Einsickern (kleine Helferlein)",
+        "Wird als Komfort/Standard wahrgenommen (nicht als Debatte)",
+        "Integration in Tools/Alltagsgeräte",
+        "schrittweise Normalisierung ohne Abschlussmoment",
+        "veränderte Praxis vor veränderter Meinung"
+      ],
+      "persistence_indicators": [
+        "Infrastruktur-/Ökosystem-Aufbau (Standards, Geräte, Skills)",
+        "Lock-in durch Gewohnheit/Bequemlichkeit",
+        "Ritualisierung (regelmäßige Nutzung, kulturelle Einbettung)",
+        "Weitergabe über Familie/Peers (Lernen durch Nachahmung)"
+      ],
+      "fleeting_indicators": [
+        "abhängig von Skandal/Empörung",
+        "keine stabile Praxis nach dem Hype",
+        "fehlt Anschlussfähigkeit im Alltag",
+        "ersetzbar durch nächstes Narrativ"
+      ]
+    },
+    "mechanisms": [
+      {
+        "mechanism_id": "MECH-01",
+        "name": "Aufmerksamkeitsökonomie",
+        "description": "Laute Themen konkurrieren in kurzen Zyklen; leise Features umgehen die Debatten-Arena und werden durch Nutzung stabil."
+      },
+      {
+        "mechanism_id": "MECH-02",
+        "name": "Alltags-Embedding",
+        "description": "Was in Routinen eingebettet ist, benötigt weniger Zustimmung/Ideologie und wird resilient gegen Meinungsschwankungen."
+      },
+      {
+        "mechanism_id": "MECH-03",
+        "name": "Kopplungsdichte Familie",
+        "description": "Familie wirkt als Verstärker/Filter: Praktiken werden dort normalisiert, weitergegeben oder blockiert; dadurch entsteht Dauerwirkung."
+      }
+    ],
+    "contra_patterns": [
+      {
+        "label": "Laute Themen, die dauerhaft wurden",
+        "examples": [
+          "Kriege/Bedrohungslagen mit langem Verlauf",
+          "Migration als dauerpolitisierter Komplex",
+          "langfristige Ideologiekonflikte"
+        ],
+        "notes": "Hier greifen oft institutionelle Verstetigung, materielles Interesse oder dauerhafte Konfliktlinien."
+      },
+      {
+        "label": "Leise Themen, die wieder verschwanden",
+        "examples": [
+          "Nischen-Features ohne Nutzen",
+          "kurzlebige Plattformen ohne Ökosystem"
+        ],
+        "notes": "Fehlende Anschlussfähigkeit/Ökosystem verhindert Verankerung."
+      }
+    ],
+    "application_prompts": [
+      "Beschreibe das Auftreten: laut oder leise? Woran erkennt man das?",
+      "Welche Alltagspraktik verändert sich (oder nicht)?",
+      "Gibt es infrastrukturelle/rituelle Verankerung?",
+      "Welche Rolle spielt Familie/Peer-Group bei Normalisierung oder Abwehr?",
+      "Welche Gegenbeispiele sprechen gegen die Heuristik in diesem Fall?"
+    ],
+    "links": {
+      "related_lenses": ["data/lenses/meta_patterns"],
+      "related_research_questions": ["RQ-010"],
+      "suggested_overlays": ["resonance_strands_overlay"],
+      "suggested_tools": ["src/tools/pattern_lenses"]
+    },
+    "evidence": [
+      {
+        "grade": "reported",
+        "source_ref": "Zeitzeugen-Transcript 2026-01-25 (Interview)",
+        "extract": "Muster: 'Wenn etwas sehr laut daherkommt, wird es schnell weniger; leise Einschleichen bleibt.'",
+        "notes": "Als Zeitzeugenbeobachtung/Heuristik aufgenommen; weitere Fallprüfung vorgesehen."
+      }
+    ],
+    "tags": [
+      "meta_patterns",
+      "attention_economy",
+      "adoption",
+      "normalization",
+      "infrastructure",
+      "family_coupling"
+    ],
+    "metadata": {
+      "created": "2026-01-25",
+      "status": "draft",
+      "version": "0.1.0"
+    }
+  },
   "metadata": {
     "module": "meta_patterns",
     "file": "patterns",
     "version": "0.1.0",
     "created": "2026-01-22",
-    "description": "Wiederkehrende Meta-Patterns über Domains hinweg",
+    "description": "Wiederkehrende Meta-Patterns über Domains hinweg. Ink. META-PAT-006: Leise Integration vs. laute Disruption",
     "schema_version": "1.0.0"
   }
 }

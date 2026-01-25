@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Resonance Strands Overlay",
+  "type": "object",
+  "required": [
+    "overlay_id",
+    "scope",
+    "strands",
+    "edges"
+  ],
+  "properties": {
+    "overlay_id": {
+      "type": "string",
+      "description": "Eindeutige Kennung des Overlays im Format RSO-{ISO}-{NAME}-{YEAR}-{NUM}"
+    },
+    "scope": {
+      "type": "object",
+      "description": "Geltungsbereich des Overlays",
+      "properties": {
+        "primary_carrier_id": {
+          "type": "string",
+          "description": "Primärer Träger (z.B. Individuum-ID)"
+        },
+        "time_window": {
+          "type": "object",
+          "description": "Zeitlicher Geltungsbereich (optional)",
+          "properties": {
+            "start_year": {
+              "type": ["integer", "null"],
+              "description": "Startjahr"
+            },
+            "end_year": {
+              "type": ["integer", "null"],
+              "description": "Endjahr"
+            }
+          }
+        }
+      },
+      "required": ["primary_carrier_id"]
+    },
+    "strands": {
+      "type": "array",
+      "description": "Liste der Resonanzstrands in diesem Overlay",
+      "items": {
+        "type": "string",
+        "description": "Referenz auf Strand-ID"
+      }
+    },
+    "edges": {
+      "type": "array",
+      "description": "Verbindungen zwischen Strands",
+      "items": {
+        "type": "object",
+        "properties": {
+          "from_strand_id": {
+            "type": "string",
+            "description": "ID des Ausgangs-Strands"
+          },
+          "to_strand_id": {
+            "type": "string",
+            "description": "ID des Ziel-Strands"
+          },
+          "coupling_mode": {
+            "type": "string",
+            "description": "Art der Verknüpfung",
+            "enum": ["amplifies", "dampens", "filters", "translates", "gates", "echoes", "conflicts_with"]
+          },
+          "strength": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1,
+            "description": "Stärke der Kopplung (0-1)"
+          },
+          "notes": {
+            "type": "string",
+            "description": "Zusätzliche Anmerkungen"
+          }
+        },
+        "required": ["from_strand_id", "to_strand_id", "coupling_mode", "strength"]
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "created": {
+          "type": "string",
+          "format": "date"
+        },
+        "updated": {
+          "type": "string",
+          "format": "date"
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "active", "archived"]
+        }
+      }
+    }
+  }
+}

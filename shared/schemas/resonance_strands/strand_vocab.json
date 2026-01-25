@@ -1,0 +1,209 @@
+{
+  "schema_version": "0.1.0",
+  "title": "Resonance Strands Vokabular",
+  "description": "Kontrollierte Vokabulare für Resonance Strands",
+  "strand_types": [
+    {
+      "id": "IRS",
+      "name": "Individueller Resonanzstrang",
+      "description": "Resonanzen, die auf individueller Ebene wahrgenommen und verarbeitet werden"
+    },
+    {
+      "id": "FRS",
+      "name": "Familiärer Resonanzstrang",
+      "description": "Resonanzen, die familiäre Strukturen und Beziehungen betreffen"
+    },
+    {
+      "id": "OeRS",
+      "name": "Öffentlicher Resonanzstrang",
+      "description": "Resonanzen, die öffentliche, gesellschaftliche oder kulturelle Kontexte betreffen"
+    }
+  ],
+  "coupling_modes": [
+    {
+      "id": "amplifies",
+      "name": "Verstärkt",
+      "description": "Der Strand verstärkt die Wirkung des verknüpften Elements"
+    },
+    {
+      "id": "dampens",
+      "name": "Dämpft",
+      "description": "Der Strand reduziert oder schwächt die Wirkung des verknüpften Elements"
+    },
+    {
+      "id": "filters",
+      "name": "Filtert",
+      "description": "Der Strand filtert oder selektiert bestimmte Aspekte des verknüpften Elements"
+    },
+    {
+      "id": "translates",
+      "name": "Übersetzt",
+      "description": "Der Strand übersetzt oder transformiert das verknüpfte Element in einen anderen Kontext"
+    },
+    {
+      "id": "gates",
+      "name": "Steuernd",
+      "description": "Der Strand steuert den Zugang oder die Verfügbarkeit des verknüpften Elements"
+    },
+    {
+      "id": "echoes",
+      "name": "Wiederholt",
+      "description": "Der Strand spiegelt oder wiederholt Muster des verknüpften Elements wider"
+    },
+    {
+      "id": "conflicts_with",
+      "name": "Konflikthaft",
+      "description": "Der Strand steht in Widerspruch oder Konflikt mit dem verknüpften Element"
+    }
+  ],
+  "evidence_grades": [
+    {
+      "id": "raw_observation",
+      "name": "Rohbeobachtung",
+      "description": "Direkte, ungefilterte Wahrnehmung ohne systematische Dokumentation",
+      "confidence_level": "low"
+    },
+    {
+      "id": "reported",
+      "name": "Berichtet",
+      "description": "Vom Träger berichtete Erfahrungen oder Beobachtungen",
+      "confidence_level": "medium"
+    },
+    {
+      "id": "documented",
+      "name": "Dokumentiert",
+      "description": "Systematisch dokumentierte und archivierte Belege",
+      "confidence_level": "high"
+    },
+    {
+      "id": "verified",
+      "name": "Verifiziert",
+      "description": "Durch externe Quellen oder Methoden verifizierte Belege",
+      "confidence_level": "very_high"
+    }
+  ],
+  "carrier_types": [
+    {
+      "id": "individual",
+      "name": "Individuum",
+      "description": "Einzelne Person"
+    },
+    {
+      "id": "family",
+      "name": "Familie",
+      "description": "Familiäre Einheit oder System"
+    },
+    {
+      "id": "community",
+      "name": "Gemeinschaft",
+      "description": "Soziale oder kulturelle Gemeinschaft"
+    },
+    {
+      "id": "institution",
+      "name": "Institution",
+      "description": "Formale Organisation oder Institution"
+    },
+    {
+      "id": "place",
+      "name": "Ort",
+      "description": "Geografischer oder räumlicher Kontext"
+    }
+  ],
+  "target_types": [
+    {
+      "id": "node",
+      "name": "Knoten",
+      "description": "Wissensknoten in der Menschheitsgedächtniskarte"
+    },
+    {
+      "id": "edge",
+      "name": "Kante",
+      "description": "Verbindung zwischen Knoten"
+    },
+    {
+      "id": "marker",
+      "name": "Marker",
+      "description": "Markierungen oder Annotationen"
+    },
+    {
+      "id": "lens",
+      "name": "Linse",
+      "description": "Analytische Perspektive oder Lense"
+    },
+    {
+      "id": "pattern",
+      "name": "Muster",
+      "description": "Wiederkehrende Muster oder Patterns"
+    },
+    {
+      "id": "module",
+      "name": "Modul",
+      "description": "Thematisches Modul der Menschheitsgedächtniskarte"
+    }
+  ],
+  "common_motifs": [
+    {
+      "id": "hero_cycle",
+      "name": "Hero's Cycle",
+      "description": "Der Zyklus von Heldenreise, Transformation und Rückkehr"
+    },
+    {
+      "id": "memory_resonance",
+      "name": "Memory Resonance",
+      "description": "Resonanz mit kollektiven oder persönlichen Erinnerungen"
+    },
+    {
+      "id": "ritual_core",
+      "name": "Ritual Core Loop",
+      "description": "Wiederkehrende rituelle Muster und Transformationsprozesse"
+    },
+    {
+      "id": "order_chaos",
+      "name": "Order/Chaos Balance",
+      "description": "Spannung zwischen Ordnung und Chaos"
+    },
+    {
+      "id": "initiation",
+      "name": "Initiation",
+      "description": "Übergangsrituale und Initiationserfahrungen"
+    },
+    {
+      "id": "threshold",
+      "name": "Threshold Crossing",
+      "description": "Überschreiten von Schwellen und Grenzen"
+    },
+    {
+      "id": "loss_recovery",
+      "name": "Loss and Recovery",
+      "description": "Verlust und Wiedererlangung"
+    },
+    {
+      "id": "origin_return",
+      "name": "Origin and Return",
+      "description": "Ursprung und Rückkehr"
+    }
+  ],
+  "status_values": [
+    {
+      "id": "draft",
+      "name": "Entwurf",
+      "description": "Erste Version noch in Entwicklung"
+    },
+    {
+      "id": "active",
+      "name": "Aktiv",
+      "description": "Veröffentlicht und aktiv genutzt"
+    },
+    {
+      "id": "archived",
+      "name": "Archiviert",
+      "description": "Nicht mehr aktiv, aber für Referenz erhalten"
+    }
+  ],
+  "metadata": {
+    "created": "2026-01-25",
+    "last_updated": "2026-01-25",
+    "maintainer": "Menschheitsgedächtniskarte",
+    "version": "0.1.0"
+  }
+}

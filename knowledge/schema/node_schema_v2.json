@@ -206,6 +206,27 @@
           "description": "Fragen zur Selbstreflexion"
         }
       }
+    },
+    "resonance_strands": {
+      "type": "array",
+      "description": "Optionale Referenzen auf Resonance Strands, die mit diesem Knoten verbunden sind",
+      "items": {
+        "type": "object",
+        "properties": {
+          "overlay_id": {
+            "type": "string",
+            "description": "ID des Resonance Strands Overlay"
+          },
+          "strand_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "IDs der Strands, die diesen Knoten referenzieren"
+          }
+        },
+        "required": ["overlay_id", "strand_ids"]
+      }
     }
   },
   "required": ["node_id", "title", "node_type", "epistemic_layer_id"]
