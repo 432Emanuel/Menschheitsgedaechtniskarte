@@ -13,9 +13,9 @@
     },
     "repository": {
       "url": "https://github.com/432Emanuel/Menschheitsged-chtniskarte.git",
-      "latest_commit": "486a8d45a6ddaea68836d1ec4d78236c51d2f5cf"
+      "latest_commit": "7f6b1747eae9121e8bd9e4bc4aea32f24276f251"
     },
-    "last_updated": "2026-01-22",
+    "last_updated": "2026-01-28",
     "version": "1.0.0",
     "language": "de/en (bilingual project)"
   },
@@ -86,9 +86,21 @@
       ],
       "contemporary_cases": {
         "description": "Zeitgenössische Fallbeispiele (Contemporary Cases)",
+        "index_file": "zeitgeist_module/ZG-CB-contemporary-cases/index/ZG-CB_index.json",
         "schema": "zeitgeist_module/ZG-CB-contemporary-cases/schema/ZG-CB_case.schema.json",
+        "schema_example": "zeitgeist_module/ZG-CB-contemporary-cases/schema/ZG-CB_case.example.json",
         "template": "zeitgeist_module/ZG-CB-contemporary-cases/ZG-CB_template.md",
-        "example_case": "knowledge/contemporary_cases/ZG-CB-DE-2020-01.md"
+        "guidelines": "zeitgeist_module/ZG-CB-contemporary-cases/ZG-CB_guidelines.md",
+        "cases": {
+          "DE": [
+            "ZG-CB-DE-2020-01.md (knowledge/)",
+            "ZG-CB-DE-2026-01.md (cases/)"
+          ],
+          "VE": [
+            "ZG-CB-VE-2026-01.json",
+            "ZG-CB-VE-2026-01.md"
+          ]
+        }
       }
     },
     "family_module": {
@@ -110,6 +122,14 @@
       "index_file": "modules/imperium/index.json",
       "status": "prototype",
       "entity_types": ["persons", "empires", "places", "patterns", "timelines", "comparisons"],
+      "example_files": {
+        "persons": "entities/persons/example_person.json",
+        "empires": "entities/empires/example_empire.json",
+        "places": "entities/places/example_place.json",
+        "patterns": "patterns/example_pattern.json",
+        "timelines": "timelines/example_timeline.json",
+        "comparisons": "comparisons/example_comparison.json"
+      },
       "note": "Alle Entity-Dateien sind derzeit Beispiel-Dateien. Keine echten historischen Daten vorhanden."
     },
     "modules_mythos_und_verwaltung": {
@@ -137,13 +157,23 @@
             "humanity_potential_space.json",
             "individuals/DE-EMANUEL-1989.json (Beispiel)",
             "edges/human_world_edges.json",
-            "overlays/onkel_resonance_profile.json"
+            "overlays/onkel_resonance_profile.json",
+            "overlays/resonance_strands/RSO-DE-EMANUEL-1989-0001.json",
+            "overlays/resonance_strands/README.md",
+            "overlays/resonance_strands/index.json"
           ]
         },
         "lenses": {
           "description": "Analytische Lenses und Meta-Patterns",
           "files": [
-            "meta_patterns/patterns.json"
+            "meta_patterns/patterns.json",
+            "meta_patterns/README.md",
+            "meta_patterns/node_candidates.json",
+            "meta_patterns/ML_TRUTH_EMERGENCE_001.json",
+            "resonance_strands/README.md",
+            "resonance_strands/strands/RS-IRS-EMANUEL-ARCHASTRO-0001.json",
+            "lens_sketches/resonanzbasierte_intelligenzkopplung.json",
+            "lens_sketches/drafts/README.md"
           ]
         },
         "modules/build_on_old": {
@@ -189,8 +219,32 @@
         },
         "contemporary_cases": {
           "files": [
-            "ZG-CB-DE-2020-01.md (Beispiel)"
+            "ZG-CB-DE-2020-01.md (Beispiel)",
+            "bewertungsmatrix_skizze.txt"
           ]
+        },
+        "crisis_analysis": {
+          "description": "COVID-2020 Zeitzeugen-Analyse",
+          "subdirectories": {
+            "covid_2020": {
+              "description": "Struktur-, Resonanz- und Zeitzeugen-Marker der COVID-19 Krise",
+              "files": [
+                "index.json",
+                "README.md",
+                "time_witness/README.md",
+                "time_witness/index.json",
+                "time_witness/ZG-KI-2026-001.json",
+                "time_witness/ZG-KRISE-2026-001.json",
+                "time_witness/raw/.gitkeep",
+                "time_witness/raw/ZB_CORONA_LAUSEN_001.json",
+                "structure_markers/README.md",
+                "structure_markers/raw/.gitkeep",
+                "structure_markers/raw/ZB_CORONA_LAUSEN_001_structures.json",
+                "resonance_markers/README.md",
+                "resonance_markers/raw/.gitkeep"
+              ]
+            }
+          }
         }
       }
     }
@@ -198,7 +252,12 @@
   "architecture_and_interface": {
     "architecture": {
       "description": "Architektur- und Designprinzipien",
-      "file": "architecture/DP-001-anthropologische-erkenntnisarchitektur.json",
+      "files": [
+        "README.md",
+        "DP-001-anthropologische-erkenntnisarchitektur.json",
+        "DP-002-epistemische-haltung.json",
+        "DP-003-thorus-operating-loop.json"
+      ],
       "principle": "Anthropologische Erkenntnisarchitektur (Körper-Geist-Seele Modell)",
       "levels": [
         "Körper-Ebene (MapView): Räumliche Verkörperung von Wissen",
@@ -268,7 +327,29 @@
     },
     "schemas": {
       "description": "Gemeinsame Schema-Definitionen",
-      "directory": "shared/schemas/"
+      "directory": "shared/schemas/",
+      "files": [
+        "README.md",
+        "resonance_strands/resonance_strands_overlay.schema.json",
+        "resonance_strands/RS_strand.schema.json",
+        "resonance_strands/strand_vocab.json"
+      ]
+    },
+    "markers": {
+      "description": "Marker für Resonanz- und Strukturanalyse",
+      "directory": "shared/markers/",
+      "files": [
+        "README.md",
+        "template_marker.json",
+        "marker_index.json",
+        "items/MARK-000001.json",
+        "items/MARK-000002.json",
+        "items/MARK-000003.json",
+        "items/MARK-000004.json",
+        "items/MARK-000005.json",
+        "items/MARK-000006.json",
+        "items/LM_CORONA_KI_001.json"
+      ]
     },
     "vocabularies": {
       "description": "Gemeinsame Vokabulare und Tags",
@@ -282,6 +363,9 @@
     "src": {
       "description": "NEU: Standard-Tooling und Validierung",
       "status": "active",
+      "files": [
+        "README.md"
+      ],
       "subdirectories": {
         "validate": {
           "description": "JSON-Validierung mit Legacy-Support",
@@ -293,7 +377,8 @@
           "description": "Hilfsscripte",
           "files": [
             "add_individual.py",
-            "link_nodes.py"
+            "link_nodes.py",
+            "pattern_lenses/README.md"
           ]
         }
       }
@@ -332,10 +417,17 @@
     ]
   },
   "file_structure_overview": {
-    "root_level": [
-      "README.md",
+    "root_level_files": [
+      ".gitignore",
       "LICENSE",
-      "chatgpt_project_overview.json (diese Datei)",
+      "README.md",
+      "chatgpt_project_overview.json",
+      "repo_structure_network.json",
+      "research_questions.json",
+      "Konzept_Struktur.json",
+      "visual_gephi.gephi"
+    ],
+    "root_level_directories": [
       "architecture/",
       "data/",
       "family_module/",
@@ -371,23 +463,43 @@
     }
   },
   "delta_since_last_update": {
-    "last_update_date": "2026-01-22",
-    "update_description": "Ersteinrichtung der Projektübersicht mit Forschungsfragen-Tracking",
+    "last_update_date": "2026-01-28",
+    "update_description": "Vollständige Aktualisierung der chatgpt_project_overview.json mit allen neuen Datenstrukturen",
+    "git_commit": "7f6b1747eae9121e8bd9e4bc4aea32f24276f251",
+    "updated_sections": [
+      "meta: Git-Commit und Datum aktualisiert",
+      "data_structure: human_cartography, lenses, knowledge/contemporary_cases, knowledge/crisis_analysis hinzugefügt",
+      "shared_resources: schemas, markers mit vollständiger Dateiliste ergänzt",
+      "zeitgeist_module: contemporary_cases mit index und cases (DE, VE) erweitert",
+      "modules_imperium: example_files mit allen Entity-Typen hinzugefügt",
+      "modules_mythos_und_verwaltung: institutions und documents example_files ergänzt",
+      "tooling: src/README.md und pattern_lenses/README.md hinzugefügt",
+      "architecture: README.md und DP-002-epistemische-haltung.json ergänzt",
+      "file_structure_overview: In root_level_files und root_level_directories aufgeteilt"
+    ],
     "new_modules": [],
-    "updated_modules": ["modules_mythos_und_verwaltung"],
-    "new_questions": [
-      "Wo genau liegt die Grenze zwischen Mythos-Modul und Zeitgeist-Modul?",
-      "meta_patterns: Lens oder eigenes Modul?"
+    "updated_modules": [
+      "data_structure (vollständig überarbeitet)",
+      "shared_resources (markers und schemas hinzugefügt)",
+      "zeitgeist_module (contemporary_cases erweitert)",
+      "modules_imperium (example_files hinzugefügt)",
+      "modules_mythos_und_verwaltung (example_files ergänzt)",
+      "tooling (src/ erweitert)",
+      "architecture_and_interface (files ergänzt)"
     ],
-    "decisions_made": [
-      "build_on_old wird strikt als Legacy-Lens behandelt"
+    "new_data_areas": [
+      "data/crisis_analysis/covid_2020 (vollständige Struktur)",
+      "data/human_cartography/overlays/resonance_strands",
+      "data/lenses/resonance_strands",
+      "shared/markers (vollständige Marker-Struktur)",
+      "shared/schemas/resonance_strands"
     ],
-    "open_tensions": [
-      "meta_patterns: Lens oder eigenes Modul?"
+    "new_cases": [
+      "zeitgeist_module/ZG-CB-contemporary-cases/cases/DE/ZG-CB-DE-2026-01.md",
+      "zeitgeist_module/ZG-CB-contemporary-cases/cases/VE/ZG-CB-VE-2026-01.json",
+      "zeitgeist_module/ZG-CB-contemporary-cases/cases/VE/ZG-CB-VE-2026-01.md"
     ],
-    "new_files_added": [
-      "chatgpt_project_overview.json",
-      "research_questions.json"
-    ]
+    "new_files_count": "ca. 40+ neue Dateien dokumentiert",
+    "status": "chatgpt_project_overview.json ist jetzt vollständig synchronisiert mit der tatsächlichen Projektstruktur"
   }
 }

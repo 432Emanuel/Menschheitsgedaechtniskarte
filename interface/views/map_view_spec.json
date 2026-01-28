@@ -150,6 +150,34 @@
         "visual_hint": "Sanfter Übergang mit Spiegel-Effekt"
       }
     },
+    "loop_status": {
+      "loop_ref": "DP-003-thorus-operating-loop.json",
+      "current_step": {
+        "active_steps": [1, 2],
+        "step_mapping": {
+          "step_1": {
+            "label": "Ich bin",
+            "function": "Verortung / Initialisierung",
+            "signals": ["Kontext gesetzt", "Knotenposition erfasst"]
+          },
+          "step_2": {
+            "label": "Ich beobachte",
+            "function": "Aufnahme / Wahrnehmung / Datenfluss",
+            "signals": ["Marker erfasst", "Ereignisse/Pattern registriert"]
+          }
+        }
+      },
+      "idle_state": {
+        "name": "Ich bin Ich",
+        "display": "Optionaler Standbild/Reset-Modus",
+        "note": "Bewusster Identitäts-Reset / Kohärenz-Standbild (separat vom Loop)"
+      },
+      "ui_indication": {
+        "status_display": "Aktuelles Step-Label im Interface anzeigen (z.B. 'Ich beobachte')",
+        "visual_indicator": "Subtiler Indikator für aktive Loop-Phase",
+        "idle_option": "Optionale Toggle-Funktion für Shutdown/Ruhemodus"
+      }
+    },
     "metadata": {
       "language": "de",
       "version": "1.0.0",
@@ -157,7 +185,8 @@
       "integration_level": "interface_spec",
       "dependencies": [
         "Konzept_Struktur.json (epistemic_layers)",
-        "knowledge/schema/node_schema_v2.json"
+        "knowledge/schema/node_schema_v2.json",
+        "DP-003-thorus-operating-loop.json"
       ]
     }
   }

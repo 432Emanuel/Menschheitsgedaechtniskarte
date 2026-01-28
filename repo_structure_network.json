@@ -2,7 +2,7 @@
   "meta": {
     "project_name": "Menschheitsgedächtniskarte",
     "version": "1.1.0",
-    "generated": "2026-01-25",
+    "generated": "2026-01-28",
     "visualization_type": "file_and_directory_structure",
     "description": "Netzwerk-Repräsentation der Datei- und Verzeichnisstruktur für Visualisierung (Gephi-kompatibel)"
   },
@@ -1351,6 +1351,294 @@
       "type": "directory",
       "level": 2,
       "parent": "zeitgeist_module"
+    },
+    {
+      "id": "imperium_example_person",
+      "label": "example_person.json",
+      "type": "file",
+      "file_type": "json",
+      "category": "template",
+      "level": 4,
+      "parent": "imperium_entities"
+    },
+    {
+      "id": "imperium_example_empire",
+      "label": "example_empire.json",
+      "type": "file",
+      "file_type": "json",
+      "category": "template",
+      "level": 4,
+      "parent": "imperium_entities"
+    },
+    {
+      "id": "imperium_example_place",
+      "label": "example_place.json",
+      "type": "file",
+      "file_type": "json",
+      "category": "template",
+      "level": 4,
+      "parent": "imperium_entities"
+    },
+    {
+      "id": "imperium_example_pattern",
+      "label": "example_pattern.json",
+      "type": "file",
+      "file_type": "json",
+      "category": "template",
+      "level": 4,
+      "parent": "imperium_patterns"
+    },
+    {
+      "id": "imperium_example_timeline",
+      "label": "example_timeline.json",
+      "type": "file",
+      "file_type": "json",
+      "category": "template",
+      "level": 4,
+      "parent": "imperium_timelines"
+    },
+    {
+      "id": "imperium_example_comparison",
+      "label": "example_comparison.json",
+      "type": "file",
+      "file_type": "json",
+      "category": "template",
+      "level": 4,
+      "parent": "imperium_comparisons"
+    },
+    {
+      "id": "mythos_example_institution",
+      "label": "example_institution.json",
+      "type": "file",
+      "file_type": "json",
+      "category": "template",
+      "level": 4,
+      "parent": "mythos_institutions"
+    },
+    {
+      "id": "mythos_example_document",
+      "label": "example_document.json",
+      "type": "file",
+      "file_type": "json",
+      "category": "template",
+      "level": 4,
+      "parent": "mythos_documents"
+    },
+    {
+      "id": "mythos_example_pattern",
+      "label": "example_pattern.json",
+      "type": "file",
+      "file_type": "json",
+      "category": "template",
+      "level": 4,
+      "parent": "mythos_patterns"
+    },
+    {
+      "id": "shared_candidate_readme",
+      "label": "README.md",
+      "type": "file",
+      "file_type": "md",
+      "category": "documentation",
+      "level": 3,
+      "parent": "shared_candidates"
+    },
+    {
+      "id": "shared_candidate_gitkeep",
+      "label": ".gitkeep",
+      "type": "file",
+      "file_type": "config",
+      "category": "config",
+      "level": 4,
+      "parent": "shared_candidate_items"
+    },
+    {
+      "id": "shared_candidate_enumaelish",
+      "label": "CAND-ENUMAELISH-0001.json",
+      "type": "file",
+      "file_type": "json",
+      "category": "data",
+      "level": 4,
+      "parent": "shared_candidate_items"
+    },
+    {
+      "id": "shared_candidate_marduk",
+      "label": "CAND-MARDUK-THRONE-0001.json",
+      "type": "file",
+      "file_type": "json",
+      "category": "data",
+      "level": 4,
+      "parent": "shared_candidate_items"
+    },
+    {
+      "id": "shared_candidate_osiris",
+      "label": "CAND-OSIRIS-0001.json",
+      "type": "file",
+      "file_type": "json",
+      "category": "data",
+      "level": 4,
+      "parent": "shared_candidate_items"
+    },
+    {
+      "id": "shared_candidate_isis",
+      "label": "CAND-ISIS-OSIRIS-0001.json",
+      "type": "file",
+      "file_type": "json",
+      "category": "data",
+      "level": 4,
+      "parent": "shared_candidate_items"
+    },
+    {
+      "id": "shared_candidate_herakles",
+      "label": "CAND-HERAKLES-0001.json",
+      "type": "file",
+      "file_type": "json",
+      "category": "data",
+      "level": 4,
+      "parent": "shared_candidate_items"
+    },
+    {
+      "id": "shared_candidate_theseus",
+      "label": "CAND-THESEUS-0001.json",
+      "type": "file",
+      "file_type": "json",
+      "category": "data",
+      "level": 4,
+      "parent": "shared_candidate_items"
+    },
+    {
+      "id": "shared_candidate_yu",
+      "label": "CAND-YU-GREAT-0001.json",
+      "type": "file",
+      "file_type": "json",
+      "category": "data",
+      "level": 4,
+      "parent": "shared_candidate_items"
+    },
+    {
+      "id": "shared_candidate_quyuan",
+      "label": "CAND-QUYUAN-0001.json",
+      "type": "file",
+      "file_type": "json",
+      "category": "data",
+      "level": 4,
+      "parent": "shared_candidate_items"
+    },
+    {
+      "id": "shared_candidate_arjuna",
+      "label": "CAND-BHAGAVAD-ARJUNA-0001.json",
+      "type": "file",
+      "file_type": "json",
+      "category": "data",
+      "level": 4,
+      "parent": "shared_candidate_items"
+    },
+    {
+      "id": "shared_candidate_mahabharata",
+      "label": "CAND-MAHABHARATA-0001.json",
+      "type": "file",
+      "file_type": "json",
+      "category": "data",
+      "level": 4,
+      "parent": "shared_candidate_items"
+    },
+    {
+      "id": "shared_candidate_popolvuh",
+      "label": "CAND-POPOLVUH-0001.json",
+      "type": "file",
+      "file_type": "json",
+      "category": "data",
+      "level": 4,
+      "parent": "shared_candidate_items"
+    },
+    {
+      "id": "shared_candidate_inkarri",
+      "label": "CAND-INKARRI-0001.json",
+      "type": "file",
+      "file_type": "json",
+      "category": "data",
+      "level": 4,
+      "parent": "shared_candidate_items"
+    },
+    {
+      "id": "shared_candidate_sundiata",
+      "label": "CAND-SUNDIATA-0001.json",
+      "type": "file",
+      "file_type": "json",
+      "category": "data",
+      "level": 4,
+      "parent": "shared_candidate_items"
+    },
+    {
+      "id": "shared_candidate_baldur",
+      "label": "CAND-BALDUR-0001.json",
+      "type": "file",
+      "file_type": "json",
+      "category": "data",
+      "level": 4,
+      "parent": "shared_candidate_items"
+    },
+    {
+      "id": "shared_candidate_hiwatha",
+      "label": "CAND-HIAWATHA-0001.json",
+      "type": "file",
+      "file_type": "json",
+      "category": "data",
+      "level": 4,
+      "parent": "shared_candidate_items"
+    },
+    {
+      "id": "shared_marker_readme",
+      "label": "README.md",
+      "type": "file",
+      "file_type": "md",
+      "category": "documentation",
+      "level": 3,
+      "parent": "shared_markers"
+    },
+    {
+      "id": "shared_schemas_readme",
+      "label": "README.md",
+      "type": "file",
+      "file_type": "md",
+      "category": "documentation",
+      "level": 3,
+      "parent": "shared_schemas"
+    },
+    {
+      "id": "shared_crosslinks_readme",
+      "label": "README.md",
+      "type": "file",
+      "file_type": "md",
+      "category": "documentation",
+      "level": 3,
+      "parent": "shared_crosslinks"
+    },
+    {
+      "id": "shared_crosslinks_example",
+      "label": "example_link.json",
+      "type": "file",
+      "file_type": "json",
+      "category": "template",
+      "level": 3,
+      "parent": "shared_crosslinks"
+    },
+    {
+      "id": "shared_rubrics_readme",
+      "label": "README.md",
+      "type": "file",
+      "file_type": "md",
+      "category": "documentation",
+      "level": 3,
+      "parent": "shared_rubrics"
+    },
+    {
+      "id": "visual_gephi",
+      "label": "visual_gephi.gephi",
+      "type": "file",
+      "file_type": "gephi",
+      "category": "config",
+      "level": 1,
+      "parent": "root"
     }
   ],
   "edges": [
@@ -2457,6 +2745,198 @@
       "target": "zg_zg005",
       "label": "references",
       "type": "index_reference"
+    },
+    {
+      "source": "root",
+      "target": "visual_gephi",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "imperium_entities",
+      "target": "imperium_example_person",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "imperium_entities",
+      "target": "imperium_example_empire",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "imperium_entities",
+      "target": "imperium_example_place",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "imperium_patterns",
+      "target": "imperium_example_pattern",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "imperium_timelines",
+      "target": "imperium_example_timeline",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "imperium_comparisons",
+      "target": "imperium_example_comparison",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "mythos_institutions",
+      "target": "mythos_example_institution",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "mythos_documents",
+      "target": "mythos_example_document",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "mythos_patterns",
+      "target": "mythos_example_pattern",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "shared_candidates",
+      "target": "shared_candidate_readme",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "shared_candidate_items",
+      "target": "shared_candidate_gitkeep",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "shared_candidate_items",
+      "target": "shared_candidate_enumaelish",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "shared_candidate_items",
+      "target": "shared_candidate_marduk",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "shared_candidate_items",
+      "target": "shared_candidate_osiris",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "shared_candidate_items",
+      "target": "shared_candidate_isis",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "shared_candidate_items",
+      "target": "shared_candidate_herakles",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "shared_candidate_items",
+      "target": "shared_candidate_theseus",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "shared_candidate_items",
+      "target": "shared_candidate_yu",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "shared_candidate_items",
+      "target": "shared_candidate_quyuan",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "shared_candidate_items",
+      "target": "shared_candidate_arjuna",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "shared_candidate_items",
+      "target": "shared_candidate_mahabharata",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "shared_candidate_items",
+      "target": "shared_candidate_popolvuh",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "shared_candidate_items",
+      "target": "shared_candidate_inkarri",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "shared_candidate_items",
+      "target": "shared_candidate_sundiata",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "shared_candidate_items",
+      "target": "shared_candidate_baldur",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "shared_candidate_items",
+      "target": "shared_candidate_hiwatha",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "shared_markers",
+      "target": "shared_marker_readme",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "shared_schemas",
+      "target": "shared_schemas_readme",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "shared_crosslinks",
+      "target": "shared_crosslinks_readme",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "shared_crosslinks",
+      "target": "shared_crosslinks_example",
+      "label": "contains",
+      "type": "directory_structure"
+    },
+    {
+      "source": "shared_rubrics",
+      "target": "shared_rubrics_readme",
+      "label": "contains",
+      "type": "directory_structure"
     }
   ],
   "groups": {
@@ -2469,7 +2949,7 @@
       "index": ["family_index", "zg_index", "imperium_index", "mythos_index", "shared_candidate_index", "shared_marker_index", "shared_rubric_index", "data_crisis_tw_index", "data_crisis_index"],
       "schema": ["architecture_dp001", "architecture_dp002", "knowledge_node_schema_v2", "data_schema_node", "data_schema_edge", "interface_map", "interface_graph", "interface_resonance", "shared_rs_overlay_schema", "shared_rs_strand_schema"],
       "data": ["knowledge_places_archaeoastronomy", "knowledge_places_candidates", "knowledge_epistemic_layers", "knowledge_resonance_layers", "data_hc_potential_space", "data_hc_emanuel", "data_hc_world_edges", "data_hc_onkel", "data_hc_rs_overlay", "data_lenses_patterns", "data_lenses_node_candidates", "data_lenses_ml_truth", "data_modules_build_concepts_onkel", "data_modules_build_concepts", "data_modules_build_patterns_onkel", "data_modules_build_rules", "shared_rubric_patterns", "mythos_gilgamesh", "mythos_hero_ascension", "mythos_death_transformation", "mythos_duty_destiny", "shared_marker_001", "shared_marker_002", "shared_marker_003", "shared_marker_004", "shared_marker_005", "shared_marker_006", "shared_marker_corona_ki", "data_lenses_rs_emanuel", "data_crisis_tw_zg_ki", "data_crisis_tw_zg_krise", "data_crisis_tw_lausen", "data_crisis_sm_lausen_structures", "data_lenses_lens_sketches_resonanz"],
-      "template": ["shared_candidate_template", "shared_marker_template"],
+      "template": ["shared_candidate_template", "shared_marker_template", "imperium_example_person", "imperium_example_empire", "imperium_example_place", "imperium_example_pattern", "imperium_example_timeline", "imperium_example_comparison", "mythos_example_institution", "mythos_example_document", "mythos_example_pattern"],
       "documentation": ["readme", "architecture_readme", "data_readme", "data_hc_readme", "data_modules_build_readme", "data_lenses_readme", "data_lenses_resonance_strands_readme", "data_crisis_tw_readme", "data_crisis_sm_readme", "data_crisis_rm_readme", "data_hc_rs_readme", "data_lenses_drafts_readme", "family_fm001_readme", "family_fm001_function", "family_fm001_modern", "family_fm001_fractures", "family_fm001_resilience", "family_fm001_perspective", "family_fm001_neolithic", "interface_readme", "knowledge_places_integration", "knowledge_places_expansion", "knowledge_cb_de", "imperium_readme", "mythos_readme", "src_readme", "src_pattern_lenses_readme", "tooling_readme", "tooling_notes", "tooling_legacy", "tooling_status"],
       "code": ["src_validate_script", "src_add_individual", "src_link_nodes"],
       "config": ["gitignore", "license", "research_questions_json", "konzept_struktur_json", "knowledge_places_bewertung", "data_crisis_tw_raw_gitkeep", "data_crisis_sm_raw_gitkeep", "data_crisis_rm_raw_gitkeep"],
@@ -2486,18 +2966,18 @@
     }
   },
   "statistics": {
-    "total_nodes": 169,
-    "total_edges": 197,
+    "total_nodes": 204,
+    "total_edges": 229,
     "max_depth": 6,
     "directories": 76,
-    "files": 93,
+    "files": 128,
     "index_files": 8,
     "data_files": 27,
     "schema_files": 9,
-    "documentation_files": 29,
+    "documentation_files": 33,
     "code_files": 3,
-    "config_files": 7,
-    "template_files": 2,
+    "config_files": 8,
+    "template_files": 10,
     "module_directories": 10
   }
 }

@@ -28,6 +28,14 @@ Dieses Prinzip beschreibt die erkenntnistheoretische Grundhaltung des Projekts:
 - **Zielwirkung**: Anstoß innerer Prozesse statt Überzeugung
 - **Krisenbezug**: Krisen als Verdichtungsräume für Wahrheitsbildungsprozesse
 
+## DP-003 – THORUS Operating Loop
+
+THORUS ist das Meta-Interface / Betriebssystem-Prinzip der Menschheitsgeschichtenkarte:
+ein zyklischer Erkenntnis- und Wirkprozess (Loop, kein Endzustand).
+
+- Loop-Schritte: Ich bin → Ich beobachte → Ich lerne → Ich verstehe → Ich wirke
+- Shutdown/Idle (separat, nicht Teil des Loops): „Ich bin Ich“
+
 ## Beziehung zu anderen Teilen des Projekts
 
 - **Trennung von Konzept und Daten**: Architektur-Dokumente beschreiben das "Wie", nicht das "Was"

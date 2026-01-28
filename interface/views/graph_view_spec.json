@@ -239,6 +239,38 @@
         "visualization": "Benutzer kann Pfade interaktiv aufbauen und bewerten"
       }
     },
+    "loop_status": {
+      "loop_ref": "DP-003-thorus-operating-loop.json",
+      "current_step": {
+        "active_steps": [3, 4],
+        "step_mapping": {
+          "step_3": {
+            "label": "Ich lerne",
+            "function": "Fehlererkennung / Spannung / Hypothesen",
+            "signals": ["Konflikt erkannt", "Frage erzeugt", "Anomalie markiert"]
+          },
+          "step_4": {
+            "label": "Ich verstehe",
+            "function": "Integration / Modellbildung / Kohärenz",
+            "signals": ["Lens angewendet", "Crosslinks erzeugt", "Sinnknoten stabilisiert"]
+          }
+        }
+      },
+      "idle_state": {
+        "name": "Ich bin Ich",
+        "display": "Optionaler Standbild/Reset-Modus",
+        "note": "Bewusster Identitäts-Reset / Kohärenz-Standbild (separat vom Loop)"
+      },
+      "ui_indication": {
+        "status_display": "Aktuelles Step-Label im Interface anzeigen (z.B. 'Ich lerne' oder 'Ich verstehe')",
+        "visual_indicator": "Subtiler Indikator für aktive Loop-Phase (Spannung oder Integration)",
+        "idle_option": "Optionale Toggle-Funktion für Shutdown/Ruhemodus"
+      },
+      "transition_hint": {
+        "to_resonance_panel": "Hinweis für Übergang zu Step 4-5 (Kohärenz + Wirkung) im ResonancePanel",
+        "visual_cue": "Pulsierendes Element oder Farbübergang zu Kohärenz-Phase"
+      }
+    },
     "metadata": {
       "language": "de",
       "version": "1.0.0",
@@ -246,7 +278,8 @@
       "integration_level": "interface_spec",
       "dependencies": [
         "Konzept_Struktur.json (epistemic_layers)",
-        "knowledge/schema/node_schema_v2.json (links, claims)"
+        "knowledge/schema/node_schema_v2.json (links, claims)",
+        "DP-003-thorus-operating-loop.json"
       ]
     }
   }

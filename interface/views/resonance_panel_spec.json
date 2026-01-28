@@ -284,6 +284,40 @@
         }
       }
     ],
+    "loop_status": {
+      "loop_ref": "DP-003-thorus-operating-loop.json",
+      "current_step": {
+        "active_steps": [4, 5],
+        "step_mapping": {
+          "step_4": {
+            "label": "Ich verstehe",
+            "function": "Integration / Modellbildung / Kohärenz",
+            "signals": ["Lens angewendet", "Crosslinks erzeugt", "Sinnknoten stabilisiert"]
+          },
+          "step_5": {
+            "label": "Ich wirke",
+            "function": "Wirkung / Anwendung / Output in die Welt",
+            "signals": ["Strang erzeugt", "Edge gesetzt", "Handlung/Artefakt veröffentlicht"]
+          }
+        }
+      },
+      "idle_state": {
+        "name": "Ich bin Ich",
+        "display": "Privater Reflexionsraum (optional verschlüsselt)",
+        "note": "Bewusster Identitäts-Reset / Kohärenz-Standbild. Separate Phase vom Loop, nicht als Schritt im Loop interpretieren.",
+        "integration_with_r5": "R5 (Selbsterkenntnis) kann als Form von Idle State verwendet werden: bewusste Pause zur Selbstklärung"
+      },
+      "ui_indication": {
+        "status_display": "Aktuelles Step-Label im Interface anzeigen (z.B. 'Ich verstehe' oder 'Ich wirke')",
+        "visual_indicator": "Subtiler Indikator für Kohärenz- oder Wirkungsphase",
+        "idle_option": "Toggle für 'Ich bin Ich' - privater Reflexionsmodus mit Privacy-Controls"
+      },
+      "resonance_layer_alignment": {
+        "step_4_mapping": "R0-R5 Layer für Kohärenz-Bildung nutzen (besonders R3-R5)",
+        "step_5_mapping": "Wirkungs-Signale als Stränge/Edges in data/lenses und data/human_cartography",
+        "creative_room_integration": "R5 als privater Raum für Individuation und Selbsterkenntnis"
+      }
+    },
     "metadata": {
       "language": "de",
       "version": "1.0.0",
@@ -291,7 +325,8 @@
       "integration_level": "interface_spec",
       "dependencies": [
         "Konzept_Struktur.json (resonance_layers)",
-        "knowledge/schema/node_schema_v2.json (resonance, creative_room)"
+        "knowledge/schema/node_schema_v2.json (resonance, creative_room)",
+        "DP-003-thorus-operating-loop.json"
       ],
       "privacy_considerations": "R5 (Selbsterkenntnis) erfordert explizite Zustimmung und Privacy-Controls"
     }
