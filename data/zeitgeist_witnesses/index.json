@@ -1,9 +1,9 @@
 {
   "index_info": {
-    "title": "Zeitzeugenberichte - KI, digitaler Wandel & Religion",
-    "description": "Sammlung von Zeitzeugenberichten zu KI-relevanten Themen und religiösen Deutungsformen",
+    "title": "Zeitzeugenberichte - KI, digitaler Wandel, Religion & Indigene Perspektiven",
+    "description": "Sammlung von Zeitzeugenberichten zu KI-relevanten Themen, religiösen Deutungsformen und indigenen Perspektiven",
     "created_at": "2026-02-01",
-    "last_updated": "2026-02-01",
+    "last_updated": "2026-02-02",
     "status": "active"
   },
   "source_reference": {
@@ -153,6 +153,18 @@
       "perspective_type": "value_based_exit",
       "tags": ["Kirchenaustritt", "Wertekonsistenz", "Post-institutionelle_Glaubenspraxis", "Klimagerechtigkeitsbewegung", "Grundgesetz", "Frauenfrage", "Tägliches_Gebet"],
       "summary": "Austritt aufgrund christlicher Werte, post-institutionelle Glaubenspraxis (tägliches Gebet, religiös motiviertes Klimagerechtigkeitsengagement)"
+    },
+    {
+      "id": "TZ-IND-KUNUK-2025-01",
+      "title": "Inuit-Perspektive: Trumps Grönland-Pläne und koloniale Kontinuität",
+      "file": "data/zeitgeist_witnesses/TZ-IND-KUNUK-2025-01.json",
+      "date": "2026-02-02",
+      "speakers": ["Kunuk", "Aurelia"],
+      "series": "TZ-IND",
+      "perspective_type": "indigenous_embodied_connection",
+      "source_reference": "SRC-INUIT-NUOVISO-2025-01",
+      "tags": ["Inuit", "Grönland", "Indigene_Perspektive", "Schamanismus", "Kolonialismus", "Spirituelle_Rückbesinnung", "Land_Bindung", "Alles-ist-eins", "Katharsis", "Ahnenarbeit"],
+      "summary": "Phänomenologische Dokumentation indigener Perspektive auf Trumps Grönland-Pläne, koloniale Disruption und spirituelle Selbstbestimmung"
     }
   ],
   "cluster_distribution": {
@@ -161,7 +173,8 @@
     "LENS_VIRTUAL_INSTINCT_001": 2,
     "LENS_EDUCATION_OBSOLESCENCE_001": 1,
     "LENS_TOOL_NEUTRALITY_001": 1,
-    "TZ-REL": 5
+    "TZ-REL": 5,
+    "TZ-IND": 1
   },
   "speaker_distribution": {
     "Frank": 5,
@@ -175,7 +188,8 @@
     "institutional_religion_critique": 1,
     "institutional_engagement_for_reform": 1,
     "value_based_outside": 1,
-    "value_based_exit": 2
+    "value_based_exit": 2,
+    "indigenous_embodied_connection": 1
   },
   "related_lenses": [
     "LENS_ALGO_ATTENTION_001",

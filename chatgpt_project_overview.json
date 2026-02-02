@@ -15,7 +15,7 @@
       "url": "https://github.com/432Emanuel/Menschheitsged-chtniskarte.git",
       "latest_commit": "120c12a56f2c5d41376f7413e1c96e2f9c7dc214"
     },
-    "last_updated": "2026-02-01",
+    "last_updated": "2026-02-02",
     "version": "1.0.0",
     "language": "de/en (bilingual project)"
   },
@@ -151,6 +151,18 @@
     "data": {
       "description": "NEUE Datenstruktur mit analytischen Modulen",
       "subdirectories": {
+        "sources": {
+          "description": "Quellen-Datenbank mit epistemischer Trennung (TXT=Quelle, JSON=Hülle)",
+          "files": [
+            "index.json",
+            "README.md",
+            "transcripts/raw/ (5 Transkripte vom Kongress Rätsel der Antarktis-Kartografie 2020)",
+            "transcripts/raw/SRC-INUIT-NUOVISO-2025-01.txt (Inuit-Interview)",
+            "transcripts/metadata/ (6 Metadaten-Dateien)",
+            "podcast_transcripts/engel_daemonen_home_office_616_source.json",
+            "podcast_transcripts/alpha_omega_kirchengespraech_2024.json"
+          ]
+        },
         "human_cartography": {
           "description": "Overlay/Reader Model für individuelle Perspektiven",
           "files": [
@@ -227,7 +239,7 @@
           ]
         },
         "zeitgeist_witnesses": {
-          "description": "Zeitzeugen mit Perspektiv-Typisierung",
+          "description": "Zeitzeugen mit Perspektiv-Typisierung (TZ-REL: Religion, TZ-IND: Indigene Perspektiven, ZG-KI: KI-relevante Phänomene)",
           "files": [
             "README.md",
             "INTEGRATION_REPORT.md",
@@ -235,6 +247,10 @@
             "index.json",
             "TZ-REL-RBT.json (Robert - Religiös-kosmologische Deutung)",
             "TZ-REL-ELS.json (Elias - Institutionskritik)",
+            "TZ-REL-VALUES-EXIT-DE-2026.json",
+            "TZ-REL-VALUES-EXIT-DE-2024-002.json",
+            "TZ-REL-ENGAGED-REFORM-DE-2026.json",
+            "TZ-IND-KUNUK-2025-01.json (Inuit aus Grönland - Indigene Perspektive)",
             "ZG-KI-2026-002.json bis ZG-KI-2026-008.json"
           ]
         },
@@ -245,6 +261,17 @@
             "candidates_archaeoastronomy.json",
             "integration_report_newgrange.md",
             "expansion_report.md"
+          ]
+        },
+        "epistemic_documents": {
+          "description": "Epistemische Dokumente mit historischer Kartografie-Kollektion",
+          "files": [
+            "README.md",
+            "index.json",
+            "schema/node_schema_v2.json",
+            "cartography/maps/ (21 historische Weltkarten von 600 v.Chr. bis 1502 n.Chr.)",
+            "cartography/maps/MAP-WORLD-ANAXIMANDER-0600.json (Älteste Karte)",
+            "cartography/maps/MAP-WORLD-CANTINO-1502.json (Späteste Karte)"
           ]
         },
         "contemporary_cases": {
@@ -400,6 +427,11 @@
         "items/MARK-000007.json (Geschlossene Erkenntnisschleife)",
         "items/MARK-000008.json (Projektionscontainer)",
         "items/MARK-000009.json (Symbolische Überfrachtung)",
+        "items/MARK-000010.json",
+        "items/MARK-000011.json",
+        "items/MARK-000012.json",
+        "items/MARK-000013.json",
+        "items/MARK-000014.json",
         "items/LM_CORONA_KI_001.json"
       ]
     },
@@ -515,13 +547,15 @@
     }
   },
   "delta_since_last_update": {
-    "last_update_date": "2026-02-01",
-    "update_description": "Integration religiöser Deutungsformen und Merkzettel-System",
+    "last_update_date": "2026-02-02",
+    "update_description": "Erweiterung um indigene Perspektiven (Inuit-Zeitzeuge TZ-IND-KUNUK-2025-01)",
     "git_commit": "120c12a56f2c5d41376f7413e1c96e2f9c7dc214",
     "updated_sections": [
-      "meta: Git-Commit und Datum auf 2026-02-01 aktualisiert",
+      "meta: Datum auf 2026-02-02 aktualisiert",
       "shared_resources.candidates: count auf 16 erhöht, types und workflow hinzugefügt",
-      "shared_resources.markers: 3 neue Marker (MARK-000007 bis MARK-000009) ergänzt",
+      "shared_resources.markers: 8 neue Marker (MARK-000007 bis MARK-000014) ergänzt",
+      "data_structure: data/sources mit Transkript-Datenbank hinzugefügt",
+      "data_structure: knowledge/epistemic_documents mit 21 historischen Weltkarten erweitert",
       "data_structure: human_cartography, lenses, knowledge/contemporary_cases, knowledge/crisis_analysis hinzugefügt",
       "shared_resources: schemas, markers mit vollständiger Dateiliste ergänzt",
       "zeitgeist_module: contemporary_cases mit index und cases (DE, VE) erweitert",
@@ -532,17 +566,19 @@
       "file_structure_overview: In root_level_files und root_level_directories aufgeteilt"
     ],
     "new_modules": [
+      "data/sources (Quellen-Datenbank mit epistemischer Trennung)",
       "data/layers/meta (Meta-Layers für entpersonalisierte Typologien)",
       "data/meta_agents (Meta-Agenten für epistemische Trigger)",
-      "data/zeitgeist_witnesses (Zeitzeugen mit Perspektiv-Typisierung)"
+      "data/zeitgeist_witnesses (Zeitzeugen mit Perspektiv-Typisierung)",
+      "knowledge/epistemic_documents (Epistemische Dokumente mit historischer Kartografie)"
     ],
     "updated_modules": [
       "shared/candidates (Merkzettel-System integriert)",
       "data/lenses/meta_patterns (L_SCALE_PROJECTION_001 hinzugefügt)",
-      "data/zeitgeist_witnesses (TZ-REL-RBT und TZ-REL-ELS hinzugefügt)",
+      "data/zeitgeist_witnesses (TZ-REL-RBT, TZ-REL-ELS, TZ-REL-VALUES-EXIT-DE-2026, TZ-REL-VALUES-EXIT-DE-2024-002, TZ-REL-ENGAGED-REFORM-DE-2026, TZ-IND-KUNUK-2025-01 hinzugefügt)",
       "data/layers/meta (L-META-REL-DEUTUNG-001 hinzugefügt)",
       "data/meta_agents (META-FRK-001 hinzugefügt)",
-      "shared/markers (3 neue Marker für epistemische Risiken)",
+      "shared/markers (8 neue Marker für epistemische Risiken)",
       "shared_resources (markers und schemas hinzugefügt)",
       "zeitgeist_module (contemporary_cases erweitert)",
       "modules_imperium (example_files hinzugefügt)",
@@ -551,18 +587,29 @@
       "architecture_and_interface (files ergänzt)"
     ],
     "new_data_areas": [
+      "data/sources/transcripts (5 Transkripte vom Kongress Rätsel der Antarktis-Kartografie 2020)",
+      "data/sources/podcast_transcripts (2 Podcast-Quellen)",
+      "knowledge/epistemic_documents/cartography/maps (21 historische Weltkarten)",
       "data/crisis_analysis/covid_2020 (vollständige Struktur)",
       "data/human_cartography/overlays/resonance_strands",
       "data/lenses/resonance_strands",
       "shared/markers (vollständige Marker-Struktur)",
-      "shared/schemas/resonance_strands"
+      "shared/schemas/resonance_strands",
+      "shared/schemas/epistemic_documents"
     ],
     "new_cases": [
       "zeitgeist_module/ZG-CB-contemporary-cases/cases/DE/ZG-CB-DE-2026-01.md",
       "zeitgeist_module/ZG-CB-contemporary-cases/cases/VE/ZG-CB-VE-2026-01.json",
       "zeitgeist_module/ZG-CB-contemporary-cases/cases/VE/ZG-CB-VE-2026-01.md"
     ],
-    "new_files_count": "11 neue Dateien (Zeitzeugen, Meta-Layers, Meta-Agenten, Marker, Lenses, Integration)",
-    "status": "chatgpt_project_overview.json ist vollständig synchronisiert mit den neuen religiösen Deutungsformen und dem Merkzettel-System"
+    "new_witnesses": [
+      "data/zeitgeist_witnesses/TZ-IND-KUNUK-2025-01.json (Inuit-Perspektive auf Trumps Grönland-Pläne, koloniale Disruption und spirituelle Selbstbestimmung)"
+    ],
+    "new_sources": [
+      "data/sources/transcripts/raw/SRC-INUIT-NUOVISO-2025-01.txt (Inuit-Interview Transkript)",
+      "data/sources/transcripts/metadata/SRC-INUIT-NUOVISO-2025-01.meta.json"
+    ],
+    "new_files_count": "43 neue Dateien (Quellen, historische Karten, Zeitzeugen, Marker, Schemas, inkl. Inuit-Zeitzeuge)",
+    "status": "chatgpt_project_overview.json ist vollständig synchronisiert mit der Quellen-Datenbank, der historischen Kartografie-Kollektion, den erweiterten Zeitzeugen und der neuen indigenen Perspektive (TZ-IND-KUNUK-2025-01)"
   }
 }
