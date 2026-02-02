@@ -1,0 +1,67 @@
+{
+  "id": "TZ-REL-RBT",
+  "type": "zeitzeuge",
+  "name": "Robert",
+  "timeframe": {
+    "year": 2026,
+    "context": "Gespräch über religiöse Deutung der Gegenwart"
+  },
+  "thematic_domain": [
+    "Religion",
+    "Gnosis",
+    "Bewusstsein",
+    "Spirituelle Transformation"
+  ],
+  "perspective_type": "religious_reinterpretation",
+  "religious_understanding": {
+    "core_belief": "Religion als Erkenntnisweg, nicht als Institution",
+    "institutional_christianity": "stark kritisch",
+    "knowledge_concept": "Erkenntnis = Befreiung",
+    "relationship_to_tradition": "kritische Aneignung gnostischer Motive"
+  },
+  "dominant_narratives": [
+    "Fall",
+    "Erkenntnis",
+    "Aufstieg"
+  ],
+  "core_mechanics": {
+    "worldview": "gnostisch-dualistisch",
+    "narrative_arc": "Fall → Erkenntnis → Aufstieg",
+    "epistemic_stance": "Es gibt ein besseres Erklärungsmodell",
+    "consciousness_concept": "Bewusstsein als Schlüssel zur Transformation"
+  },
+  "key_tensions": [
+    "Individuelle Erkenntnis vs. institutionelle Lehre",
+    "Bewusstseinsmanipulation vs. spirituelle Befreiung",
+    "Verdeckte Realität vs. offizielle Narrative"
+  ],
+  "zeitzeugen_these": "Die Gegenwart ist als Zustand des Falls zu verstehen, der durch individuelle Erkenntnis überwunden werden kann.",
+  "risk_markers": [
+    "closed_loop_potential"
+  ],
+  "strength_markers": [
+    "Sinnstiftung",
+    "Meta-Erklärungskraft",
+    "Individuelle Handlungsfähigkeit"
+  ],
+  "meta_layer_links": [
+    "L-META-PRJ-001"
+  ],
+  "witness_value": "Beispiel für religiös-kosmologische Gegenwartsdeutung außerhalb institutioneller Rahmen",
+  "epistemic_status": "first_person_religious_perspective",
+  "suggested_crosslinks": [
+    "Marker: gnostic_dualism",
+    "Marker: closed_loop",
+    "Meta-Layer: Projektions- & Deutungsmechaniken"
+  ],
+  "tags": [
+    "Gnosis",
+    "Bewusstsein",
+    "Transformation",
+    "Institutionskritik",
+    "Religiöse_Reinterpretation"
+  ],
+  "status": "draft",
+  "created_at": "2026-02-01",
+  "notes": "Zeuge wird phänomenologisch dokumentiert, nicht bewertet. Die Klassifizierung erfolgt über perspective_type, nicht über inhaltliche Richtigkeit."
+}

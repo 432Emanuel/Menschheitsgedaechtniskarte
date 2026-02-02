@@ -1,0 +1,94 @@
+{
+  "type": "sources_index",
+  "version": "1.0.0",
+  "created_at": "2026-02-02",
+  "last_updated": "2026-02-02",
+  "description": "Zentrales Register aller Quellen im Menschheitsgedächtniskarte-Projekt",
+  "categories": {
+    "transcripts": {
+      "path": "transcripts",
+      "description": "Rohtranskripte (Podcast, Vorträge, Interviews, Diskussionen)",
+      "count": 5,
+      "items": [
+        {
+          "id": "SRC-TRANSCRIPT-DE-2020-001",
+          "title": "Die modernste Karte der Antarktis - Vortrag Prof. Dr. Manfred Buchroithner",
+          "type": "vortrag",
+          "region": "DE",
+          "date": "2020-10-19",
+          "file_path": "transcripts/raw/SRC-TRANSCRIPT-DE-2020-001.txt",
+          "metadata_path": "transcripts/metadata/SRC-TRANSCRIPT-DE-2020-001.meta.json"
+        },
+        {
+          "id": "SRC-TRANSCRIPT-DE-2020-002",
+          "title": "Die verschlüsselten Nachrichten der antiken Karten - Vortrag Dominik Görlitz",
+          "type": "vortrag",
+          "region": "DE",
+          "date": "2020-10-19",
+          "file_path": "transcripts/raw/SRC-TRANSCRIPT-DE-2020-002.txt",
+          "metadata_path": "transcripts/metadata/SRC-TRANSCRIPT-DE-2020-002.meta.json"
+        },
+        {
+          "id": "SRC-TRANSCRIPT-DE-2020-003",
+          "title": "Diskussionsrunde: Die Implikationen der frühkartografischen Funde",
+          "type": "diskussion",
+          "region": "DE",
+          "date": "2020-10-19",
+          "file_path": "transcripts/raw/SRC-TRANSCRIPT-DE-2020-003.txt",
+          "metadata_path": "transcripts/metadata/SRC-TRANSCRIPT-DE-2020-003.meta.json"
+        },
+        {
+          "id": "SRC-TRANSCRIPT-DE-2020-004",
+          "title": "Interview: Die arabische Überlieferungskette - Ein Gespräch mit Prof. Dr. Hassan Al-Mansour",
+          "type": "interview",
+          "region": "DE",
+          "date": "2020-10-19",
+          "file_path": "transcripts/raw/SRC-TRANSCRIPT-DE-2020-004.txt",
+          "metadata_path": "transcripts/metadata/SRC-TRANSCRIPT-DE-2020-004.meta.json"
+        },
+        {
+          "id": "SRC-TRANSCRIPT-DE-2020-005",
+          "title": "Abschlussrede: Der Weg zu einer neuen Kartografiegeschichte",
+          "type": "rede",
+          "region": "DE",
+          "date": "2020-10-19",
+          "file_path": "transcripts/raw/SRC-TRANSCRIPT-DE-2020-005.txt",
+          "metadata_path": "transcripts/metadata/SRC-TRANSCRIPT-DE-2020-005.meta.json"
+        }
+      ]
+    }
+  },
+  "statistics": {
+    "total_sources": 5,
+    "by_type": {
+      "vortrag": 2,
+      "diskussion": 1,
+      "interview": 1,
+      "rede": 1
+    },
+    "by_region": {
+      "DE": 5
+    },
+    "by_status": {
+      "raw": 5,
+      "processed": 0,
+      "integrated": 0
+    },
+    "by_event": {
+      "Kongress Rätsel der Antarktis-Kartografie 2020": 5
+    }
+  },
+  "epistemic_principles": {
+    "separation": "TXT = Quelle, JSON = epistemische Hülle",
+    "no_interpretation": "Keine Bewertung oder inhaltliche Glättung",
+    "traceability": "Alle Ableitungen referenzieren die Quellen-ID"
+  },
+  "event_collections": {
+    "Kongress_Rätsel_der_Antarktis-Kartografie_2020": {
+      "description": "Kongress über frühkartografische Anomalien in Fernerhall am 19.10.2020",
+      "sources": ["SRC-TRANSCRIPT-DE-2020-001", "SRC-TRANSCRIPT-DE-2020-002", "SRC-TRANSCRIPT-DE-2020-003", "SRC-TRANSCRIPT-DE-2020-004", "SRC-TRANSCRIPT-DE-2020-005"],
+      "key_speakers": ["Prof. Dr. Manfred Buchroithner", "Dominik Görlitz", "Dr. Anna Weber", "Prof. Dr. Hassan Al-Mansour"],
+      "main_themes": ["frühkartografie", "lost_knowledge", "arabische_überlieferung", "kartografiegeschichte"]
+    }
+  }
+}

@@ -2,7 +2,7 @@
   "index_id": "IDX-CANDIDATES-0001",
   "scope": "shared/candidates",
   "version": "0.2.0",
-  "updated_at": "2026-01-21",
+  "updated_at": "2026-02-01",
   "rubric_id": "RUB-URKNOTEN-PATTERNS-0001",
   "pattern_module": "modules/mythos_und_verwaltung",
   "patterns_available": [
@@ -20,8 +20,9 @@
     }
   ],
   "counts": {
-    "total": 15,
+    "total": 16,
     "by_status": {
+      "merkzettel": 1,
       "candidate": 15,
       "shortlisted": 0,
       "promoted": 0,
@@ -118,6 +119,14 @@
       "title": "Hiawatha-Legende (Irokesen)",
       "status": "candidate",
       "linked_patterns": ["MUV-PAT-HERO-ASCENSION-0001", "MUV-PAT-DUTY-DESTINY-0001"]
+    },
+    {
+      "id": "CAND-REL-ECON-001",
+      "title": "(Schöpfungs-)Verantwortung ökonomisch. Vor wem und wofür?",
+      "status": "merkzettel",
+      "candidate_type": "knotenpunkt",
+      "speaker": "Friedemann Voigt",
+      "linked_patterns": []
     }
   ]
 }

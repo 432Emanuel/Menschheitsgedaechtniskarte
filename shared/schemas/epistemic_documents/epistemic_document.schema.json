@@ -1,0 +1,239 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/432Emanuel/Menschheitsged-chtniskarte/shared/schemas/epistemic_documents/epistemic_document.schema.json",
+  "title": "Epistemic Document",
+  "description": "Schema für epistemische Dokumente - Artefakte der Wissenspraxis wie Karten, Globen, Atlanten, Projektionen, Messkampagnen. Dokumentiert was existiert, nicht ob es stimmt.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "type",
+    "id",
+    "title",
+    "domain",
+    "document_kind",
+    "date_range",
+    "provenance"
+  ],
+  "properties": {
+    "type": {
+      "const": "epistemic_document",
+      "description": "Typ-Identifikator für alle epistemischen Dokumente"
+    },
+
+    "id": {
+      "type": "string",
+      "description": "Stabile Identifikator, z.B. MAP-WORLD-CAVERIO-1505",
+      "pattern": "^[A-Z]+-[A-Z]+-[A-Z]+-\\d{4}$"
+    },
+
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Titel des Dokuments"
+    },
+
+    "domain": {
+      "type": "string",
+      "enum": ["cartography", "geodesy", "remote_sensing", "navigation", "other"],
+      "description": "Wissensdomain des Dokuments"
+    },
+
+    "document_kind": {
+      "type": "string",
+      "enum": ["map", "globe", "atlas", "timeline", "projection", "survey_campaign", "dataset", "paper", "other"],
+      "description": "Art des Dokuments"
+    },
+
+    "date_range": {
+      "type": "object",
+      "description": "Zeitliche Einordnung des Dokuments",
+      "required": ["start_year"],
+      "properties": {
+        "start_year": {
+          "type": "integer",
+          "minimum": -10000,
+          "maximum": 2100,
+          "description": "Startjahr (negativ für v. Chr.)"
+        },
+        "end_year": {
+          "type": "integer",
+          "minimum": -10000,
+          "maximum": 2100,
+          "description": "Endjahr (wenn bekannt)"
+        },
+        "approximate": {
+          "type": "boolean",
+          "default": true,
+          "description": "Ob die Datierung ungefähr ist"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "creators": {
+      "type": "array",
+      "description": "Ersteller des Dokuments",
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "role": {
+            "type": "string",
+            "description": "Rolle, z.B. cartographer, publisher, engraver"
+          },
+          "affiliation": {
+            "type": "string",
+            "description": "Zugehörigkeit oder Institution"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+
+    "region_scope": {
+      "type": "array",
+      "description": "Geografischer Geltungsbereich; Freitext-Tags",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+
+    "technical": {
+      "type": "object",
+      "description": "Technische Details des Dokuments",
+      "properties": {
+        "projection": {
+          "type": "string",
+          "description": "Kartenprojektion (falls zutreffend)"
+        },
+        "graticule": {
+          "type": "string",
+          "description": "Netz/Gradnetz-Angaben"
+        },
+        "scale": {
+          "type": "string",
+          "description": "Maßstab"
+        },
+        "medium": {
+          "type": "string",
+          "description": "Material/Träger, z.B. parchment, paper, globe, digital"
+        },
+        "measurement_basis": {
+          "type": "array",
+          "description": "Grundlage der Messung/Erstellung",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "dimensions": {
+          "type": "string",
+          "description": "Abmessungen (optional)"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "provenance": {
+      "type": "object",
+      "description": "Herkunft und Quellenangabe",
+      "required": ["source_type"],
+      "properties": {
+        "source_type": {
+          "type": "string",
+          "enum": ["transcript", "book", "paper", "archive", "website", "other"],
+          "description": "Art der Quelle"
+        },
+        "source_reference": {
+          "type": "string",
+          "description": "Verweis auf MGK-Quellknoten oder externe Zitation"
+        },
+        "notes": {
+          "type": "string",
+          "description": "Zusätzliche Anmerkungen zur Provenienz"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "claims_and_limits": {
+      "type": "object",
+      "description": "Was das Dokument typischerweise zeigen soll und bekannte Einschränkungen. Keine Validierung!",
+      "properties": {
+        "commonly_stated_claims": {
+          "type": "array",
+          "description": "Üblicherweise genannte Behauptungen über das Dokument",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "known_limits": {
+          "type": "array",
+          "description": "Bekannte Einschränkungen oder Ungenauigkeiten",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "links": {
+      "type": "array",
+      "description": "Verknüpfungen zu anderen Entitäten",
+      "items": {
+        "type": "object",
+        "required": ["kind", "target_id"],
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": ["related_document", "source_node", "marker", "lens"],
+            "description": "Art der Verknüpfung"
+          },
+          "target_id": {
+            "type": "string",
+            "minLength": 1,
+            "description": "ID des Ziels"
+          },
+          "note": {
+            "type": "string",
+            "description": "Anmerkung zur Verknüpfung"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+
+    "tags": {
+      "type": "array",
+      "description": "Freie Tags für Kategorisierung und Suche",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+
+    "language": {
+      "type": "string",
+      "description": "Sprache des Dokuments (optional)"
+    },
+
+    "institutional_context": {
+      "type": "string",
+      "description": "Institutioneller Kontext (optional)"
+    },
+
+    "created_at": {
+      "type": "string",
+      "description": "Erstellungsdatum im Format YYYY-MM-DD",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    }
+  }
+}

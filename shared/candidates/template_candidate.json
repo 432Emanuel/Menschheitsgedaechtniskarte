@@ -1,7 +1,13 @@
 {
   "id": "CAND-000001",
-  "candidate_type": "urknoten",
+  "candidate_type": "modul",
   "title": "",
+  "source_type": "",
+  "speaker": "",
+  "short_description": "",
+  "thematic_tags": [],
+  "potential_relevance": [],
+  "phase_hint": "",
   "proposed_module": "modules/mythos_und_verwaltung",
   "proposed_path": "",
   "rubric_matches": [
@@ -35,6 +41,7 @@
     }
   ],
   "status": "candidate",
+  "notes": "",
   "meta": {
     "created_by": "agent",
     "created_at": null,

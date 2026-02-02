@@ -13,9 +13,9 @@
     },
     "repository": {
       "url": "https://github.com/432Emanuel/Menschheitsged-chtniskarte.git",
-      "latest_commit": "7f6b1747eae9121e8bd9e4bc4aea32f24276f251"
+      "latest_commit": "120c12a56f2c5d41376f7413e1c96e2f9c7dc214"
     },
-    "last_updated": "2026-01-28",
+    "last_updated": "2026-02-01",
     "version": "1.0.0",
     "language": "de/en (bilingual project)"
   },
@@ -170,6 +170,7 @@
             "meta_patterns/README.md",
             "meta_patterns/node_candidates.json",
             "meta_patterns/ML_TRUTH_EMERGENCE_001.json",
+            "meta_patterns/L_SCALE_PROJECTION_001.json (Skalierung & Projektion)",
             "resonance_strands/README.md",
             "resonance_strands/strands/RS-IRS-EMANUEL-ARCHASTRO-0001.json",
             "lens_sketches/resonanzbasierte_intelligenzkopplung.json",
@@ -203,9 +204,38 @@
           ]
         },
         "layers": {
+          "description": "Epistemische und Resonanz-Layers sowie Meta-Layers",
           "files": [
             "epistemic_layers.json",
             "resonance_layers.json"
+          ],
+          "subdirectories": {
+            "meta": {
+              "description": "Meta-Layers für entpersonalisierte Typologien",
+              "files": [
+                "README.md",
+                "L-META-REL-DEUTUNG-001.json (Religiöse Deutungsformen)"
+              ]
+            }
+          }
+        },
+        "meta_agents": {
+          "description": "Meta-Agenten für epistemische Trigger",
+          "files": [
+            "README.md",
+            "META-FRK-001.json (Frank - Epistemic Trigger)"
+          ]
+        },
+        "zeitgeist_witnesses": {
+          "description": "Zeitzeugen mit Perspektiv-Typisierung",
+          "files": [
+            "README.md",
+            "INTEGRATION_REPORT.md",
+            "RELIGIOUS_INTERPRETATION_INTEGRATION.md",
+            "index.json",
+            "TZ-REL-RBT.json (Robert - Religiös-kosmologische Deutung)",
+            "TZ-REL-ELS.json (Elias - Institutionskritik)",
+            "ZG-KI-2026-002.json bis ZG-KI-2026-008.json"
           ]
         },
         "places": {
@@ -289,11 +319,29 @@
   },
   "shared_resources": {
     "candidates": {
-      "description": "15 mythologische Kandidaten für das Mythos-Modul",
+      "description": "16 Kandidaten (15 mythologische + 1 Merkzettel) für Mythos-Modul und Zeitzeugen",
       "directory": "shared/candidates/items/",
-      "count": 15,
+      "count": 16,
       "index": "shared/candidates/candidate_index.json",
       "template": "shared/candidates/template_candidate.json",
+      "types": [
+        "modul: Klassische Modul-Kandidaten (15)",
+        "zeitzeuge: Potenzielle Zeitzeugen",
+        "knotenpunkt: Themen-Knotenpunkte und Brückenperspektiven"
+      ],
+      "workflow": [
+        "merkzettel → candidate → shortlisted → promoted → rejected"
+      ],
+      "new_fields": [
+        "candidate_type",
+        "source_type",
+        "speaker",
+        "short_description",
+        "thematic_tags",
+        "potential_relevance",
+        "phase_hint",
+        "notes"
+      ],
       "examples": [
         "CAND-ENUMAELISH-0001 (Enuma Elish)",
         "CAND-OSIRIS-0001 (Osiris)",
@@ -307,7 +355,8 @@
         "CAND-INKARRI-0001 (Inkarri)",
         "CAND-SUNDIATA-0001 (Sundiata)",
         "CAND-BALDUR-0001 (Baldur)",
-        "CAND-HIAWATHA-0001 (Hiawatha)"
+        "CAND-HIAWATHA-0001 (Hiawatha)",
+        "CAND-REL-ECON-001 (Friedemann Voigt - Merkzettel/Knotenpunkt)"
       ]
     },
     "rubrics": {
@@ -348,6 +397,9 @@
         "items/MARK-000004.json",
         "items/MARK-000005.json",
         "items/MARK-000006.json",
+        "items/MARK-000007.json (Geschlossene Erkenntnisschleife)",
+        "items/MARK-000008.json (Projektionscontainer)",
+        "items/MARK-000009.json (Symbolische Überfrachtung)",
         "items/LM_CORONA_KI_001.json"
       ]
     },
@@ -463,11 +515,13 @@
     }
   },
   "delta_since_last_update": {
-    "last_update_date": "2026-01-28",
-    "update_description": "Vollständige Aktualisierung der chatgpt_project_overview.json mit allen neuen Datenstrukturen",
-    "git_commit": "7f6b1747eae9121e8bd9e4bc4aea32f24276f251",
+    "last_update_date": "2026-02-01",
+    "update_description": "Integration religiöser Deutungsformen und Merkzettel-System",
+    "git_commit": "120c12a56f2c5d41376f7413e1c96e2f9c7dc214",
     "updated_sections": [
-      "meta: Git-Commit und Datum aktualisiert",
+      "meta: Git-Commit und Datum auf 2026-02-01 aktualisiert",
+      "shared_resources.candidates: count auf 16 erhöht, types und workflow hinzugefügt",
+      "shared_resources.markers: 3 neue Marker (MARK-000007 bis MARK-000009) ergänzt",
       "data_structure: human_cartography, lenses, knowledge/contemporary_cases, knowledge/crisis_analysis hinzugefügt",
       "shared_resources: schemas, markers mit vollständiger Dateiliste ergänzt",
       "zeitgeist_module: contemporary_cases mit index und cases (DE, VE) erweitert",
@@ -477,9 +531,18 @@
       "architecture: README.md und DP-002-epistemische-haltung.json ergänzt",
       "file_structure_overview: In root_level_files und root_level_directories aufgeteilt"
     ],
-    "new_modules": [],
+    "new_modules": [
+      "data/layers/meta (Meta-Layers für entpersonalisierte Typologien)",
+      "data/meta_agents (Meta-Agenten für epistemische Trigger)",
+      "data/zeitgeist_witnesses (Zeitzeugen mit Perspektiv-Typisierung)"
+    ],
     "updated_modules": [
-      "data_structure (vollständig überarbeitet)",
+      "shared/candidates (Merkzettel-System integriert)",
+      "data/lenses/meta_patterns (L_SCALE_PROJECTION_001 hinzugefügt)",
+      "data/zeitgeist_witnesses (TZ-REL-RBT und TZ-REL-ELS hinzugefügt)",
+      "data/layers/meta (L-META-REL-DEUTUNG-001 hinzugefügt)",
+      "data/meta_agents (META-FRK-001 hinzugefügt)",
+      "shared/markers (3 neue Marker für epistemische Risiken)",
       "shared_resources (markers und schemas hinzugefügt)",
       "zeitgeist_module (contemporary_cases erweitert)",
       "modules_imperium (example_files hinzugefügt)",
@@ -499,7 +562,7 @@
       "zeitgeist_module/ZG-CB-contemporary-cases/cases/VE/ZG-CB-VE-2026-01.json",
       "zeitgeist_module/ZG-CB-contemporary-cases/cases/VE/ZG-CB-VE-2026-01.md"
     ],
-    "new_files_count": "ca. 40+ neue Dateien dokumentiert",
-    "status": "chatgpt_project_overview.json ist jetzt vollständig synchronisiert mit der tatsächlichen Projektstruktur"
+    "new_files_count": "11 neue Dateien (Zeitzeugen, Meta-Layers, Meta-Agenten, Marker, Lenses, Integration)",
+    "status": "chatgpt_project_overview.json ist vollständig synchronisiert mit den neuen religiösen Deutungsformen und dem Merkzettel-System"
   }
 }

@@ -1,0 +1,194 @@
+{
+  "index_info": {
+    "title": "Zeitzeugenberichte - KI, digitaler Wandel & Religion",
+    "description": "Sammlung von Zeitzeugenberichten zu KI-relevanten Themen und religiösen Deutungsformen",
+    "created_at": "2026-02-01",
+    "last_updated": "2026-02-01",
+    "status": "active"
+  },
+  "source_reference": {
+    "primary_source": "SOURCE_PODCAST_ENGEL_DAEMONEN_616",
+    "source_type": "podcast_transcript",
+    "title": "Engel & Dämonen - Home Office #616",
+    "notes": "KI-relevante Aussagen extrahiert (Algorithmus, Aufmerksamkeit, Bildung, Kompetenzverschiebung, Technikambivalenz)"
+  },
+  "witnesses": [
+    {
+      "id": "ZG-KI-2026-001",
+      "title": "Engel & Dämonen - Home Office #616 (Podcast)",
+      "file": "data/zeitgeist_witnesses/ZG-KI-2026-001.json",
+      "date": "2026-02-01",
+      "tags": ["Podcast", "KI", "Algorithmus", "Aufmerksamkeit", "Bildung"],
+      "summary": "Vollständiger Podcast-Transkript-Bericht"
+    },
+    {
+      "id": "ZG-KI-2026-002",
+      "title": "Algorithmus 'kennt' mich besser",
+      "file": "data/zeitgeist_witnesses/ZG-KI-2026-002.json",
+      "date": "2026-02-01",
+      "speaker": "Frank",
+      "cluster": "LENS_ALGO_ATTENTION_001",
+      "tags": ["KI_Algorithmus", "Personalisierung", "Trigger", "Feed-Logik"],
+      "summary": "Subjektives Erleben von algorithmischer Personalisierung"
+    },
+    {
+      "id": "ZG-KI-2026-003",
+      "title": "Kurzclips und Zeitverlust",
+      "file": "data/zeitgeist_witnesses/ZG-KI-2026-003.json",
+      "date": "2026-02-01",
+      "speaker": "Frank",
+      "cluster": "LENS_ALGO_ATTENTION_001",
+      "tags": ["Aufmerksamkeitsökonomie", "Kurzformat", "Lernillusion", "Suchtmechanik"],
+      "summary": "Fragmentierung von Aufmerksamkeit durch Kurzformat-Feeds"
+    },
+    {
+      "id": "ZG-KI-2026-004",
+      "title": "Autonomer KI-Schneeroboter",
+      "file": "data/zeitgeist_witnesses/ZG-KI-2026-004.json",
+      "date": "2026-02-01",
+      "speaker": "Frank",
+      "cluster": "LENS_TECH_AMBIVALENCE_001",
+      "tags": ["KI_Alltag", "Autonomie", "Robotik", "Technikfaszination"],
+      "summary": "Positive KI-Narrative im Alltag"
+    },
+    {
+      "id": "ZG-KI-2026-005",
+      "title": "Virtuelle Lebenswelt und räumliche Wahrnehmung",
+      "file": "data/zeitgeist_witnesses/ZG-KI-2026-005.json",
+      "date": "2026-02-01",
+      "speaker": "Frank",
+      "cluster": "LENS_VIRTUAL_INSTINCT_001",
+      "tags": ["Virtualisierung", "Sensorik", "Räumliche_Wahrnehmung", "Generation_Z_Alpha"],
+      "summary": "Nebenwirkungen digitaler Lebenswelt auf junge Menschen"
+    },
+    {
+      "id": "ZG-KI-2026-006",
+      "title": "Haptik und synaptische Spuren",
+      "file": "data/zeitgeist_witnesses/ZG-KI-2026-006.json",
+      "date": "2026-02-01",
+      "speaker": "Frank",
+      "cluster": "LENS_VIRTUAL_INSTINCT_001",
+      "tags": ["Neuroplastizität", "Haptik", "Sensorik", "Digitale_Oberfläche"],
+      "summary": "Medienform beeinflusst Körper-Gehirn-Lernarchitektur"
+    },
+    {
+      "id": "ZG-KI-2026-007",
+      "title": "Warum noch lernen, wenn KI es kann?",
+      "file": "data/zeitgeist_witnesses/ZG-KI-2026-007.json",
+      "date": "2026-02-01",
+      "speaker": "Robert",
+      "cluster": "LENS_EDUCATION_OBSOLESCENCE_001",
+      "tags": ["KI_und_Bildung", "Obsoleszenz", "Zeitgeist", "Autonomie"],
+      "summary": "Technologische Obsoleszenz-Logik in Bildung"
+    },
+    {
+      "id": "ZG-KI-2026-008",
+      "title": "Digitales macht nicht dumm, verschiebt Kompetenzen",
+      "file": "data/zeitgeist_witnesses/ZG-KI-2026-008.json",
+      "date": "2026-02-01",
+      "speaker": "Robert",
+      "cluster": "LENS_TOOL_NEUTRALITY_001",
+      "tags": ["KI_als_Werkzeug", "Kompetenzverschiebung", "Aufmerksamkeit", "Generationenkonflikt"],
+      "summary": "Gegenposition zur Defizit-These"
+    },
+    {
+      "id": "TZ-REL-RBT",
+      "title": "Religiös-kosmologische Gegenwartsdeutung (Robert)",
+      "file": "data/zeitgeist_witnesses/TZ-REL-RBT.json",
+      "date": "2026-02-01",
+      "speaker": "Robert",
+      "perspective_type": "religious_reinterpretation",
+      "tags": ["Gnosis", "Bewusstsein", "Transformation", "Institutionskritik", "Religiöse_Reinterpretation"],
+      "summary": "Beispiel für religiös-kosmologische Gegenwartsdeutung außerhalb institutioneller Rahmen"
+    },
+    {
+      "id": "TZ-REL-ELS",
+      "title": "Strukturelle Religions- und Organisationskritik (Elias)",
+      "file": "data/zeitgeist_witnesses/TZ-REL-ELS.json",
+      "date": "2026-02-01",
+      "speaker": "Elias",
+      "perspective_type": "institutional_religion_critique",
+      "tags": ["Institutionskritik", "Machtstrukturen", "Organisationsforschung", "Historische_Kritik", "Netzwerkanalyse"],
+      "summary": "Beispiel für strukturelle Religionskritik mit Fokus auf Organisationen und ihre Werke"
+    },
+    {
+      "id": "TZ-REL-DE-2026-002",
+      "title": "Christliche Werte ohne Institution – Gehen und verkörpern",
+      "file": "data/zeitgeist_witnesses/TZ-REL-DE-2026-002.json",
+      "date": "2026-02-01",
+      "series": "TZ-REL",
+      "perspective_type": "value_based_outside",
+      "tags": ["Werte", "Verkörperung", "Austritt", "Post-institutionelle_Glaubenspraxis", "Ethik"],
+      "summary": "Wertebasierte Außenperspektive: Christliche Werte werden außerhalb der Institution gelebt"
+    },
+    {
+      "id": "TZ-REL-ENGAGED-REFORM-DE-2026",
+      "title": "Kirchlich Engagierte Reformkraft",
+      "file": "data/zeitgeist_witnesses/TZ-REL-ENGAGED-REFORM-DE-2026.json",
+      "date": "2026-02-01",
+      "series": "TZ-REL",
+      "perspective_type": "institutional_engagement_for_reform",
+      "tags": ["Kirchliche_Engagement", "Reform", "Synodaler_Weg", "Kritisch-Verbunden", "Zweifel", "Hoffnung", "Institutionelle_Verantwortung"],
+      "summary": "Beispiel für kirchlich engagierte Perspektive mit kritisch-verbundener Haltung im Reformkontext"
+    },
+    {
+      "id": "TZ-REL-VALUES-EXIT-DE-2026",
+      "title": "Wertebasierter Austritt – Werte vor Mitgliedschaft",
+      "file": "data/zeitgeist_witnesses/TZ-REL-VALUES-EXIT-DE-2026.json",
+      "date": "2026-02-01",
+      "series": "TZ-REL",
+      "perspective_type": "value_based_exit",
+      "tags": ["Kirchenaustritt", "Werte", "Moralische_Kohärenz", "Post-institutionelle_Wertebindung", "Christsein_ohne_Kirche", "Menschenrechte"],
+      "summary": "Beispiel für wertebasierten Austritt: Austritt als Akt moralischer Kohärenz, christliche Werte werden außerhalb der Institution fortgeführt"
+    },
+    {
+      "id": "TZ-REL-VALUES-EXIT-DE-2024-002",
+      "title": "Andreas Waldvogel – Kirchenaustritt aus christlichen Werten",
+      "file": "data/zeitgeist_witnesses/TZ-REL-VALUES-EXIT-DE-2024-002.json",
+      "date": "2026-02-01",
+      "speaker": "Andreas Waldvogel",
+      "age": 28,
+      "source_reference": "SOURCE_ALPHA_OMEGA_2024",
+      "series": "TZ-REL",
+      "perspective_type": "value_based_exit",
+      "tags": ["Kirchenaustritt", "Wertekonsistenz", "Post-institutionelle_Glaubenspraxis", "Klimagerechtigkeitsbewegung", "Grundgesetz", "Frauenfrage", "Tägliches_Gebet"],
+      "summary": "Austritt aufgrund christlicher Werte, post-institutionelle Glaubenspraxis (tägliches Gebet, religiös motiviertes Klimagerechtigkeitsengagement)"
+    }
+  ],
+  "cluster_distribution": {
+    "LENS_ALGO_ATTENTION_001": 2,
+    "LENS_TECH_AMBIVALENCE_001": 1,
+    "LENS_VIRTUAL_INSTINCT_001": 2,
+    "LENS_EDUCATION_OBSOLESCENCE_001": 1,
+    "LENS_TOOL_NEUTRALITY_001": 1,
+    "TZ-REL": 5
+  },
+  "speaker_distribution": {
+    "Frank": 5,
+    "Robert": 3,
+    "Elias": 1,
+    "Svenja Stumpf": 1,
+    "Andreas Waldvogel": 1
+  },
+  "perspective_distribution": {
+    "religious_reinterpretation": 1,
+    "institutional_religion_critique": 1,
+    "institutional_engagement_for_reform": 1,
+    "value_based_outside": 1,
+    "value_based_exit": 2
+  },
+  "related_lenses": [
+    "LENS_ALGO_ATTENTION_001",
+    "LENS_VIRTUAL_INSTINCT_001",
+    "LENS_EDUCATION_OBSOLESCENCE_001",
+    "LENS_TOOL_NEUTRALITY_001",
+    "LENS_TECH_AMBIVALENCE_001",
+    "L-META-PRJ-001"
+  ],
+  "crosslink_suggestions": [
+    "ZEITGEIST/zeitgeist_module/ZG-CB-contemporary-cases/",
+    "META_&_INDIVIDUELL/data/lenses/",
+    "BAUSTEINE/shared/markers/",
+    "modules/mythos_und_verwaltung/"
+  ]
+}

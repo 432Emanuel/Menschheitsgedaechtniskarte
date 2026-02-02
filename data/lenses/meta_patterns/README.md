@@ -79,6 +79,11 @@ Diese Verbindungen sind in `patterns.json` dokumentiert.
 - **Archäoastronomische Orte** als Spatial Anchoring
 - **Familien** als Intergenerational Transmission
 
+### Example 3: Skalierung & Projektion (META-PAT-007)
+- **Religiöse Institutionen**: Analyse der Projektion von institutionellen Strukturen auf totale Welterklärungen
+- **Politische Systeme**: Erkennung von Skalierungs-Sprüngen von lokaler Machtausübung zu globalem Totalanspruch
+- **Conspiracy-Frameworks**: Identifikation von Totalisierungstendenzen und zentraler Steuerungsrhetorik
+
 ## Integration mit Resonance Strands
 
 Pattern Lenses können mit Resonance Strands verknüpft werden über `links.suggested_overlays`:
