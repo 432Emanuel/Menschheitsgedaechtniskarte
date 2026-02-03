@@ -2,9 +2,44 @@
   "type": "sources_index",
   "version": "1.0.0",
   "created_at": "2026-02-02",
-  "last_updated": "2026-02-02",
+  "last_updated": "2026-02-03",
   "description": "Zentrales Register aller Quellen im Menschheitsgedächtniskarte-Projekt",
   "categories": {
+    "podcast_transcripts": {
+      "path": "podcast_transcripts",
+      "description": "Podcast-Transkripte und Interviews",
+      "count": 3,
+      "items": [
+        {
+          "id": "SRC-CAROLINE-RAASCH-ACHTUNG-BUCH-2026",
+          "title": "Wie aus Gott Google wurde – Im Gespräch mit Caroline Raasch",
+          "series": "Achtung Buch",
+          "type": "podcast_interview",
+          "date": "2026",
+          "file_path": "podcast_transcripts/caroline_raasch_achtung_buch_2026.json",
+          "witness_id": "TZ-REL-AR-2026-01"
+        },
+        {
+          "id": "SRC-ALPHA-OMEGA-KIRCHENGESPRÄECH-2024",
+          "title": "Alpha Omega – Kirchengespräch 2024",
+          "series": "Alpha Omega",
+          "type": "podcast_interview",
+          "date": "2024",
+          "file_path": "podcast_transcripts/alpha_omega_kirchengespraech_2024.json",
+          "witness_id": "TZ-REL-VALUES-EXIT-DE-2024-002"
+        },
+        {
+          "id": "SRC-INUIT-NUOVISO-2025-01",
+          "title": "Inuit-Perspektive: Trumps Grönland-Pläne",
+          "series": "NUWiSO",
+          "type": "podcast_interview",
+          "date": "2025",
+          "file_path": "../transcripts/raw/SRC-INUIT-NUOVISO-2025-01.txt",
+          "metadata_path": "../transcripts/metadata/SRC-INUIT-NUOVISO-2025-01.meta.json",
+          "witness_id": "TZ-IND-KUNUK-2025-01"
+        }
+      ]
+    },
     "transcripts": {
       "path": "transcripts",
       "description": "Rohtranskripte (Podcast, Vorträge, Interviews, Diskussionen)",
@@ -59,22 +94,26 @@
     }
   },
   "statistics": {
-    "total_sources": 5,
+    "total_sources": 8,
     "by_type": {
+      "podcast_interview": 3,
       "vortrag": 2,
       "diskussion": 1,
       "interview": 1,
       "rede": 1
     },
     "by_region": {
-      "DE": 5
+      "DE": 8
     },
     "by_status": {
-      "raw": 5,
-      "processed": 0,
+      "raw": 6,
+      "processed": 2,
       "integrated": 0
     },
-    "by_event": {
+    "by_series": {
+      "Achtung Buch": 1,
+      "Alpha Omega": 1,
+      "NUWiSO": 1,
       "Kongress Rätsel der Antarktis-Kartografie 2020": 5
     }
   },
