@@ -43,7 +43,7 @@
     "transcripts": {
       "path": "transcripts",
       "description": "Rohtranskripte (Podcast, Vorträge, Interviews, Diskussionen)",
-      "count": 5,
+      "count": 6,
       "items": [
         {
           "id": "SRC-TRANSCRIPT-DE-2020-001",
@@ -89,24 +89,36 @@
           "date": "2020-10-19",
           "file_path": "transcripts/raw/SRC-TRANSCRIPT-DE-2020-005.txt",
           "metadata_path": "transcripts/metadata/SRC-TRANSCRIPT-DE-2020-005.meta.json"
+        },
+        {
+          "id": "SRC-INDUSTRIEGUERTEL-DE-2026-01",
+          "title": "Deutschlands untergegangene Industrielandschaft / ostmitteldeutscher Industriegürtel",
+          "type": "explanatory_narrative",
+          "region": "DE",
+          "spatial_focus": "Ostmitteldeutscher Industriegürtel (Sachsen, Thüringen, südliches Sachsen-Anhalt, südliches Brandenburg)",
+          "date": "2026",
+          "file_path": "transcripts/raw/SRC-INDUSTRIEGUERTEL-DE-2026-01.txt",
+          "metadata_path": "transcripts/metadata/SRC-INDUSTRIEGUERTEL-DE-2026-01.meta.json"
         }
       ]
     }
   },
   "statistics": {
-    "total_sources": 8,
+    "total_sources": 10,
     "by_type": {
       "podcast_interview": 3,
+      "first_person_account": 1,
       "vortrag": 2,
       "diskussion": 1,
       "interview": 1,
-      "rede": 1
+      "rede": 1,
+      "explanatory_narrative": 1
     },
     "by_region": {
-      "DE": 8
+      "DE": 9
     },
     "by_status": {
-      "raw": 6,
+      "raw": 7,
       "processed": 2,
       "integrated": 0
     },
@@ -114,7 +126,9 @@
       "Achtung Buch": 1,
       "Alpha Omega": 1,
       "NUWiSO": 1,
-      "Kongress Rätsel der Antarktis-Kartografie 2020": 5
+      "Kongress Rätsel der Antarktis-Kartografie 2020": 5,
+      "TZ-POSTIND": 1,
+      "Ostmitteldeutscher Industriegürtel": 1
     }
   },
   "epistemic_principles": {

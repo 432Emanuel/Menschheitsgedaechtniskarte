@@ -1,7 +1,7 @@
 {
   "index_info": {
-    "title": "Zeitzeugenberichte - KI, digitaler Wandel, Religion & Indigene Perspektiven",
-    "description": "Sammlung von Zeitzeugenberichten zu KI-relevanten Themen, religiösen Deutungsformen und indigenen Perspektiven",
+    "title": "Zeitzeugenberichte - KI, digitaler Wandel, Religion, Indigene Perspektiven & Postindustrielle Räume",
+    "description": "Sammlung von Zeitzeugenberichten zu KI-relevanten Themen, religiösen Deutungsformen, indigenen Perspektiven und postindustriellen Raumtransformationen",
     "created_at": "2026-02-01",
     "last_updated": "2026-02-03",
     "status": "active"
@@ -177,6 +177,18 @@
       "source_type": "podcast_interview_transcript",
       "tags": ["Astrologie", "Spiritualität", "Transhumanismus", "Technikkritik", "Digitale_Ersatzanbindung", "Zeitdiagnose", "Pluto_Phase", "Familie", "Krankheit_als_Ausdruck"],
       "summary": "Astrologisch fundierte Zeitdiagnose: 2024-2043 als Übergangsphase, digitale Technologie als Ersatzanbindung für verlorene geistige Verbindung"
+    },
+    {
+      "id": "TZ-POSTIND-WO-2026-01",
+      "title": "Postindustrielle Ruinen und informelle Nutzung (Wolkramshausen)",
+      "file": "data/zeitgeist_witnesses/TZ-POSTIND-WO-2026-01.json",
+      "date": "2026-02-03",
+      "speaker": "Anonyme Zeugin aus Wolkramshausen",
+      "series": "TZ-POSTIND",
+      "perspective_type": "postindustrial_embodied_observation",
+      "source_reference": "SRC-POSTIND-WO-2026-01",
+      "tags": ["Postindustriell", "Ruinen", "Informelle_Nutzung", "Natur-Rückeroberung", "Ostdeutschland", "DDR-Nachgeschichte", "Sozialer_Raum", "Leipzig", "Stillhalrende_Übereinkunft"],
+      "summary": "Langzeitbeobachtung postindustrieller Ruinen: Natur-Rückeroberung, informelle soziale Nutzung, stillhalrende Übereinkunft zwischen Nutzern und Verwaltung"
     }
   ],
   "cluster_distribution": {
@@ -186,7 +198,8 @@
     "LENS_EDUCATION_OBSOLESCENCE_001": 1,
     "LENS_TOOL_NEUTRALITY_001": 1,
     "TZ-REL": 6,
-    "TZ-IND": 1
+    "TZ-IND": 1,
+    "TZ-POSTIND": 1
   },
   "speaker_distribution": {
     "Frank": 5,
@@ -202,7 +215,8 @@
     "institutional_engagement_for_reform": 1,
     "value_based_outside": 1,
     "value_based_exit": 2,
-    "indigenous_embodied_connection": 1
+    "indigenous_embodied_connection": 1,
+    "postindustrial_embodied_observation": 1
   },
   "related_lenses": [
     "LENS_ALGO_ATTENTION_001",
