@@ -1,7 +1,7 @@
 {
   "index_info": {
-    "title": "Zeitzeugenberichte - KI, digitaler Wandel, Religion, Indigene Perspektiven & Postindustrielle Räume",
-    "description": "Sammlung von Zeitzeugenberichten zu KI-relevanten Themen, religiösen Deutungsformen, indigenen Perspektiven und postindustriellen Raumtransformationen",
+    "title": "Zeitzeugenberichte - KI, digitaler Wandel, Religion, Indigene Perspektiven, Postindustrielle Räume & Experimentalarchäologie",
+    "description": "Sammlung von Zeitzeugenberichten zu KI-relevanten Themen, religiösen Deutungsformen, indigenen Perspektiven, postindustriellen Raumtransformationen und experimenteller Archäologie",
     "created_at": "2026-02-01",
     "last_updated": "2026-02-03",
     "status": "active"
@@ -189,6 +189,18 @@
       "source_reference": "SRC-POSTIND-WO-2026-01",
       "tags": ["Postindustriell", "Ruinen", "Informelle_Nutzung", "Natur-Rückeroberung", "Ostdeutschland", "DDR-Nachgeschichte", "Sozialer_Raum", "Leipzig", "Stillhalrende_Übereinkunft"],
       "summary": "Langzeitbeobachtung postindustrieller Ruinen: Natur-Rückeroberung, informelle soziale Nutzung, stillhalrende Übereinkunft zwischen Nutzern und Verwaltung"
+    },
+    {
+      "id": "TZ-EXP-ARCH-GOERLITZ-2025",
+      "title": "Experimentalarchäologie: Transatlantik-Hypothesen (Dominik Görlitz)",
+      "file": "data/zeitgeist_witnesses/TZ-EXP-ARCH-GOERLITZ-2025.json",
+      "date": "2026-02-03",
+      "speaker": "Dominik Görlitz",
+      "series": "TZ-EXP",
+      "perspective_type": "experimental_archaeology_process",
+      "source_type": "longform_interview / jahresrückblick",
+      "tags": ["Experimentalarchäologie", "Transatlantik", "Präkolumbisch", "Schilfboot", "Pyramiden", "Felsbilder", "Datierung", "Institutionelle_Konflikte", "Wissenspolitik", "OSL", "C14"],
+      "summary": "Dokumentation Forschungsprozess: Transatlantik-Hypothesen, Datierungsprojekte, institutionelle Spannungen (national vs. international), Prophethen-Motiv"
     }
   ],
   "cluster_distribution": {
@@ -199,7 +211,8 @@
     "LENS_TOOL_NEUTRALITY_001": 1,
     "TZ-REL": 6,
     "TZ-IND": 1,
-    "TZ-POSTIND": 1
+    "TZ-POSTIND": 1,
+    "TZ-EXP": 1
   },
   "speaker_distribution": {
     "Frank": 5,
@@ -216,7 +229,8 @@
     "value_based_outside": 1,
     "value_based_exit": 2,
     "indigenous_embodied_connection": 1,
-    "postindustrial_embodied_observation": 1
+    "postindustrial_embodied_observation": 1,
+    "experimental_archaeology_process": 1
   },
   "related_lenses": [
     "LENS_ALGO_ATTENTION_001",
