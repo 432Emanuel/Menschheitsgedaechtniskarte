@@ -201,6 +201,18 @@
       "source_type": "longform_interview / jahresrückblick",
       "tags": ["Experimentalarchäologie", "Transatlantik", "Präkolumbisch", "Schilfboot", "Pyramiden", "Felsbilder", "Datierung", "Institutionelle_Konflikte", "Wissenspolitik", "OSL", "C14"],
       "summary": "Dokumentation Forschungsprozess: Transatlantik-Hypothesen, Datierungsprojekte, institutionelle Spannungen (national vs. international), Prophethen-Motiv"
+    },
+    {
+      "id": "OBS-REFLECT-SEASONS-001",
+      "title": "Reflexive Unterbrechung: Jahreszeiten-Rhythmen und Einkehr",
+      "file": "data/zeitgeist_witnesses/OBS-REFLECT-SEASONS-001.json",
+      "date": "2026-02-04",
+      "contributors": ["Robert", "Frank"],
+      "type": "observation_artifact",
+      "subtype": "reflective_interruption",
+      "epistemic_level": "experiential_reflection",
+      "tags": ["Jahreszeiten", "Einkehr", "Rhythmus", "Kreative_Entwicklung", "Selbstwahrnehmung", "Zyklische_Muster", "Resonanz_Marker"],
+      "summary": "Bewusste Unterbrechung externer Aktivität zugunsten einer Reflexion über zyklische Entwicklungsphasen (Aktivität/Rückzug)"
     }
   ],
   "cluster_distribution": {
