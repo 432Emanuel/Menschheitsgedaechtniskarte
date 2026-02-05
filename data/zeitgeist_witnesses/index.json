@@ -1,9 +1,9 @@
 {
   "index_info": {
-    "title": "Zeitzeugenberichte - KI, digitaler Wandel, Religion, Indigene Perspektiven, Postindustrielle Räume & Experimentalarchäologie",
-    "description": "Sammlung von Zeitzeugenberichten zu KI-relevanten Themen, religiösen Deutungsformen, indigenen Perspektiven, postindustriellen Raumtransformationen und experimenteller Archäologie",
+    "title": "Zeitzeugenberichte - KI, digitaler Wandel, Religion, Indigene Perspektiven, Postindustrielle Räume, Experimentalarchäologie & Mystische Architektur",
+    "description": "Sammlung von Zeitzeugenberichten zu KI-relevanten Themen, religiösen Deutungsformen, indigenen Perspektiven, postindustriellen Raumtransformationen, experimenteller Archäologie und mystischer Architektur",
     "created_at": "2026-02-01",
-    "last_updated": "2026-02-03",
+    "last_updated": "2026-02-05",
     "status": "active"
   },
   "source_reference": {
@@ -213,6 +213,32 @@
       "epistemic_level": "experiential_reflection",
       "tags": ["Jahreszeiten", "Einkehr", "Rhythmus", "Kreative_Entwicklung", "Selbstwahrnehmung", "Zyklische_Muster", "Resonanz_Marker"],
       "summary": "Bewusste Unterbrechung externer Aktivität zugunsten einer Reflexion über zyklische Entwicklungsphasen (Aktivität/Rückzug)"
+    },
+    {
+      "id": "TZ-REL-FLEISCHHAUER-2021-001",
+      "title": "Ex-Hochgradfreimaurer Q&A: Initiation, Desillusionierung, Symbolik",
+      "file": "data/zeitgeist_witnesses/TZ-REL-FLEISCHHAUER-2021-001.json",
+      "date": "2021-02-19",
+      "speaker": "Charles Moritz Fleischhauer",
+      "type": "livestream_q_and_a",
+      "series": "TZ-REL",
+      "perspective_type": "inner_perspective_exit",
+      "source_type": "primary_source",
+      "status": "indexed",
+      "tags": ["Freimaurerei", "Initiation", "Austritt", "Symbolik", "Desillusionierung", "Anti_Simplifikation", "Wissensgrenzen"],
+      "summary": "Livestream-Q&A mit Ex-Hochgradfreimaurer: Initiationserfahrung, innere Distanzierungsprozess, Symbolik-Mehrfachdeutungen, Ablehnung von Vereinfachungen"
+    },
+    {
+      "id": "TZ-SPEAKER-STARK-LOCUM",
+      "title": "Wolfgang Stark: Mystische Architektur und Kloster Loccum",
+      "file": "data/zeitgeist_witnesses/TZ-SPEAKER-STARK-LOCUM.json",
+      "date": "2026-02-05",
+      "speaker": "Wolfgang Stark",
+      "type": "speaker_profile",
+      "series": "TZ-ARCH",
+      "perspective_types": ["initiatoric", "esoteric", "experience_based"],
+      "tags": ["Kloster_Loccum", "Zisterzienser", "Templer", "Radiästhesie", "Mystische_Architektur", "Initiation", "Liturgie"],
+      "summary": "Speaker-Profil: Wolfgang Stark beschreibt aus jahrelanger Erfahrung als Klosterführer und Radiästhet Architektur, Experimente und metaphysische Deutungen in Kloster Loccum"
     }
   ],
   "cluster_distribution": {
@@ -224,7 +250,8 @@
     "TZ-REL": 6,
     "TZ-IND": 1,
     "TZ-POSTIND": 1,
-    "TZ-EXP": 1
+    "TZ-EXP": 1,
+    "TZ-ARCH": 1
   },
   "speaker_distribution": {
     "Frank": 5,
@@ -242,7 +269,10 @@
     "value_based_exit": 2,
     "indigenous_embodied_connection": 1,
     "postindustrial_embodied_observation": 1,
-    "experimental_archaeology_process": 1
+    "experimental_archaeology_process": 1,
+    "initiatoric": 1,
+    "esoteric": 1,
+    "experience_based": 1
   },
   "related_lenses": [
     "LENS_ALGO_ATTENTION_001",

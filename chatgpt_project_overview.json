@@ -15,7 +15,7 @@
       "url": "https://github.com/432Emanuel/Menschheitsged-chtniskarte.git",
       "latest_commit": "120c12a56f2c5d41376f7413e1c96e2f9c7dc214"
     },
-    "last_updated": "2026-02-02",
+    "last_updated": "2026-02-05",
     "version": "1.0.0",
     "language": "de/en (bilingual project)"
   },
@@ -156,9 +156,11 @@
           "files": [
             "index.json",
             "README.md",
-            "transcripts/raw/ (5 Transkripte vom Kongress Rätsel der Antarktis-Kartografie 2020)",
+            "transcripts/raw/ (19 Transkripte: 5 vom Kongress Rätsel der Antarktis-Kartografie 2020, 1 Inuit-Interview, 14 weitere Quellen mit UNK-Markierung)",
+            "transcripts/raw/SRC-TRANSCRIPT-DE-2020-001.txt bis SRC-TRANSCRIPT-DE-2020-005.txt (Kongress Transkripte)",
             "transcripts/raw/SRC-INUIT-NUOVISO-2025-01.txt (Inuit-Interview)",
-            "transcripts/metadata/ (6 Metadaten-Dateien)",
+            "transcripts/raw/SRC-TRANSCRIPT-UNK-UNK-006.txt bis SRC-TRANSCRIPT-UNK-UNK-019.txt (14 Quellen ohne Jahres-/Regionsinformation)",
+            "transcripts/metadata/ (22 Metadaten-Dateien: alle Transkripte mit .meta.json)",
             "podcast_transcripts/engel_daemonen_home_office_616_source.json",
             "podcast_transcripts/alpha_omega_kirchengespraech_2024.json"
           ]
@@ -547,11 +549,11 @@
     }
   },
   "delta_since_last_update": {
-    "last_update_date": "2026-02-02",
-    "update_description": "Erweiterung um indigene Perspektiven (Inuit-Zeitzeuge TZ-IND-KUNUK-2025-01)",
-    "git_commit": "120c12a56f2c5d41376f7413e1c96e2f9c7dc214",
+    "last_update_date": "2026-02-05",
+    "update_description": "Umbenennung von 14 Transkripten nach MGK-Benennungsrichtlinien (SRC-TRANSCRIPT-UNK-UNK-XXX) und Erstellung von 14 Metadaten-Dateien",
+    "git_commit": "86a1d100a0598d6ce4a16c8f8e4999dafdf315ca",
     "updated_sections": [
-      "meta: Datum auf 2026-02-02 aktualisiert",
+      "meta: Datum auf 2026-02-05 aktualisiert",
       "shared_resources.candidates: count auf 16 erhöht, types und workflow hinzugefügt",
       "shared_resources.markers: 8 neue Marker (MARK-000007 bis MARK-000014) ergänzt",
       "data_structure: data/sources mit Transkript-Datenbank hinzugefügt",
@@ -607,9 +609,16 @@
     ],
     "new_sources": [
       "data/sources/transcripts/raw/SRC-INUIT-NUOVISO-2025-01.txt (Inuit-Interview Transkript)",
-      "data/sources/transcripts/metadata/SRC-INUIT-NUOVISO-2025-01.meta.json"
+      "data/sources/transcripts/metadata/SRC-INUIT-NUOVISO-2025-01.meta.json",
+      "data/sources/transcripts/raw/SRC-TRANSCRIPT-UNK-UNK-006.txt bis SRC-TRANSCRIPT-UNK-UNK-019.txt (14 umbenannte Transkripte)",
+      "data/sources/transcripts/metadata/SRC-TRANSCRIPT-UNK-UNK-006.meta.json bis SRC-TRANSCRIPT-UNK-UNK-019.meta.json (14 neue Metadaten-Dateien)"
     ],
-    "new_files_count": "43 neue Dateien (Quellen, historische Karten, Zeitzeugen, Marker, Schemas, inkl. Inuit-Zeitzeuge)",
-    "status": "chatgpt_project_overview.json ist vollständig synchronisiert mit der Quellen-Datenbank, der historischen Kartografie-Kollektion, den erweiterten Zeitzeugen und der neuen indigenen Perspektive (TZ-IND-KUNUK-2025-01)"
+    "renamed_sources": [
+      "14 Transkripte nach MGK-Benennungskonvention umbenannt (SRC-TRANSCRIPT-UNK-UNK-XXX)",
+      "Umbenannt von ursprünglichen Dateinamen zu standardisiertem Format mit UNK-Markierung",
+      "Epistemische Prinzipien eingehalten: Keine Annahmen zu Jahr/Region"
+    ],
+    "new_files_count": "14 neue Metadaten-Dateien + 14 umbenannte Transkripte",
+    "status": "chatgpt_project_overview.json ist vollständig synchronisiert mit der erweiterten Quellen-Datenbank (19 Transkripte mit Metadaten), der historischen Kartografie-Kollektion, den erweiterten Zeitzeugen und der neuen indigenen Perspektive (TZ-IND-KUNUK-2025-01)"
   }
 }

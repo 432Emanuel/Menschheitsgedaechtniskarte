@@ -2,13 +2,13 @@
   "type": "sources_index",
   "version": "1.0.0",
   "created_at": "2026-02-02",
-  "last_updated": "2026-02-03",
+  "last_updated": "2026-02-05",
   "description": "Zentrales Register aller Quellen im Menschheitsgedächtniskarte-Projekt",
   "categories": {
     "podcast_transcripts": {
       "path": "podcast_transcripts",
       "description": "Podcast-Transkripte und Interviews",
-      "count": 3,
+      "count": 5,
       "items": [
         {
           "id": "SRC-CAROLINE-RAASCH-ACHTUNG-BUCH-2026",
@@ -37,13 +37,35 @@
           "file_path": "../transcripts/raw/SRC-INUIT-NUOVISO-2025-01.txt",
           "metadata_path": "../transcripts/metadata/SRC-INUIT-NUOVISO-2025-01.meta.json",
           "witness_id": "TZ-IND-KUNUK-2025-01"
+        },
+        {
+          "id": "SRC-DIALOG-STARK-FLEISCHHAUER-PT1-2021",
+          "title": "Dialog Wolfgang Stark - Charles Fleischhauer: Freimaurerei, Bibel und Gott (Teil I)",
+          "series": "Charles Fleischhauer Podcast",
+          "type": "podcast_dialog",
+          "date": "2021-02-19",
+          "file_path": "transcripts/raw/SRC-DIALOG-STARK-FLEISCHHAUER-PT1-2021.txt",
+          "metadata_path": "transcripts/metadata/SRC-DIALOG-STARK-FLEISCHHAUER-PT1-2021.meta.json",
+          "speakers": ["Charles Fleischhauer", "Wolfgang Stark"],
+          "cluster_id": "CL-REL-FM-DIALOG-STARK-FLEISCHHAUER-2021"
+        },
+        {
+          "id": "SRC-DIALOG-STARK-FLEISCHHAUER-PT2-2021",
+          "title": "Dialog Wolfgang Stark - Charles Fleischhauer: Freimaurerei, Bibel und Gott (Teil II)",
+          "series": "Charles Fleischhauer Podcast",
+          "type": "podcast_dialog",
+          "date": "2021-02-19",
+          "file_path": "transcripts/raw/SRC-DIALOG-STARK-FLEISCHHAUER-PT2-2021.txt",
+          "metadata_path": "transcripts/metadata/SRC-DIALOG-STARK-FLEISCHHAUER-PT2-2021.meta.json",
+          "speakers": ["Charles Fleischhauer", "Wolfgang Stark"],
+          "cluster_id": "CL-REL-FM-DIALOG-STARK-FLEISCHHAUER-2021"
         }
       ]
     },
     "transcripts": {
       "path": "transcripts",
       "description": "Rohtranskripte (Podcast, Vorträge, Interviews, Diskussionen)",
-      "count": 6,
+      "count": 7,
       "items": [
         {
           "id": "SRC-TRANSCRIPT-DE-2020-001",
@@ -99,33 +121,49 @@
           "date": "2026",
           "file_path": "transcripts/raw/SRC-INDUSTRIEGUERTEL-DE-2026-01.txt",
           "metadata_path": "transcripts/metadata/SRC-INDUSTRIEGUERTEL-DE-2026-01.meta.json"
+        },
+        {
+          "id": "SRC-TRANSCRIPT-FLEISCHHAUER-2021-001",
+          "title": "Ex-Hochgradfreimaurer packt aus – Livestream Q&A",
+          "type": "livestream_q_and_a",
+          "region": "DE",
+          "date": "2021-02-19",
+          "language": "de",
+          "format": "livestream_transcript",
+          "source_type": "primary_source",
+          "speaker": "Charles Moritz Fleischhauer",
+          "file_path": "transcripts/raw/TZ-REL-FLEISCHHAUER-2021-001.txt",
+          "metadata_path": "transcripts/metadata/TZ-REL-FLEISCHHAUER-2021-001.meta.json",
+          "witness_id": "TZ-REL-FLEISCHHAUER-2021-001"
         }
       ]
     }
   },
   "statistics": {
-    "total_sources": 10,
+    "total_sources": 12,
     "by_type": {
       "podcast_interview": 3,
-      "first_person_account": 1,
+      "podcast_dialog": 2,
       "vortrag": 2,
       "diskussion": 1,
       "interview": 1,
       "rede": 1,
-      "explanatory_narrative": 1
+      "explanatory_narrative": 1,
+      "livestream_q_and_a": 1
     },
     "by_region": {
-      "DE": 9
+      "DE": 12
     },
     "by_status": {
       "raw": 7,
-      "processed": 2,
+      "processed": 5,
       "integrated": 0
     },
     "by_series": {
       "Achtung Buch": 1,
       "Alpha Omega": 1,
       "NUWiSO": 1,
+      "Charles Fleischhauer Podcast": 2,
       "Kongress Rätsel der Antarktis-Kartografie 2020": 5,
       "TZ-POSTIND": 1,
       "Ostmitteldeutscher Industriegürtel": 1
@@ -135,6 +173,21 @@
     "separation": "TXT = Quelle, JSON = epistemische Hülle",
     "no_interpretation": "Keine Bewertung oder inhaltliche Glättung",
     "traceability": "Alle Ableitungen referenzieren die Quellen-ID"
+  },
+  "source_clusters": {
+    "CL-REL-FLEISCHHAUER-GNOSTIC-FM-2021": {
+      "description": "Charles Moritz Fleischhauer: Gnostische Geheimlehre der Freimaurer (Buchankündigung + Vortrag)",
+      "cluster_type": "synthetic_knowledge_exposition",
+      "sources": ["SRC-REL-FLEISCHHAUER-BOOK-ANNOUNCE-2021-001", "SRC-REL-FLEISCHHAUER-LECTURE-GNOSTIC-2021-002"],
+      "main_themes": ["gnostic_freemasonry", "astrotheology", "symbol_decoding", "tradition_preservation"]
+    },
+    "CL-REL-FM-DIALOG-STARK-FLEISCHHAUER-2021": {
+      "description": "Dialog-Cluster: Wolfgang Stark über Freimaurerei, Bibel und Gott (2021)",
+      "cluster_type": "dialog_cluster",
+      "sources": ["SRC-DIALOG-STARK-FLEISCHHAUER-PT1-2021", "SRC-DIALOG-STARK-FLEISCHHAUER-PT2-2021"],
+      "participants": ["Charles Fleischhauer", "Wolfgang Stark"],
+      "main_themes": ["freemasonic_symbolism", "biblical_hermeneutics", "tradition_vs_modernity", "initiatory_path"]
+    }
   },
   "event_collections": {
     "Kongress_Rätsel_der_Antarktis-Kartografie_2020": {

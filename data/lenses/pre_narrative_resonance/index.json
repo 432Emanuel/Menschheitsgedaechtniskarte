@@ -1,0 +1,35 @@
+{
+  "module": {
+    "id": "pre_narrative_resonance",
+    "version": "1.0.0",
+    "title": "Pre-Narrative Resonance Layer",
+    "purpose": "Analytische Lens für Resonanzpunkte vor Narrativbildung",
+    "created": "2026-02-05"
+  },
+  "characteristics": {
+    "stage": "pre_narrative",
+    "epistemic_mode": "non_evaluative",
+    "function": "early_signal_detection",
+    "scope": "cross_contextual",
+    "characteristic": "questions_over_assertions"
+  },
+  "files": [
+    {
+      "id": "MGK-RESONANCE-INITIATORY-QUESTIONS-001",
+      "file": "resonance_primitives.json",
+      "title": "Resonanzpunkte menschlicher Sinnsuche vor narrativer Projektion",
+      "type": "resonance_primitives",
+      "status": "init",
+      "created_by": "Emanuel",
+      "intended_use": "abstraction_layer_for_multiple_domains"
+    }
+  ],
+  "metadata": {
+    "module": "pre_narrative_resonance",
+    "file": "index",
+    "version": "1.0.0",
+    "created": "2026-02-05",
+    "updated": "2026-02-05",
+    "description": "Index für Pre-Narrative Resonance Layer - Resonanzpunkte vor Narrativbildung"
+  }
+}
