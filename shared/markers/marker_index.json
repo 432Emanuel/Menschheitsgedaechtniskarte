@@ -164,6 +164,10 @@
     {
       "id": "MARK-DIAL-PROJ-AFFECT-001",
       "file": "items/MARK-DIAL-PROJ-AFFECT-001.json"
+    },
+    {
+      "id": "MARK-MISSION-DECLARE-0001",
+      "file": "items/MARK-MISSION-DECLARE-0001.json"
     }
   ]
 }

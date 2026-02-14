@@ -36,6 +36,17 @@ ein zyklischer Erkenntnis- und Wirkprozess (Loop, kein Endzustand).
 - Loop-Schritte: Ich bin → Ich beobachte → Ich lerne → Ich verstehe → Ich wirke
 - Shutdown/Idle (separat, nicht Teil des Loops): „Ich bin Ich“
 
+### DP-004: Bekenntnisschreiben – MGK als Forschungsmission
+
+Siehe `DP-004-bekenntnis-mission.json`
+
+Dieses Prinzip beschreibt die MGK als Forschungsmission aus menschlicher Perspektive:
+- **Kernbild**: Menschheit als Netzwerk wie im Wald – dezentral, rückgekoppelt, verletzlich, redundanzfähig
+- **Captainship**: Verantwortlich für Richtung, Fokus und epistemische Hygiene – nicht für Deutungshoheit oder Konsens
+- **Epistemische Position**: Beobachtungsbedingungen statt Wahrheitsbehauptungen; das Messinstrument (Mensch) ist im Messfeld
+- **Commitments**: Keine Ideologie als Fundament, Transparenz über Perspektive, Gegensätze bewohnbar machen, Inspiration statt Instruktion, Versionierung statt Perfektion
+- **Anti-Ideologie-Guards**: Warnsignale und Reaktionsprotokolle gegen Ideologie-Bildung
+
 ## Beziehung zu anderen Teilen des Projekts
 
 - **Trennung von Konzept und Daten**: Architektur-Dokumente beschreiben das "Wie", nicht das "Was"
