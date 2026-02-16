@@ -2,39 +2,92 @@
 
 ## Definition
 
-Gedächtnistopologie modelliert die strukturelle Verbindung zwischen faktischen historischen Ereignissen und narrativen Verdichtungen über sogenannte Projektionsknoten.
+Gedächtnistopologie untersucht die **strukturellen Rückkopplungen** zwischen realen historischen Brüchen (faktischer Layer) und narrativen Verdichtungen (narrativer Layer).
 
-Projektionsknoten sind keine historischen Orte, sondern **Verdichtungsstellen kollektiver Verarbeitung**, an denen reale Umbrüche in symbolische Narrative transformiert werden.
+Projektionsknoten sind **Verdichtungsstellen**, an denen reale Umbrüche symbolisch transformiert, reguliert oder identitätsstabilisierend verarbeitet werden.
 
-## Die drei Layer
+**WICHTIG:** Gedächtnistopologie ist kein Mythensammler. Es ist ein **Forschungsinstrument zur Analyse der Rückkopplung zwischen faktischer Ebene und narrativer Ebene**.
 
-### 1. Factual Layer (factual_events.json)
+---
 
-Enthält faktische historische Ereignisse mit:
-- Eindeutiger Ereignis-ID
-- Zeitangaben
-- Geographische Region
-- Ereignistyp (Naturkatastrophe, Machtwechsel, Klimabruch, etc.)
-- Quellenangaben
-- Sicherheitsgrad der historischen Rekonstruktion
+## KERNHYPOTHESE
+
+> **Narrative Verdichtungen entstehen gehäuft in historischen Umbruchphasen und dienen der kollektiven Selbstregulation.**
+
+Langfristiges Ziel: Transparenz der Dynamik zwischen Fakt und Narrativ zur Förderung von Differenzierung und Konfliktlösung durch Erkenntnis.
+
+---
+
+## Zwei Ebenen + Dynamik
+
+### 1. Faktischer Layer (factual_events.json)
+
+Enthält historisch rekonstruierbare Ereignisse:
+- Ereignisse, Brüche, Transformationen
+- Mit Quellenbeleg und Zeit-Raum-Verortung
+- Certainty-Level explizit ausweisbar
 
 **Wertebereich certainty_level:** `high | medium | low | unknown`
 
-### 2. Narrative Layer (narrative_structures.json)
+### 2. Narrativer Layer (narrative_structures.json)
 
-Enthält narrative Verdichtungen und Mythen mit:
-- Eindeutiger Narrativ-ID
-- Titel der Erzählung
-- Kulturraum
-- Entstehungszeitpunkt
-- Kernmotive
-- Symbolische Funktionen
-- Primäre Quellen
-- Narrativer Typus
+Enthält kulturelle Verdichtungsformen:
+- Mythen, Legenden, symbolische Deutungen
+- Kernmotive und symbolische Funktionen
+- Kulturräume und Emergenzzeiten
 
-### 3. Projection Nodes (projection_nodes.json)
+### 3. Die Analyse-Dynamik
 
-Projektionsknoten sind Verdichtungsstellen, an denen Fakt und Narrativ über Transformationsprozesse gekoppelt werden. Sie enthalten:
+Gedächtnistopologie analysiert die **Transformationsdynamik** zwischen diesen Ebenen.
+
+---
+
+## Funktion von Narrativen
+
+Narrative werden nicht als wahr oder falsch klassifiziert, sondern als **regulatorische Strukturen** verstanden.
+
+### Transformationsfunktionen
+
+Das Modul untersucht folgende Transformationsmechanismen:
+
+| Funktion | Beschreibung |
+|----------|--------------|
+| `trauma_compression` | Katastrophale Ereignisse werden in verdichtete Symbolik transformiert |
+| `moral_parable` | Historische Ereignisse werden zu moralischen Lehrgeschichten umgeformt |
+| `identity_stabilization` | Ereignisse werden zur Selbstvergewisserung einer Gruppe narrativiert |
+| `power_legitimation` | Machtverhältnisse werden durch mythische Erzählungen gerechtfertigt |
+| `symbolic_elevation` | Profane Ereignisse werden in sakralisierte Symbolik transformiert |
+| `mythic_synthesis` | Mehrere faktische Ereignisse werden zu einer mythischen Erzählung verschmolzen |
+| `memory_distortion` | Ungünstige Fakten werden durch narrativ günstigere Versionen ersetzt |
+
+**Wertebereich confidence_level:** `high | medium | low | speculative`
+
+---
+
+## WICHTIGE Unterscheidung
+
+### Was das Modul dient zu:
+
+- ✓ Fakt und Narrativ unterscheidbar zu machen
+- ✓ Ihre Wechselwirkung sichtbar zu machen
+- ✓ Projektionen als solche erkennbar zu machen
+- ✓ Transformationsdynamiken analysierbar zu machen
+
+### Was das Modul NICHT dient zu:
+
+- ✗ Mythen zu widerlegen
+- ✗ Wahrheitsansprüche zu bewerten
+- ✗ Alternative Geschichtsthesen zu beweisen
+- ✗ Narrative als "falsch" zu entlarven
+
+---
+
+## Struktur des Moduls
+
+### Projection Nodes (projection_nodes.json)
+
+Projektionsknoten sind Verdichtungsstellen, an denen Fakt und Narrativ gekoppelt werden:
+
 - Eindeutige Knoten-ID
 - Konzept/Begriff (z.B. Atlantis)
 - Erste bekannte Quelle
@@ -44,11 +97,10 @@ Projektionsknoten sind Verdichtungsstellen, an denen Fakt und Narrativ über Tra
 - Identitätsladung
 - Anmerkungen
 
-## Transformation Links
+### Transformation Links (transformation_links.json)
 
-Transformation_links beschreiben die vermutete Verarbeitungsdynamik zwischen factual_layer, narrative_layer und projection_nodes.
+Beschreiben die vermutete Verarbeitungsdynamik zwischen den Layern:
 
-**Struktur:**
 - Eindeutige Link-ID
 - Referenz auf projection_node_id
 - Referenz auf factual_event_id
@@ -57,40 +109,54 @@ Transformation_links beschreiben die vermutete Verarbeitungsdynamik zwischen fac
 - Verarbeitungshypothese
 - Konfidenzniveau
 
-**Wertebereich confidence_level:** `high | medium | low | speculative`
+---
 
-**Erlaubte transformation_type Werte:**
-- `trauma_compression` - Traumakomprimierung
-- `moral_parable` - Moralische Parabel
-- `identity_stabilization` - Identitätsstabilisierung
-- `power_legitimation` - Machlegitimation
-- `memory_distortion` - Gedächtnisverzerrung
-- `symbolic_elevation` - Symbolische Erhöhung
-- `mythic_synthesis` - Mythische Synthese
-- `speculative` - Spekulativ
+## Forschungsausrichtung
 
-## Unterschied zum Mythos-Modul
+### Phase 1: Forschungsinstrument
 
-Dieses Modul ist **keine Sammlung von Mythen**. Es ist ein **Analysemodul für Transformationsdynamiken** zwischen Fakt und Narrativ.
+Das Modul dient primär als **Forschungsinstrument zur Modellierung kollektiver Selbstregulationsprozesse**.
 
-Während das Mythos-Modul (`modules/mythos_und_verwaltung`) Mythen als kulturelle Phänomene dokumentiert, analysiert die Gedächtnistopologie **wie und warum** faktische Ereignisse in narrative Formen transformiert werden.
+Es ermöglicht:
+- Systematisches Tracking von Ereignis-Narrativ-Paaren
+- Longitudinalanalyse von Projektionsknoten-Dichten
+- Cross-cultural comparison von Transformationsmustern
 
-## Forschungshypothese
+### Langfristige Perspektive: Bewusstseinswerkzeug
 
-> "Projektionsknoten treten gehäuft in historischen Umbruchphasen auf und dienen als narrative Verdichtungsstellen kollektiver Verarbeitung."
+**Erkenntnisbasierte Differenzierung als Beitrag zur Konfliktlösung**
 
-Diese Hypothese wird durch das Modul systematisch überprüfbar gemacht, indem:
-1. Faktische Ereignisse dokumentiert werden
-2. Narrative Strukturen erfasst werden
-3. Projektionsknoten als Transformationsorte identifiziert werden
-4. Die Verbindungsdynamik explizit modelliert wird
+Durch die strukturelle Analyse der Dynamik zwischen Fakt und Narrativ soll:
+- Die Unterscheidbarkeit von Fakt und Projektion geschärft werden
+- Die regulatorischen Funktionen von Narrativen transparent werden
+- Ein Beitrag zur Konfliktlösung durch Differenzierung geleistet werden
+
+---
+
+## Abgrenzung zu anderen Modulen
+
+### vs. Mythos-Modul (`modules/mythos_und_verwaltung`)
+
+- **Mythos-Modul:** Dokumentiert Mythen als kulturelle Phänomene
+- **Gedächtnistopologie:** Analysiert die Transformationsdynamik zwischen Fakt und Narrativ
+
+### vs. Krisenanalyse (`data/crisis_analysis/`)
+
+- **Krisenanalyse:** Identifiziert pre-disruptive tension periods
+- **Gedächtnistopologie:** Untersucht, wie diese Phasen narrative Verdichtungen erzeugen
+
+---
 
 ## Verwendung
 
 Das Modul ermöglicht es, Pilotfälle (z.B. Atlantis) systematisch einzupflegen und die Transformationsdynamik zwischen Fakt und Narrativ sichtbar zu machen.
 
+**Architektur-Referenz:** `architecture/DP-006-gedaechtnistopologie.json`
+
+---
+
 **Status:** PROTOTYPE
 
-**Version:** 0.1.0
+**Version:** 0.2.0
 
 **Letztes Update:** 2026-02-16

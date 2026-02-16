@@ -1,9 +1,9 @@
 {
   "module_id": "gedaechtnistopologie",
   "title": "Gedächtnistopologie",
-  "index_version": "0.1.0",
+  "index_version": "0.2.0",
   "status": "prototype",
-  "description": "Modellierung der strukturellen Verbindung zwischen faktischen Ereignissen und narrativen Verdichtungen über Projektionsknoten.",
+  "description": "Methodisches Analyseinstrument zur Untersuchung der Rückkopplungen zwischen faktischen historischen Brüchen und narrativen Verdichtungen. Forschungsausrichtung: Analyse kollektiver Selbstregulation durch narrative Transformation.",
   "layers": [
     "factual_layer",
     "narrative_layer",
