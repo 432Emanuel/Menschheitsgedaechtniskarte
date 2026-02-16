@@ -168,6 +168,10 @@
     {
       "id": "MARK-MISSION-DECLARE-0001",
       "file": "items/MARK-MISSION-DECLARE-0001.json"
+    },
+    {
+      "id": "PROJ-CONT-ATLANTIS-001",
+      "file": "items/projection_container_atlantis.json"
     }
   ]
 }
