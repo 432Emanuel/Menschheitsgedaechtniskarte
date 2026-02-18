@@ -2,7 +2,7 @@
   "index_id": "IDX-CANDIDATES-0001",
   "scope": "shared/candidates",
   "version": "0.2.0",
-  "updated_at": "2026-02-01",
+  "updated_at": "2026-02-18",
   "rubric_id": "RUB-URKNOTEN-PATTERNS-0001",
   "pattern_module": "modules/mythos_und_verwaltung",
   "patterns_available": [
@@ -20,10 +20,10 @@
     }
   ],
   "counts": {
-    "total": 16,
+    "total": 17,
     "by_status": {
       "merkzettel": 1,
-      "candidate": 15,
+      "candidate": 16,
       "shortlisted": 0,
       "promoted": 0,
       "rejected": 0
@@ -126,6 +126,14 @@
       "status": "merkzettel",
       "candidate_type": "knotenpunkt",
       "speaker": "Friedemann Voigt",
+      "linked_patterns": []
+    },
+    {
+      "id": "CAND-TEMPORAL-CONVERGENCE-2012-0001",
+      "title": "Temporal Convergence Node – 2012",
+      "status": "candidate",
+      "candidate_type": "knotenpunkt",
+      "source_type": "zeitgeist",
       "linked_patterns": []
     }
   ]

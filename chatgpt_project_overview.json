@@ -13,9 +13,9 @@
     },
     "repository": {
       "url": "https://github.com/432Emanuel/Menschheitsged-chtniskarte.git",
-      "latest_commit": "120c12a56f2c5d41376f7413e1c96e2f9c7dc214"
+      "latest_commit": "f34c4b4f3ed621c7230acfdf3e2393c090e83b90"
     },
-    "last_updated": "2026-02-05",
+    "last_updated": "2026-02-18",
     "version": "1.0.0",
     "language": "de/en (bilingual project)"
   },
@@ -30,6 +30,8 @@
       "Zeitgeist-Module für zeitgenössische Phänomene",
       "Familienmodul als anthropologische Konstante",
       "Mythos & Verwaltung als Strukturierungs-Pattern",
+      "Gedächtnistopologie für strukturelle Analyse",
+      "Crisis Analysis für prädisruptive Spannungsperioden",
       "Knowledge-Base mit archäoastronomischen Orten",
       "Human Cartography für individuelle Perspektiven"
     ],
@@ -144,25 +146,33 @@
       "active_narratives": [
         "MUV-NAR-GILGAMESH-0001 (Gilgamesh Epic - Urknoten)"
       ],
-      "note": "Drei Kern-Pattern dienen zur Strukturierung der 15 Kandidaten im shared/candidates Verzeichnis"
+      "note": "Drei Kern-Pattern dienen zur Strukturierung der 17 Kandidaten im shared/candidates Verzeichnis"
+    },
+    "modules_gedaechtnistopologie": {
+      "description": "Gedächtnistopologie für strukturelle Analyse historischer und zeitgenössischer Phänomene",
+      "index_file": "modules/gedaechtnistopologie/index.json",
+      "status": "active",
+      "components": [
+        "factual_events.json (Faktische Ereignisse)",
+        "narrative_structures.json (Narrative Strukturen)",
+        "projection_nodes.json (Projektionsknoten)",
+        "transformation_links.json (Transformationsverbindungen)"
+      ],
+      "note": "Strukturelle Analyse von Bruchlinien, Übergängen und Resonanzen"
     }
   },
   "data_structure": {
     "data": {
-      "description": "NEUE Datenstruktur mit analytischen Modulen",
+      "description": "Datenstruktur mit analytischen Modulen",
       "subdirectories": {
         "sources": {
           "description": "Quellen-Datenbank mit epistemischer Trennung (TXT=Quelle, JSON=Hülle)",
           "files": [
-            "index.json",
+            "index.json (13 Quellen: 5 Podcasts, 8 Transkripte)",
             "README.md",
-            "transcripts/raw/ (19 Transkripte: 5 vom Kongress Rätsel der Antarktis-Kartografie 2020, 1 Inuit-Interview, 14 weitere Quellen mit UNK-Markierung)",
-            "transcripts/raw/SRC-TRANSCRIPT-DE-2020-001.txt bis SRC-TRANSCRIPT-DE-2020-005.txt (Kongress Transkripte)",
-            "transcripts/raw/SRC-INUIT-NUOVISO-2025-01.txt (Inuit-Interview)",
-            "transcripts/raw/SRC-TRANSCRIPT-UNK-UNK-006.txt bis SRC-TRANSCRIPT-UNK-UNK-019.txt (14 Quellen ohne Jahres-/Regionsinformation)",
-            "transcripts/metadata/ (22 Metadaten-Dateien: alle Transkripte mit .meta.json)",
-            "podcast_transcripts/engel_daemonen_home_office_616_source.json",
-            "podcast_transcripts/alpha_omega_kirchengespraech_2024.json"
+            "transcripts/raw/ (20 Transkripte: 5 Kongress Antarktis-Kartografie 2020, 1 Inuit-Interview, 8 weitere UNK-Quellen, 6 Cluster-Quellen)",
+            "transcripts/metadata/ (28 Metadaten-Dateien)",
+            "podcast_transcripts/ (5 Podcast-Quellen)"
           ]
         },
         "human_cartography": {
@@ -185,11 +195,35 @@
             "meta_patterns/node_candidates.json",
             "meta_patterns/ML_TRUTH_EMERGENCE_001.json",
             "meta_patterns/L_SCALE_PROJECTION_001.json (Skalierung & Projektion)",
+            "meta_patterns/L_ATTACHMENT-OSCILLATION-001.json",
+            "meta_patterns/L_PROJECTION-CARTOGRAPHY-001.json",
+            "pre_narrative_resonance/resonance_primitives.json",
+            "pre_narrative_resonance/index.json",
+            "pre_narrative_resonance/README.md",
             "resonance_strands/README.md",
             "resonance_strands/strands/RS-IRS-EMANUEL-ARCHASTRO-0001.json",
             "lens_sketches/resonanzbasierte_intelligenzkopplung.json",
             "lens_sketches/drafts/README.md"
           ]
+        },
+        "crisis_analysis": {
+          "description": "Analyse prädisruptiver Spannungsperioden",
+          "subdirectories": {
+            "pre_disruptive_tension_periods": {
+              "description": "Drei historische Perioden mit strukturellen Mustern",
+              "files": [
+                "schema_definition.json",
+                "README.md",
+                "VALIDATION_CONSISTENCY_REPORT.md",
+                "COMPARATIVE_ANALYSIS_1998-2001_vs_1925-1939.md"
+              ],
+              "periods": [
+                "1765-1794 (Französische Revolution)",
+                "1925-1939 (Weimarer Republik → NS-Zeit)",
+                "1990-2001 (Post-Kalter Krieg → 9/11)"
+              ]
+            }
+          }
         },
         "modules/build_on_old": {
           "description": "Analytische Lenses und Konzepte für Legacy-Integration",
@@ -276,9 +310,17 @@
             "cartography/maps/MAP-WORLD-CANTINO-1502.json (Späteste Karte)"
           ]
         },
+        "analysis": {
+          "description": "Analyse-Dokumente",
+          "files": [
+            "README.md",
+            "ANA-TEMPORAL-CONVERGENCE-COMPARISON-0001.md (2012-Analyse)"
+          ]
+        },
         "contemporary_cases": {
           "files": [
             "ZG-CB-DE-2020-01.md (Beispiel)",
+            "ZG-CB-GLOBAL-2026-ROLE-IDENTITY-001.md",
             "bewertungsmatrix_skizze.txt"
           ]
         },
@@ -315,7 +357,10 @@
         "README.md",
         "DP-001-anthropologische-erkenntnisarchitektur.json",
         "DP-002-epistemische-haltung.json",
-        "DP-003-thorus-operating-loop.json"
+        "DP-003-thorus-operating-loop.json",
+        "DP-004-bekenntnis-mission.json",
+        "DP-005-gedaechtnistopologie.json",
+        "DP-006-gedaechtnistopologie.json"
       ],
       "principle": "Anthropologische Erkenntnisarchitektur (Körper-Geist-Seele Modell)",
       "levels": [
@@ -348,15 +393,15 @@
   },
   "shared_resources": {
     "candidates": {
-      "description": "16 Kandidaten (15 mythologische + 1 Merkzettel) für Mythos-Modul und Zeitzeugen",
+      "description": "17 Kandidaten (16 mythologische + 1 zeitgeistbezogener Knotenpunkt) für Mythos-Modul und Zeitzeugen",
       "directory": "shared/candidates/items/",
-      "count": 16,
+      "count": 17,
       "index": "shared/candidates/candidate_index.json",
       "template": "shared/candidates/template_candidate.json",
       "types": [
         "modul: Klassische Modul-Kandidaten (15)",
         "zeitzeuge: Potenzielle Zeitzeugen",
-        "knotenpunkt: Themen-Knotenpunkte und Brückenperspektiven"
+        "knotenpunkt: Themen-Knotenpunkte und Brückenperspektiven (2)"
       ],
       "workflow": [
         "merkzettel → candidate → shortlisted → promoted → rejected"
@@ -385,7 +430,8 @@
         "CAND-SUNDIATA-0001 (Sundiata)",
         "CAND-BALDUR-0001 (Baldur)",
         "CAND-HIAWATHA-0001 (Hiawatha)",
-        "CAND-REL-ECON-001 (Friedemann Voigt - Merkzettel/Knotenpunkt)"
+        "CAND-REL-ECON-001 (Friedemann Voigt - Merkzettel/Knotenpunkt)",
+        "CAND-TEMPORAL-CONVERGENCE-2012-0001 (2012 als temporaler Verdichtungsknoten)"
       ]
     },
     "rubrics": {
@@ -410,32 +456,57 @@
         "README.md",
         "resonance_strands/resonance_strands_overlay.schema.json",
         "resonance_strands/RS_strand.schema.json",
-        "resonance_strands/strand_vocab.json"
+        "resonance_strands/strand_vocab.json",
+        "epistemic_documents/"
       ]
     },
     "markers": {
-      "description": "Marker für Resonanz- und Strukturanalyse",
+      "description": "Marker für Resonanz- und Strukturanalyse (43 Marker)",
       "directory": "shared/markers/",
       "files": [
         "README.md",
         "template_marker.json",
         "marker_index.json",
-        "items/MARK-000001.json",
-        "items/MARK-000002.json",
-        "items/MARK-000003.json",
-        "items/MARK-000004.json",
-        "items/MARK-000005.json",
-        "items/MARK-000006.json",
-        "items/MARK-000007.json (Geschlossene Erkenntnisschleife)",
-        "items/MARK-000008.json (Projektionscontainer)",
-        "items/MARK-000009.json (Symbolische Überfrachtung)",
-        "items/MARK-000010.json",
-        "items/MARK-000011.json",
-        "items/MARK-000012.json",
-        "items/MARK-000013.json",
-        "items/MARK-000014.json",
-        "items/LM_CORONA_KI_001.json"
-      ]
+        "items/MARK-000001.json bis MARK-000015.json (15 Basis-Marker)",
+        "items/LM_CORONA_KI_001.json",
+        "items/MARK-TRANSITION-INITIATION-001.json",
+        "items/MARK-DESILLUSIONMENT-BREAK-001.json",
+        "items/MARK-BOUNDARY-OF-KNOWLEDGE-001.json",
+        "items/MARK-ANTI-SIMPLIFICATION-001.json",
+        "items/MARK-PROJECTIVE-CONTAINER-001.json",
+        "items/MARK-SYMBOLIC-OVERLOAD-001.json",
+        "items/MARK-TRADITION-PRESERVATION-001.json",
+        "items/MARK-KNOWLEDGE-AS-FLAME-001.json",
+        "items/MARK-ANTI-SENSATIONALISM-001.json",
+        "items/MARK-AUTHORIAL-LEGITIMATION-001.json",
+        "items/MARK-PROJ-TOTAL-NETWORK-001.json",
+        "items/MARK-PROJ-MORAL-INVERSION-001.json",
+        "items/MARK-PROJ-INITIATION-NEID-001.json",
+        "items/MARK-PROJ-NETWORK-CRIM-001.json",
+        "items/MARK-PROJ-EPI-SELF-001.json",
+        "items/MARK-PROJ-NON-FALSIF-001.json",
+        "items/MARK-PROJ-ENDLESS-INIT-001.json",
+        "items/MARK-PROJ-COMPLEX-ENEMY-001.json",
+        "items/MARK-DIAL-PROJ-IMMUN-001.json",
+        "items/MARK-DIAL-PROJ-INT-SEL-001.json",
+        "items/MARK-DIAL-PROJ-MIGR-001.json",
+        "items/MARK-DIAL-PROJ-ABWERT-001.json",
+        "items/MARK-DIAL-PROJ-ESCAL-001.json",
+        "items/MARK-DIAL-PROJ-AGREE-001.json",
+        "items/MARK-DIAL-PROJ-AFFECT-001.json",
+        "items/MARK-MISSION-DECLARE-0001.json",
+        "items/projection_container_atlantis.json",
+        "items/MARK-NARRATIVE-CONDENSATION-0001.json"
+      ],
+      "categories": {
+        "basis_marker": 15,
+        "uebergangsmarker": 5,
+        "symbolik_marker": 5,
+        "projektions_cluster": 9,
+        "dialog_projektionen": 7,
+        "mission": 1,
+        "spezial": 2
+      }
     },
     "vocabularies": {
       "description": "Gemeinsame Vokabulare und Tags",
@@ -447,7 +518,7 @@
   },
   "tooling": {
     "src": {
-      "description": "NEU: Standard-Tooling und Validierung",
+      "description": "Standard-Tooling und Validierung",
       "status": "active",
       "files": [
         "README.md"
@@ -494,7 +565,8 @@
       "modules.*.module_count": "Anzahl der Module aktualisieren",
       "modules.*.modules": "Modul-Listen aktualisieren",
       "data_structure.*": "Neue Dateien/Verzeichnisse hinzufügen",
-      "shared_resources.candidates.count": "Anzahl der Kandidaten aktualisieren"
+      "shared_resources.candidates.count": "Anzahl der Kandidaten aktualisieren",
+      "shared_resources.markers": "Marker-Anzahl und Kategorien aktualisieren"
     },
     "maintenance_notes": [
       "Diese Datei sollte immer auf dem neuesten Stand gehalten werden",
@@ -541,7 +613,8 @@
       "Wie ist die Datenstruktur aufgebaut?",
       "Wie füge ich einen neuen Kandidaten hinzu?",
       "Wie werden die Zeitgeist-Module verwendet?",
-      "Welche offenen Forschungsfragen gibt es?"
+      "Welche offenen Forschungsfragen gibt es?",
+      "Was ist die Gedächtnistopologie?"
     ],
     "related_files": {
       "research_questions": "research_questions.json",
@@ -549,76 +622,55 @@
     }
   },
   "delta_since_last_update": {
-    "last_update_date": "2026-02-05",
-    "update_description": "Umbenennung von 14 Transkripten nach MGK-Benennungsrichtlinien (SRC-TRANSCRIPT-UNK-UNK-XXX) und Erstellung von 14 Metadaten-Dateien",
-    "git_commit": "86a1d100a0598d6ce4a16c8f8e4999dafdf315ca",
+    "last_update_date": "2026-02-18",
+    "update_description": "Erweiterung um Gedaechtnistopologie-Modul, Crisis Analysis, neue Marker-Kategorien und 2012-Temporal-Convergence-Kandidat",
+    "git_commit": "f34c4b4f3ed621c7230acfdf3e2393c090e83b90",
     "updated_sections": [
-      "meta: Datum auf 2026-02-05 aktualisiert",
-      "shared_resources.candidates: count auf 16 erhöht, types und workflow hinzugefügt",
-      "shared_resources.markers: 8 neue Marker (MARK-000007 bis MARK-000014) ergänzt",
-      "data_structure: data/sources mit Transkript-Datenbank hinzugefügt",
-      "data_structure: knowledge/epistemic_documents mit 21 historischen Weltkarten erweitert",
-      "data_structure: human_cartography, lenses, knowledge/contemporary_cases, knowledge/crisis_analysis hinzugefügt",
-      "shared_resources: schemas, markers mit vollständiger Dateiliste ergänzt",
-      "zeitgeist_module: contemporary_cases mit index und cases (DE, VE) erweitert",
-      "modules_imperium: example_files mit allen Entity-Typen hinzugefügt",
-      "modules_mythos_und_verwaltung: institutions und documents example_files ergänzt",
-      "tooling: src/README.md und pattern_lenses/README.md hinzugefügt",
-      "architecture: README.md und DP-002-epistemische-haltung.json ergänzt",
-      "file_structure_overview: In root_level_files und root_level_directories aufgeteilt"
+      "meta: Datum auf 2026-02-18 aktualisiert",
+      "shared_resources.candidates: count auf 17 erhöht (neu: CAND-TEMPORAL-CONVERGENCE-2012-0001)",
+      "shared_resources.markers: 43 Marker mit neuen Kategorien (Übergangsmarker, Symbolik-Marker, Projektions-Cluster, Dialog-Projektionen, Mission, Spezial)",
+      "data_structure: data/crisis_analysis/pre_disruptive_tension_periods mit drei Perioden hinzugefügt",
+      "data_structure: data/lenses/pre_narrative_resonance hinzugefügt",
+      "data_structure: data/sources auf 13 Quellen erweitert (neu: Tzolkin-Transkript)",
+      "data_structure: knowledge/analysis mit Analyse-Dokumenten hinzugefügt",
+      "modules: modules_gedaechtnistopologie neu hinzugefügt",
+      "architecture_and_interface: DP-004, DP-005, DP-006 hinzugefügt"
     ],
     "new_modules": [
-      "data/sources (Quellen-Datenbank mit epistemischer Trennung)",
-      "data/layers/meta (Meta-Layers für entpersonalisierte Typologien)",
-      "data/meta_agents (Meta-Agenten für epistemische Trigger)",
-      "data/zeitgeist_witnesses (Zeitzeugen mit Perspektiv-Typisierung)",
-      "knowledge/epistemic_documents (Epistemische Dokumente mit historischer Kartografie)"
+      "modules/gedaechtnistopologie (Strukturelle Analyse von Ereignissen, Narrativen, Projektionen und Transformationen)",
+      "data/crisis_analysis/pre_disruptive_tension_periods (Drei historische Perioden: 1765-1794, 1925-1939, 1990-2001)",
+      "data/lenses/pre_narrative_resonance (Analyse pränarrativer Resonanzen)",
+      "knowledge/analysis (Analyse-Dokumente)"
     ],
     "updated_modules": [
-      "shared/candidates (Merkzettel-System integriert)",
-      "data/lenses/meta_patterns (L_SCALE_PROJECTION_001 hinzugefügt)",
-      "data/zeitgeist_witnesses (TZ-REL-RBT, TZ-REL-ELS, TZ-REL-VALUES-EXIT-DE-2026, TZ-REL-VALUES-EXIT-DE-2024-002, TZ-REL-ENGAGED-REFORM-DE-2026, TZ-IND-KUNUK-2025-01 hinzugefügt)",
-      "data/layers/meta (L-META-REL-DEUTUNG-001 hinzugefügt)",
-      "data/meta_agents (META-FRK-001 hinzugefügt)",
-      "shared/markers (8 neue Marker für epistemische Risiken)",
-      "shared_resources (markers und schemas hinzugefügt)",
-      "zeitgeist_module (contemporary_cases erweitert)",
-      "modules_imperium (example_files hinzugefügt)",
-      "modules_mythos_und_verwaltung (example_files ergänzt)",
-      "tooling (src/ erweitert)",
-      "architecture_and_interface (files ergänzt)"
+      "shared/candidates (CAND-TEMPORAL-CONVERGENCE-2012-0001 hinzugefügt)",
+      "shared/markers (43 Marker mit neuen Kategorien)",
+      "data/sources (13 Quellen, neu: SRC-TRANSCRIPT-DE-UNK-TZOLKIN-0001)",
+      "data/lenses/meta_patterns (L_ATTACHMENT-OSCILLATION-001, L_PROJECTION-CARTOGRAPHY-001 hinzugefügt)",
+      "architecture (DP-004, DP-005, DP-006 hinzugefügt)"
     ],
+    "new_marker_categories": {
+      "uebergangsmarker": 5,
+      "symbolik_marker": 5,
+      "projektions_cluster": 9,
+      "dialog_projektionen": 7,
+      "mission": 1,
+      "spezial": 2
+    },
     "new_data_areas": [
-      "data/sources/transcripts (5 Transkripte vom Kongress Rätsel der Antarktis-Kartografie 2020)",
-      "data/sources/podcast_transcripts (2 Podcast-Quellen)",
-      "knowledge/epistemic_documents/cartography/maps (21 historische Weltkarten)",
-      "data/crisis_analysis/covid_2020 (vollständige Struktur)",
-      "data/human_cartography/overlays/resonance_strands",
-      "data/lenses/resonance_strands",
-      "shared/markers (vollständige Marker-Struktur)",
-      "shared/schemas/resonance_strands",
-      "shared/schemas/epistemic_documents"
+      "modules/gedaechtnistopologie/ (factual_events.json, narrative_structures.json, projection_nodes.json, transformation_links.json)",
+      "data/crisis_analysis/pre_disruptive_tension_periods/ (drei Perioden mit vollständiger Struktur)",
+      "data/lenses/pre_narrative_resonance/",
+      "knowledge/analysis/ANA-TEMPORAL-CONVERGENCE-COMPARISON-0001.md"
     ],
     "new_cases": [
-      "zeitgeist_module/ZG-CB-contemporary-cases/cases/DE/ZG-CB-DE-2026-01.md",
-      "zeitgeist_module/ZG-CB-contemporary-cases/cases/VE/ZG-CB-VE-2026-01.json",
-      "zeitgeist_module/ZG-CB-contemporary-cases/cases/VE/ZG-CB-VE-2026-01.md"
-    ],
-    "new_witnesses": [
-      "data/zeitgeist_witnesses/TZ-IND-KUNUK-2025-01.json (Inuit-Perspektive auf Trumps Grönland-Pläne, koloniale Disruption und spirituelle Selbstbestimmung)"
+      "CAND-TEMPORAL-CONVERGENCE-2012-0001 (2012 als temporaler Verdichtungsknoten)"
     ],
     "new_sources": [
-      "data/sources/transcripts/raw/SRC-INUIT-NUOVISO-2025-01.txt (Inuit-Interview Transkript)",
-      "data/sources/transcripts/metadata/SRC-INUIT-NUOVISO-2025-01.meta.json",
-      "data/sources/transcripts/raw/SRC-TRANSCRIPT-UNK-UNK-006.txt bis SRC-TRANSCRIPT-UNK-UNK-019.txt (14 umbenannte Transkripte)",
-      "data/sources/transcripts/metadata/SRC-TRANSCRIPT-UNK-UNK-006.meta.json bis SRC-TRANSCRIPT-UNK-UNK-019.meta.json (14 neue Metadaten-Dateien)"
+      "data/sources/transcripts/raw/SRC-TRANSCRIPT-DE-UNK-TZOLKIN-0001.txt (Tzolkin-Dokumentar-Transkript)",
+      "data/sources/transcripts/metadata/SRC-TRANSCRIPT-DE-UNK-TZOLKIN-0001.meta.json"
     ],
-    "renamed_sources": [
-      "14 Transkripte nach MGK-Benennungskonvention umbenannt (SRC-TRANSCRIPT-UNK-UNK-XXX)",
-      "Umbenannt von ursprünglichen Dateinamen zu standardisiertem Format mit UNK-Markierung",
-      "Epistemische Prinzipien eingehalten: Keine Annahmen zu Jahr/Region"
-    ],
-    "new_files_count": "14 neue Metadaten-Dateien + 14 umbenannte Transkripte",
-    "status": "chatgpt_project_overview.json ist vollständig synchronisiert mit der erweiterten Quellen-Datenbank (19 Transkripte mit Metadaten), der historischen Kartografie-Kollektion, den erweiterten Zeitzeugen und der neuen indigenen Perspektive (TZ-IND-KUNUK-2025-01)"
+    "new_files_count": "43 Marker (erweitert von 15), 17 Kandidaten (erweitert von 16), 13 Quellen (erweitert von 12)",
+    "status": "chatgpt_project_overview.json ist vollständig aktualisiert mit allen Änderungen bis 2026-02-18"
   }
 }

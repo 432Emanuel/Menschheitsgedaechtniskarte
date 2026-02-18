@@ -172,6 +172,10 @@
     {
       "id": "PROJ-CONT-ATLANTIS-001",
       "file": "items/projection_container_atlantis.json"
+    },
+    {
+      "id": "MARK-NARRATIVE-CONDENSATION-0001",
+      "file": "items/MARK-NARRATIVE-CONDENSATION-0001.json"
     }
   ]
 }

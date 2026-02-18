@@ -2,7 +2,7 @@
   "type": "sources_index",
   "version": "1.0.0",
   "created_at": "2026-02-02",
-  "last_updated": "2026-02-05",
+  "last_updated": "2026-02-18",
   "description": "Zentrales Register aller Quellen im Menschheitsgedächtniskarte-Projekt",
   "categories": {
     "podcast_transcripts": {
@@ -65,7 +65,7 @@
     "transcripts": {
       "path": "transcripts",
       "description": "Rohtranskripte (Podcast, Vorträge, Interviews, Diskussionen)",
-      "count": 7,
+      "count": 8,
       "items": [
         {
           "id": "SRC-TRANSCRIPT-DE-2020-001",
@@ -135,12 +135,24 @@
           "file_path": "transcripts/raw/TZ-REL-FLEISCHHAUER-2021-001.txt",
           "metadata_path": "transcripts/metadata/TZ-REL-FLEISCHHAUER-2021-001.meta.json",
           "witness_id": "TZ-REL-FLEISCHHAUER-2021-001"
+        },
+        {
+          "id": "SRC-TRANSCRIPT-DE-UNK-TZOLKIN-0001",
+          "title": "Tzolkin – Die verborgene Ordnung der Zeit",
+          "type": "documentary_transcript",
+          "region": "global / deutschsprachiger Raum",
+          "estimated_year": "pre-2012",
+          "language": "de",
+          "file_path": "transcripts/raw/SRC-TRANSCRIPT-DE-UNK-TZOLKIN-0001.txt",
+          "metadata_path": "transcripts/metadata/SRC-TRANSCRIPT-DE-UNK-TZOLKIN-0001.meta.json",
+          "epistemic_layer": "zeitgeist_narrative",
+          "primary_domain": "temporal_cosmology"
         }
       ]
     }
   },
   "statistics": {
-    "total_sources": 12,
+    "total_sources": 13,
     "by_type": {
       "podcast_interview": 3,
       "podcast_dialog": 2,
@@ -149,13 +161,15 @@
       "interview": 1,
       "rede": 1,
       "explanatory_narrative": 1,
-      "livestream_q_and_a": 1
+      "livestream_q_and_a": 1,
+      "documentary_transcript": 1
     },
     "by_region": {
-      "DE": 12
+      "DE": 12,
+      "global": 1
     },
     "by_status": {
-      "raw": 7,
+      "raw": 8,
       "processed": 5,
       "integrated": 0
     },
