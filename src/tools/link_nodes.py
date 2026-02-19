@@ -16,7 +16,20 @@ import sys
 import argparse
 from pathlib import Path
 from datetime import datetime
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Any
+
+
+def get_canonical_id(obj: Dict[str, Any]) -> Optional[str]:
+    """Resolve canonical identifier from mixed key conventions."""
+    if not isinstance(obj, dict):
+        return None
+
+    for key in ("id", "node_id", "module_id"):
+        value = obj.get(key)
+        if isinstance(value, str) and value.strip():
+            return value.strip()
+
+    return None
 
 
 class NodeLinker:
@@ -25,6 +38,24 @@ class NodeLinker:
     def __init__(self, root_path: str = "."):
         self.root_path = Path(root_path).resolve()
         self.crosslinks_path = self.root_path / "shared" / "crosslinks"
+
+    def _warn_missing_canonical_id(self, file_path: Path, context: str, record: Any):
+        """Warn and skip a record that has no canonical identifier."""
+        keys = list(record.keys())[:6] if isinstance(record, dict) else []
+        key_info = f"keys={keys}" if keys else f"type={type(record).__name__}"
+        print(
+            f"Warning: Skipping record without canonical ID in {file_path} "
+            f"({context}; {key_info})"
+        )
+
+    def _append_canonical_id_or_warn(
+        self, target: List[str], file_path: Path, context: str, record: Any
+    ):
+        canonical_id = get_canonical_id(record)
+        if canonical_id:
+            target.append(canonical_id)
+        else:
+            self._warn_missing_canonical_id(file_path, context, record)
         
     def get_available_nodes(self) -> Dict[str, List[str]]:
         """Get all available nodes organized by module"""
@@ -43,8 +74,14 @@ class NodeLinker:
         if places_file.exists():
             with open(places_file, 'r', encoding='utf-8') as f:
                 data = json.load(f)
-                if isinstance(data, dict) and "nodes" in data:
-                    nodes["knowledge/places"] = [n["id"] for n in data["nodes"]]
+                if isinstance(data, dict) and isinstance(data.get("nodes"), list):
+                    for idx, node in enumerate(data["nodes"]):
+                        self._append_canonical_id_or_warn(
+                            nodes["knowledge/places"],
+                            places_file,
+                            f"nodes[{idx}]",
+                            node,
+                        )
         
         # Scan modules
         for module_path in ["modules/imperium", "modules/mythos_und_verwaltung"]:
@@ -53,24 +90,38 @@ class NodeLinker:
                 for json_file in module_dir.rglob("*.json"):
                     with open(json_file, 'r', encoding='utf-8') as f:
                         data = json.load(f)
-                        if isinstance(data, dict) and "id" in data:
-                            nodes[module_path].append(data["id"])
+                        if isinstance(data, dict):
+                            self._append_canonical_id_or_warn(
+                                nodes[module_path], json_file, "root", data
+                            )
         
         # Scan zeitgeist_module
         zg_index = self.root_path / "zeitgeist_module" / "Zeitgeist_index.json"
         if zg_index.exists():
             with open(zg_index, 'r', encoding='utf-8') as f:
                 data = json.load(f)
-                if "modules" in data:
-                    nodes["zeitgeist_module"] = [m["id"] for m in data["modules"]]
+                if isinstance(data, dict) and isinstance(data.get("modules"), list):
+                    for idx, module in enumerate(data["modules"]):
+                        self._append_canonical_id_or_warn(
+                            nodes["zeitgeist_module"],
+                            zg_index,
+                            f"modules[{idx}]",
+                            module,
+                        )
         
         # Scan family_module
         fm_index = self.root_path / "family_module" / "index.json"
         if fm_index.exists():
             with open(fm_index, 'r', encoding='utf-8') as f:
                 data = json.load(f)
-                if "modules" in data:
-                    nodes["family_module"] = [m["id"] for m in data["modules"]]
+                if isinstance(data, dict) and isinstance(data.get("modules"), list):
+                    for idx, module in enumerate(data["modules"]):
+                        self._append_canonical_id_or_warn(
+                            nodes["family_module"],
+                            fm_index,
+                            f"modules[{idx}]",
+                            module,
+                        )
         
         # Scan data/human_cartography
         hc_individuals = self.root_path / "data" / "human_cartography" / "individuals"
@@ -78,16 +129,27 @@ class NodeLinker:
             for json_file in hc_individuals.glob("*.json"):
                 with open(json_file, 'r', encoding='utf-8') as f:
                     data = json.load(f)
-                    if isinstance(data, dict) and "individual_id" in data:
-                        nodes["data/human_cartography"].append(data["individual_id"])
+                    if isinstance(data, dict):
+                        # Keep backwards compatibility with individual_id.
+                        individual_id = get_canonical_id(data) or data.get("individual_id")
+                        if isinstance(individual_id, str) and individual_id.strip():
+                            nodes["data/human_cartography"].append(individual_id.strip())
+                        else:
+                            self._warn_missing_canonical_id(json_file, "root", data)
         
         # Scan data/modules/build_on_old
         bol_concepts = self.root_path / "data" / "modules" / "build_on_old" / "concepts.json"
         if bol_concepts.exists():
             with open(bol_concepts, 'r', encoding='utf-8') as f:
                 data = json.load(f)
-                if isinstance(data, dict) and "concepts" in data:
-                    nodes["data/modules/build_on_old"] = [c["id"] for c in data["concepts"]]
+                if isinstance(data, dict) and isinstance(data.get("concepts"), list):
+                    for idx, concept in enumerate(data["concepts"]):
+                        self._append_canonical_id_or_warn(
+                            nodes["data/modules/build_on_old"],
+                            bol_concepts,
+                            f"concepts[{idx}]",
+                            concept,
+                        )
         
         return nodes
     
@@ -123,8 +185,7 @@ class NodeLinker:
             })
             
             # Generate ID if not provided
-            if "id" not in link_data:
-                link_data["id"] = f"LINK-{datetime.now().strftime('%Y%m%d%H%M%S')}"
+            link_data.setdefault("id", f"LINK-{datetime.now().strftime('%Y%m%d%H%M%S')}")
             
             # Add default strength
             if "strength" not in link_data:
@@ -172,9 +233,13 @@ class NodeLinker:
             with open(links_file, 'w', encoding='utf-8') as f:
                 json.dump(output_data, f, indent=2, ensure_ascii=False)
             
-            print(f"\n✓ Created link: {link_data['id']}")
-            print(f"  {link_data['source_id']} --[{link_data['link_type']}]--> {link_data['target_id']}")
-            print(f"  Strength: {link_data['strength']}")
+            print(f"\n✓ Created link: {link_data.get('id', 'unknown')}")
+            print(
+                f"  {link_data.get('source_id', 'unknown')} "
+                f"--[{link_data.get('link_type', 'unknown')}]--> "
+                f"{link_data.get('target_id', 'unknown')}"
+            )
+            print(f"  Strength: {link_data.get('strength', 'unknown')}")
             
             return True
             

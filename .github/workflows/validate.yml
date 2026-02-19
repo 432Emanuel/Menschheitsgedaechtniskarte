@@ -1,0 +1,80 @@
+name: Validate JSON
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+    branches: ['**']
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          pip install -r requirements.txt
+      
+      - name: Run JSON validator
+        run: |
+          python3 src/validate/validate_json.py --path . --json-report validate_report.json
+      
+      - name: Upload validation report
+        uses: actions/upload-artifact@v4
+        with:
+          name: validate_report
+          path: validate_report.json
+          retention-days: 30
+      
+      - name: Check validation results (strict gating)
+        run: python3 - <<'PY'
+      import json
+      import sys
+      
+      # Load validation report
+      with open('validate_report.json', 'r') as f:
+          report = json.load(f)
+      
+      metrics = report.get('metrics', {})
+      
+      # Extract key metrics
+      total = metrics.get('total_files_scanned', 0)
+      syntax_errors = metrics.get('syntax_errors', 0)
+      schema_invalid = metrics.get('schema_invalid', 0)
+      schema_valid = metrics.get('schema_valid', 0)
+      schema_missing = metrics.get('schema_missing', 0)
+      
+      # Print concise summary
+      print("=" * 60)
+      print("Validation Summary")
+      print("=" * 60)
+      print(f"Total files scanned: {total}")
+      print(f"Syntax errors:        {syntax_errors} {'✅' if syntax_errors == 0 else '❌'}")
+      print(f"Schema invalid:       {schema_invalid} {'✅' if schema_invalid == 0 else '❌'}")
+      print(f"Schema valid:         {schema_valid}")
+      print(f"Schema missing:       {schema_missing} ℹ️")
+      print("=" * 60)
+      
+      # Strict gating: FAIL on syntax_errors OR schema_invalid
+      # Do NOT fail on schema_missing (informational only)
+      if syntax_errors > 0:
+          print(f"❌ CI FAILED: {syntax_errors} files have syntax errors")
+          sys.exit(1)
+      
+      if schema_invalid > 0:
+          print(f"❌ CI FAILED: {schema_invalid} files have validation errors")
+          sys.exit(1)
+      
+      # If we get here, all critical checks passed
+      print("✅ CI PASSED: No critical errors detected")
+      sys.exit(0)
+      PY
