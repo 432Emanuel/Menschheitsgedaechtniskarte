@@ -7,10 +7,13 @@
     "persons": 1,
     "empires": 1,
     "places": 1,
-    "patterns": 1,
+    "patterns": 2,
     "timelines": 1,
     "comparisons": 1
   },
+  "patterns_active": [
+    "PAT-IMPERIAL-PRESENCE-0001"
+  ],
   "entities": {
     "persons": [
       {
@@ -34,6 +37,10 @@
       {
         "file": "patterns/example_pattern.json",
         "status": "example"
+      },
+      {
+        "file": "patterns/PAT-IMPERIAL-PRESENCE-0001.json",
+        "status": "active"
       }
     ],
     "timelines": [

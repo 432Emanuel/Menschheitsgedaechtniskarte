@@ -1,12 +1,18 @@
 [
   {
-    "event_id": "GT-FAC-0001",
-    "title": "",
-    "time_range": "",
-    "region": "",
-    "event_type": "",
-    "description": "",
+    "event_id": "GT-FAC-IMPERIAL-EXAMPLE-0001",
+    "title": "Example Imperial Infrastructure Activation",
+    "time_range": {
+      "start": "UNKNOWN",
+      "end": "UNKNOWN"
+    },
+    "region": "EXAMPLE-REGION",
+    "event_type": "infrastructure_activation",
+    "description": "Structural example event demonstrating how a factual_event can reference the Imperiale Präsenz pattern without introducing historical claims.",
+    "imperial_pattern": "PAT-IMPERIAL-PRESENCE-0001",
+    "detection_axes": ["roads"],
+    "evidence_modes": ["archaeology"],
     "sources": [],
-    "certainty_level": "high"
+    "certainty_level": "example"
   }
 ]

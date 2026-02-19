@@ -22,6 +22,11 @@
       "platform": "GitHub Actions",
       "workflow_file": ".github/workflows/validate.yml",
       "status": "active"
+    },
+    "statistics": {
+      "markdown_files": 126,
+      "json_files": 323,
+      "python_files": 6
     }
   },
   "project_status": {
@@ -29,7 +34,8 @@
     "status_indicators": {
       "structure": "🟢 Strukturphase abgeschlossen",
       "content": "🟡 Inhalte im Aufbau",
-      "international": "🔵 Internationale Perspektiven geplant"
+      "international": "🔵 Internationale Perspektiven geplant",
+      "ci_cd": "✅ CI/CD aktiv (GitHub Actions)"
     },
     "focus_areas": [
       "Zeitgeist-Module für zeitgenössische Phänomene",
@@ -38,7 +44,8 @@
       "Gedächtnistopologie für strukturelle Analyse",
       "Crisis Analysis für prädisruptive Spannungsperioden",
       "Knowledge-Base mit archäoastronomischen Orten",
-      "Human Cartography für individuelle Perspektiven"
+      "Human Cartography für individuelle Perspektiven",
+      "Narrativökologie für Analyse von Narrativen als ökologische Systeme (NEU)"
     ],
     "principles": [
       "Keine Business-Logik",
@@ -164,6 +171,37 @@
         "transformation_links.json (Transformationsverbindungen)"
       ],
       "note": "Strukturelle Analyse von Bruchlinien, Übergängen und Resonanzen"
+    },
+    "modules_narrative_ecology": {
+      "description": "NEU: Narrativökologie zur Analyse von Narrativen als ökologische Systeme",
+      "index_file": "modules/narrative_ecology/index.json",
+      "module_id": "NE-001-narrative-ecology",
+      "status": "draft",
+      "created": "2026-02-18",
+      "modes": {
+        "analysis": {
+          "description": "Strukturelle Beobachtung von Narrativen (Abstand/Vogelperspektive)",
+          "focus": "Muster, Feedback-Loops, Macht-Mechanismen, Institutionalisierung, Dominanz-Zyklen"
+        },
+        "experiential": {
+          "description": "Persönliche Auseinandersetzung mit Narrativen (Resonanz/Innenperspektive)",
+          "focus": "Resonanz, Selbst-Narrativ-Mapping, Konflikt-Spiegel, Austritts-Experimente"
+        }
+      },
+      "principles": [
+        "Wegweiser steht Richtung Klarheit; Outcome bleibt frei",
+        "Strukturbeobachtend, nicht normativ",
+        "Keine politische Agenda",
+        "Ökologische Metapher: Myzel, Pfade, Lichtungen"
+      ],
+      "schema": "modules/narrative_ecology/schema/narrative_collection.schema.json",
+      "linked_modules": [
+        "ZG-001-memory-loss",
+        "ZG-002-order-powerlessness",
+        "ZG-003-ritual-relief",
+        "ZG-004-transition-initiation",
+        "ZG-005-mythos-administration"
+      ]
     }
   },
   "data_structure": {
@@ -199,9 +237,13 @@
             "meta_patterns/README.md",
             "meta_patterns/node_candidates.json",
             "meta_patterns/ML_TRUTH_EMERGENCE_001.json",
-            "meta_patterns/L_SCALE_PROJECTION_001.json (Skalierung & Projektion)",
+            "meta_patterns/L_SCALE_PROJECTION_001.json",
             "meta_patterns/L_ATTACHMENT-OSCILLATION-001.json",
             "meta_patterns/L_PROJECTION-CARTOGRAPHY-001.json",
+            "meta_patterns/L_LABELING-DYNAMICS-001.json (NEU: Etikettierungs-Dynamik)",
+            "meta_patterns/ML_PERSPECTIVE_RESPONSIBILITY_001.json (NEU)",
+            "meta_patterns/ML_SELF_PROTECT_DARK_TOPICS_001.json (NEU)",
+            "label_instances/ (NEU: 11 Label-Instanzen)",
             "pre_narrative_resonance/resonance_primitives.json",
             "pre_narrative_resonance/index.json",
             "pre_narrative_resonance/README.md",
@@ -555,6 +597,17 @@
         "LEGACY.md"
       ],
       "note": "Siehe tooling/LEGACY.md für Migrationshinweise"
+    },
+    "ci_cd": {
+      "description": "GitHub Actions Workflow für automatisierte JSON-Validierung",
+      "file": ".github/workflows/validate.yml",
+      "features": [
+        "Automatische JSON-Syntax-Validierung bei jedem Push/PR",
+        "Schema-Validierung mit jsonschema",
+        "Strict Gating: CI bricht bei Syntax-Fehlern oder Schema-Invalidität",
+        "Upload von Validierungs-Reports als Artifacts",
+        "Python 3.11 Runtime"
+      ]
     }
   },
   "update_rules": {
@@ -563,20 +616,25 @@
       "Bei Änderung an Modul-Indizes (index.json Dateien)",
       "Bei Strukturänderungen an Hauptverzeichnissen",
       "Bei Änderung der Lizenz oder Repository-Informationen",
-      "Regelmäßig bei großen Projekt-Updates"
+      "Regelmäßig bei großen Projekt-Updates",
+      "Bei CI/CD-Änderungen"
     ],
     "fields_to_update": {
       "meta.last_updated": "Automatisch mit aktuellem Datum aktualisieren",
+      "meta.version": "Versionsnummer erhöhen",
+      "meta.repository.latest_commit": "Neuesten Commit-Hash eintragen",
       "modules.*.module_count": "Anzahl der Module aktualisieren",
       "modules.*.modules": "Modul-Listen aktualisieren",
       "data_structure.*": "Neue Dateien/Verzeichnisse hinzufügen",
       "shared_resources.candidates.count": "Anzahl der Kandidaten aktualisieren",
-      "shared_resources.markers": "Marker-Anzahl und Kategorien aktualisieren"
+      "shared_resources.markers": "Marker-Anzahl und Kategorien aktualisieren",
+      "tooling.ci_cd": "CI/CD-Informationen aktualisieren"
     },
     "maintenance_notes": [
       "Diese Datei sollte immer auf dem neuesten Stand gehalten werden",
       "Änderungen sollten konsistent mit den index.json Dateien sein",
-      "Bei Unsicherheiten die index.json Dateien als Referenz nutzen"
+      "Bei Unsicherheiten die index.json Dateien als Referenz nutzen",
+      "Neue Module müssen sofort eingepflegt werden"
     ]
   },
   "file_structure_overview": {
@@ -600,7 +658,8 @@
       "shared/",
       "src/",
       "tooling/",
-      "zeitgeist_module/"
+      "zeitgeist_module/",
+      ".github/"
     ]
   },
   "usage_for_chatgpt": {
@@ -610,7 +669,8 @@
       "Bei Fragen zu Modulen die entsprechenden index.json Dateien konsultieren",
       "Für detaillierte Architektur-Infos architecture/DP-001-anthropologische-erkenntnisarchitektur.json lesen",
       "Für spezifische Module die jeweiligen README.md Dateien prüfen",
-      "Für offene Forschungsfragen research_questions.json konsultieren"
+      "Für offene Forschungsfragen research_questions.json konsultieren",
+      "Für CI/CD-Status .github/workflows/validate.yml prüfen"
     ],
     "conversation_starters": [
       "Wie kann ich das Projekt erweitern?",
@@ -619,7 +679,9 @@
       "Wie füge ich einen neuen Kandidaten hinzu?",
       "Wie werden die Zeitgeist-Module verwendet?",
       "Welche offenen Forschungsfragen gibt es?",
-      "Was ist die Gedächtnistopologie?"
+      "Was ist die Gedächtnistopologie?",
+      "Was ist die Narrativökologie?",
+      "Wie funktioniert das CI/CD?"
     ],
     "related_files": {
       "research_questions": "research_questions.json",
@@ -628,54 +690,74 @@
   },
   "delta_since_last_update": {
     "last_update_date": "2026-02-18",
-    "update_description": "Erweiterung um Gedaechtnistopologie-Modul, Crisis Analysis, neue Marker-Kategorien und 2012-Temporal-Convergence-Kandidat",
-    "git_commit": "f34c4b4f3ed621c7230acfdf3e2393c090e83b90",
+    "current_update_date": "2026-02-19",
+    "update_description": "Erweiterung um CI/CD-Infrastruktur, Narrativökologie-Modul, Labeling-Dynamics-Meta-Pattern und Label-Instanzen",
+    "git_commit": "d86b793 Fix: YAML syntax in GitHub Actions workflow",
     "updated_sections": [
-      "meta: Datum auf 2026-02-18 aktualisiert",
-      "shared_resources.candidates: count auf 17 erhöht (neu: CAND-TEMPORAL-CONVERGENCE-2012-0001)",
-      "shared_resources.markers: 43 Marker mit neuen Kategorien (Übergangsmarker, Symbolik-Marker, Projektions-Cluster, Dialog-Projektionen, Mission, Spezial)",
-      "data_structure: data/crisis_analysis/pre_disruptive_tension_periods mit drei Perioden hinzugefügt",
-      "data_structure: data/lenses/pre_narrative_resonance hinzugefügt",
-      "data_structure: data/sources auf 13 Quellen erweitert (neu: Tzolkin-Transkript)",
-      "data_structure: knowledge/analysis mit Analyse-Dokumenten hinzugefügt",
-      "modules: modules_gedaechtnistopologie neu hinzugefügt",
-      "architecture_and_interface: DP-004, DP-005, DP-006 hinzugefügt"
+      "meta: Datum auf 2026-02-19 aktualisiert, Version auf 1.1.0 erhöht",
+      "meta: CI/CD-Informationen hinzugefügt (GitHub Actions)",
+      "meta: Statistiken hinzugefügt (126 MD, 323 JSON, 6 PY)",
+      "meta: Latest Commit auf d86b793 aktualisiert",
+      "project_status: CI/CD-Status-Indikator hinzugefügt",
+      "project_status: Narrativökologie zu focus_areas hinzugefügt",
+      "modules: modules_narrative_ecology neu hinzugefügt (NE-001-narrative-ecology)",
+      "data_structure.data.lenses: 3 neue Meta-Patterns hinzugefügt",
+      "data_structure.data.lenses: label_instances/ Verzeichnis mit 11 Instanzen hinzugefügt",
+      "tooling: ci_cd Sektion mit GitHub Actions Informationen hinzugefügt"
     ],
     "new_modules": [
-      "modules/gedaechtnistopologie (Strukturelle Analyse von Ereignissen, Narrativen, Projektionen und Transformationen)",
-      "data/crisis_analysis/pre_disruptive_tension_periods (Drei historische Perioden: 1765-1794, 1925-1939, 1990-2001)",
-      "data/lenses/pre_narrative_resonance (Analyse pränarrativer Resonanzen)",
-      "knowledge/analysis (Analyse-Dokumente)"
+      "modules/narrative_ecology/ (NE-001-narrative-ecology, Draft-Status)",
+      ".github/workflows/validate.yml (CI/CD-Workflow)"
     ],
     "updated_modules": [
-      "shared/candidates (CAND-TEMPORAL-CONVERGENCE-2012-0001 hinzugefügt)",
-      "shared/markers (43 Marker mit neuen Kategorien)",
-      "data/sources (13 Quellen, neu: SRC-TRANSCRIPT-DE-UNK-TZOLKIN-0001)",
-      "data/lenses/meta_patterns (L_ATTACHMENT-OSCILLATION-001, L_PROJECTION-CARTOGRAPHY-001 hinzugefügt)",
-      "architecture (DP-004, DP-005, DP-006 hinzugefügt)"
+      "data/lenses/meta_patterns/ (3 neue Meta-Patterns)",
+      "data/label_instances/ (11 Label-Instanzen neu)"
     ],
-    "new_marker_categories": {
-      "uebergangsmarker": 5,
-      "symbolik_marker": 5,
-      "projektions_cluster": 9,
-      "dialog_projektionen": 7,
-      "mission": 1,
-      "spezial": 2
+    "new_meta_patterns": {
+      "L_LABELING-DYNAMICS-001": "Etikettierungs-Dynamik (Analyse von Labeling-Mechanismen)",
+      "ML_PERSPECTIVE_RESPONSIBILITY_001": "Perspektivische Verantwortung",
+      "ML_SELF_PROTECT_DARK_TOPICS_001": "Selbstschutz bei Dunkelthemen"
     },
-    "new_data_areas": [
-      "modules/gedaechtnistopologie/ (factual_events.json, narrative_structures.json, projection_nodes.json, transformation_links.json)",
-      "data/crisis_analysis/pre_disruptive_tension_periods/ (drei Perioden mit vollständiger Struktur)",
-      "data/lenses/pre_narrative_resonance/",
-      "knowledge/analysis/ANA-TEMPORAL-CONVERGENCE-COMPARISON-0001.md"
-    ],
-    "new_cases": [
-      "CAND-TEMPORAL-CONVERGENCE-2012-0001 (2012 als temporaler Verdichtungsknoten)"
-    ],
-    "new_sources": [
-      "data/sources/transcripts/raw/SRC-TRANSCRIPT-DE-UNK-TZOLKIN-0001.txt (Tzolkin-Dokumentar-Transkript)",
-      "data/sources/transcripts/metadata/SRC-TRANSCRIPT-DE-UNK-TZOLKIN-0001.meta.json"
-    ],
-    "new_files_count": "43 Marker (erweitert von 15), 17 Kandidaten (erweitert von 16), 13 Quellen (erweitert von 12)",
-    "status": "chatgpt_project_overview.json ist vollständig aktualisiert mit allen Änderungen bis 2026-02-18"
+    "new_label_instances": {
+      "count": 11,
+      "examples": [
+        "LI-EXPERTEN_001.json (Experten)",
+        "LI-LAIEN_001.json (Laien)",
+        "LI-QUERDENKER_001.json (Querdenker)",
+        "LI-VOLKSFEIND_001.json (Volksfeind)",
+        "LI_DAMEN_001.json, LI_DAS-PROLETARIAT_001.json, LI_DIE-REICHEN_001.json, LI_GÖREN_001.json, LI_HALUNKEN_001.json, LI_HERREN_001.json"
+      ]
+    },
+    "narrative_ecology_details": {
+      "module_id": "NE-001-narrative-ecology",
+      "status": "draft",
+      "created": "2026-02-18",
+      "modes": [
+        "analysis (Vogelperspektive: Strukturelle Beobachtung)",
+        "experiential (Innenperspektive: Persönliche Auseinandersetzung)"
+      ],
+      "schema": "narrative_collection.schema.json",
+      "principles": [
+        "Wegweiser steht Richtung Klarheit",
+        "Strukturbeobachtend, nicht normativ",
+        "Keine politische Agenda",
+        "Ökologische Metapher: Myzel, Pfade, Lichtungen"
+      ]
+    },
+    "ci_cd_details": {
+      "platform": "GitHub Actions",
+      "workflow_file": ".github/workflows/validate.yml",
+      "trigger": "Push und Pull Request auf alle Branches",
+      "python_version": "3.11",
+      "features": [
+        "Automatische JSON-Syntax-Validierung",
+        "Schema-Validierung mit jsonschema",
+        "Strict Gating (bricht bei Fehlern)",
+        "Upload von Validierungs-Reports",
+        "30 Tage Aufbewahrung"
+      ]
+    },
+    "new_files_count": "3 Meta-Patterns, 11 Label-Instanzen, 1 NE-Modul, 1 CI/CD-Workflow",
+    "status": "chatgpt_project_overview.json ist vollständig aktualisiert mit allen Änderungen bis 2026-02-19"
   }
 }

@@ -176,6 +176,10 @@
     {
       "id": "MARK-NARRATIVE-CONDENSATION-0001",
       "file": "items/MARK-NARRATIVE-CONDENSATION-0001.json"
+    },
+    {
+      "id": "MARK-IMPERIAL-PRESENCE-0001",
+      "file": "items/MARK-IMPERIAL-PRESENCE-0001.json"
     }
   ]
 }
