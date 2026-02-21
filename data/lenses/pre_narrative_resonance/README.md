@@ -87,6 +87,7 @@ Siehe `resonance_primitives.json` für detaillierte Beschreibungen inklusive Ker
 ## Dateien
 
 - `resonance_primitives.json` - Hauptstruktur mit allen Resonanzpunkten
+- `ur_interface_001.json` - Konzeptstruktur für Ur-Interface als physischer Resonanzraum
 - `index.json` - Metadaten und Modul-Informationen
 - `README.md` - Diese Datei
 

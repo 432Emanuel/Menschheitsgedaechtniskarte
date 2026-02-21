@@ -1,0 +1,21 @@
+{
+  "type": "pattern",
+  "id": "PAT-MATRIX-0002",
+  "name": "Beschreibung-zu-Wertung (Kipppunkt)",
+  "origin": "derived_from_case_or_lens",
+  "description": "Ein Wechsel von Ereignisbericht zu Werturteil wird als Kipppunkt markiert. Der Übergang zeigt, wie aus situativen Beschreibungen Bewertungen entstehen, ohne dass damit eine Prüfung der Beschreibung oder Bewertung verbunden ist.",
+  "epistemic_status": "observational",
+  "applicability": [
+    "everyday_observations",
+    "culture_contrast_reporting",
+    "situational_judgement_shifts"
+  ],
+  "risks": [
+    "category_confusion_description_vs_evaluation",
+    "escalation_to_devaluation"
+  ],
+  "derived_from": [
+    "ZG-CB-GLOBAL-2026-MATRIX-RELATIVIZATION-001.json"
+  ],
+  "status": "draft"
+}

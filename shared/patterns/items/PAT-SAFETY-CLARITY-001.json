@@ -1,0 +1,276 @@
+{
+  "type": "pattern",
+  "identifier": "PAT-SAFETY-CLARITY-001",
+  "pattern_name": "Klarheit fördern, Überforderung dämpfen",
+  "status": "draft",
+  "version": "0.1.0",
+  "intent": {
+    "goal": "MGK-Inhalte so ausspielbar machen, dass sie Erkenntnis/Orientierung erhöhen, ohne Nutzer:innen zu überfluten.",
+    "non_goals": [
+      "Therapie ersetzen",
+      "Diagnosen stellen",
+      "emotionale Durchbrüche forcieren",
+      "Heilsversprechen oder metaphysische Endwahrheiten liefern"
+    ]
+  },
+  "safety_principles": [
+    "Freiwilligkeit vor Tiefe",
+    "Pacing vor Vollständigkeit",
+    "Kontext vor Dramaturgie",
+    "Exit-Option immer verfügbar",
+    "Körper-/Umfeld-Check als Realitätsanker",
+    "Keine Heroisierung von Leid oder Extremzuständen"
+  ],
+  "fields": {
+    "intensity_budget": {
+      "intensity_level": {
+        "type": "integer",
+        "range": [
+          1,
+          5
+        ],
+        "meaning": {
+          "1": "leicht (alltagstauglich)",
+          "2": "moderat (leicht emotional/komplex)",
+          "3": "intensiv (kann triggern/überfordern)",
+          "4": "sehr intensiv (Trauma/Verlust/Identitätskrisen möglich)",
+          "5": "extrem (nur mit ausdrücklichem Consent Gate + starkem Pacing)"
+        }
+      },
+      "recommended_pace": {
+        "type": "string",
+        "enum": [
+          "snack",
+          "spaziergang",
+          "deep_dive"
+        ],
+        "guidance": {
+          "snack": "30–90 Sekunden",
+          "spaziergang": "3–10 Minuten",
+          "deep_dive": "10–45+ Minuten, segmentiert"
+        }
+      },
+      "stop_signals": {
+        "type": "array",
+        "items": "string",
+        "examples": [
+          "Druck im Brustkorb / flacher Atem",
+          "Tunnelblick / Gedankenrasen",
+          "innerer Zwang 'ich muss das jetzt zu Ende machen'",
+          "emotionale Taubheit oder plötzliche Überflutung"
+        ]
+      }
+    },
+    "layered_output": {
+      "layers": [
+        {
+          "id": "LAYER-A",
+          "label": "Überblick",
+          "target_duration": "30–90s",
+          "content_rules": [
+            "nur Kernthesen + neutrale Zusammenfassung",
+            "keine dramatische Sprache",
+            "keine persönlichen Details",
+            "immer 1 Exit-Hinweis"
+          ]
+        },
+        {
+          "id": "LAYER-B",
+          "label": "Sinn & Einordnung",
+          "target_duration": "3–10min",
+          "content_rules": [
+            "Definitionen, Kontexte, Alternativerklärungen",
+            "max. 1 kurzer Erfahrungsbezug, wenn vorhanden",
+            "keine Eskalationsrhetorik (kein 'die Wahrheit', 'alles erklärt')"
+          ]
+        },
+        {
+          "id": "LAYER-C",
+          "label": "Tiefe / Quellen / Kontroversen",
+          "target_duration": "10–45+min",
+          "content_rules": [
+            "segmentiert in klare Kapitel",
+            "Quellenlage, Unsicherheiten, Gegenpositionen",
+            "bei hoher Intensität: Consent Gate + Micro-Pausen"
+          ]
+        }
+      ],
+      "default_layer_by_intensity": {
+        "1": "LAYER-B",
+        "2": "LAYER-B",
+        "3": "LAYER-A",
+        "4": "LAYER-A",
+        "5": "LAYER-A"
+      }
+    },
+    "consent_gate": {
+      "enabled_if": {
+        "any_of": [
+          {
+            "intensity_level_gte": 4
+          },
+          {
+            "tags_include_any": [
+              "trauma",
+              "tod",
+              "verlust",
+              "identitaet",
+              "dissociation",
+              "psychosis_risk"
+            ]
+          }
+        ]
+      },
+      "gate_text_templates": {
+        "short": "Dieses Thema kann intensiv sein. Willst du bei einem nüchternen Überblick bleiben oder tiefer gehen?",
+        "options": [
+          {
+            "id": "OPT-OVERVIEW",
+            "label": "Nur Überblick (sachlich)"
+          },
+          {
+            "id": "OPT-CONTEXT",
+            "label": "Einordnung (moderat)"
+          },
+          {
+            "id": "OPT-DEEP",
+            "label": "Tiefer gehen (segmentiert)"
+          },
+          {
+            "id": "OPT-EXIT",
+            "label": "Zur Stabilitätskarte"
+          }
+        ]
+      },
+      "hard_stop_rule": {
+        "if_user_reports_stop_signals": true,
+        "action": "offer_exit_and_reduce_intensity"
+      }
+    },
+    "de_dramatization": {
+      "enabled": true,
+      "rules": [
+        {
+          "id": "DDR-001",
+          "trigger": "heroic_arc_language",
+          "action": "rewrite_to_neutral",
+          "notes": "Reduziert 'Heldenerzählung' / 'Erwachen' / 'Auserwählt'."
+        },
+        {
+          "id": "DDR-002",
+          "trigger": "absolutist_claims",
+          "action": "add_uncertainty_marker",
+          "markers": [
+            "eine mögliche Lesart",
+            "hypothetisch",
+            "nach aktuellem Stand",
+            "phänomenologisch"
+          ]
+        },
+        {
+          "id": "DDR-003",
+          "trigger": "graphic_or_intimate_loss_details",
+          "action": "minimize_personal_detail_and_offer_opt_out"
+        }
+      ]
+    },
+    "stability_harbor": {
+      "always_available": true,
+      "harbor_actions": [
+        {
+          "id": "HARBOR-001",
+          "label": "3x3 Realitätsanker",
+          "steps": [
+            "Nenne 3 Dinge, die du siehst.",
+            "Nenne 3 Dinge, die du hörst.",
+            "Spüre 3 Körperkontakte (Füße/Boden, Rücken/Lehne, Hände)."
+          ]
+        },
+        {
+          "id": "HARBOR-002",
+          "label": "Atem & Tempo",
+          "steps": [
+            "3 ruhige Atemzüge beobachten (nichts optimieren).",
+            "Tempo halbieren: langsam lesen/hören oder Pause drücken."
+          ]
+        },
+        {
+          "id": "HARBOR-003",
+          "label": "Rücksprung",
+          "steps": [
+            "Zurück zu LAYER-A (Überblick).",
+            "Oder zu einem regulierenden MGK-Knoten (z. B. Natur/Ort)."
+          ]
+        }
+      ],
+      "harbor_refs": {
+        "type": "array",
+        "items": "string",
+        "examples": [
+          "knowledge/places/forest.md",
+          "modules/hainleiteforscher/index.json"
+        ]
+      }
+    }
+  },
+  "application": {
+    "attach_to": [
+      "node",
+      "module",
+      "lens",
+      "source_digest",
+      "podcast_script"
+    ],
+    "how_to_apply": [
+      "Setze intensity_level + recommended_pace",
+      "Wähle default_layer_by_intensity",
+      "Falls Consent Gate greift: zeige Gate vor Layer-B/C",
+      "Wende de_dramatization Regeln auf generierte Texte an",
+      "Biete stability_harbor jederzeit an (UI/Command)"
+    ]
+  },
+  "implementation_notes_for_codex": {
+    "recommended_data_model": {
+      "node_fields_to_add": [
+        "safety.intensity_level",
+        "safety.recommended_pace",
+        "safety.stop_signals",
+        "safety.tags",
+        "safety.stability_harbor_refs"
+      ],
+      "renderer_behavior": [
+        "Render LAYER-A/B/C as collapsible sections",
+        "Auto-select default layer by intensity",
+        "Insert Consent Gate modal/prompt before B/C when enabled",
+        "Provide a persistent 'Stabilitätskarte' button"
+      ]
+    },
+    "minimum_viable_guardrails": [
+      "Never auto-play deep trauma-related narration without consent",
+      "Always offer opt-out + stability harbor",
+      "Prefer neutral tone when intensity>=3"
+    ]
+  },
+  "examples": [
+    {
+      "example_id": "EX-001",
+      "scenario": "Privater Podcast aus Chat mit Verlustthema",
+      "settings": {
+        "intensity_level": 4,
+        "recommended_pace": "spaziergang",
+        "stop_signals": [
+          "Kloß im Hals",
+          "innerer Druck weiterzuhören"
+        ],
+        "default_layer": "LAYER-A",
+        "consent_gate": "enabled"
+      },
+      "expected_behavior": [
+        "Startet mit sachlichem Überblick",
+        "fragt aktiv nach Tiefegrad",
+        "bietet Stabilitätskarte jederzeit an",
+        "de-dramatisiert 'Heldenerzählung'"
+      ]
+    }
+  ]
+}

@@ -38,6 +38,24 @@
       "recommended_use": "Explorativer Vergleichsraum für Weltbild-Encodings",
       "epistemic_risks_marked": true,
       "tags": ["worldview", "encoding", "epistemology", "story_transmission", "cultural_memory"]
+    },
+    {
+      "id": "L-UR-INTERFACE-2026-001",
+      "file": "L-UR-INTERFACE-2026-001.json",
+      "title": "Ur-Interface: Resonanzräume, Wissenshierarchien und Technologieprojektion",
+      "status": "draft",
+      "epistemic_level": "observational",
+      "confidence": "hypothesis_space",
+      "epistemic_risks_marked": true,
+      "tags": [
+        "ur_interface",
+        "resonance_places",
+        "technology_projection",
+        "knowledge_hierarchies",
+        "heritage_access",
+        "preservation_vs_research",
+        "epistemic_layers"
+      ]
     }
   ],
   "metadata": {
@@ -45,7 +63,7 @@
     "file": "index",
     "version": "0.1.0",
     "created": "2026-02-04",
-    "updated": "2026-02-04",
+    "updated": "2026-02-21",
     "description": "Index für Lens-Sketches im Observations/Hypothesenraum",
     "notes": [
       "Lens-Sketches sind spezifische Beobachtungen, keine universellen Meta-Patterns",

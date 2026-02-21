@@ -1,0 +1,21 @@
+{
+  "type": "pattern",
+  "id": "PAT-UR-INTERFACE-0002",
+  "name": "Gatekeeping-Mechanismen",
+  "origin": "derived_from_case_or_lens",
+  "description": "Institutionalisierte Wissenskontrolle wird als Mechanismus beschrieben, der Zugang, Deutung oder Sichtbarkeit von Wissen steuert. Die Struktur wird als Gatekeeping benannt und als erklärender Rahmen für Konflikte um Bewahrung und Erforschung verwendet. Der Pattern beschreibt eine Zuschreibung von Mechanismus, nicht die Prüfung von Motiven oder Kausalitäten.",
+  "epistemic_status": "observational",
+  "applicability": [
+    "heritage_management",
+    "institutional_knowledge_domains",
+    "access_and_interpretation_conflicts"
+  ],
+  "risks": [
+    "motive_attribution_without_evidence",
+    "institutional_totalization"
+  ],
+  "derived_from": [
+    "L-UR-INTERFACE-2026-001.json"
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "pattern",
+  "id": "PAT-MATRIX-0001",
+  "name": "Relativierung → Identitätskonsolidierung",
+  "origin": "derived_from_case_or_lens",
+  "description": "Relativierung durch Kulturkontrast wird als Spiegelfunktion beschrieben, die Selbstvergewisserung auslöst. Rückkehr-Erleichterung und Formulierungen von gesteigerter Zugehörigkeit (\"deutscheste Deutsche\", \"noch nie so deutsch\") markieren Identitätskonsolidierung im Kontrast. Der Pattern beschreibt einen psychischen Mechanismus, nicht objektive Kulturvergleiche.",
+  "epistemic_status": "identity_mechanism",
+  "applicability": [
+    "travel_contrast_narratives",
+    "culture_comparison_accounts",
+    "return_reintegration_talk"
+  ],
+  "risks": [
+    "stereotype_reinforcement",
+    "overgeneralization_from_limited_experience"
+  ],
+  "derived_from": [
+    "ZG-CB-GLOBAL-2026-MATRIX-RELATIVIZATION-001.json"
+  ],
+  "status": "draft"
+}

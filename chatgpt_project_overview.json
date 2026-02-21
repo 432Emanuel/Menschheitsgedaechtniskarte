@@ -13,10 +13,10 @@
     },
     "repository": {
       "url": "https://github.com/432Emanuel/Menschheitsged-chtniskarte.git",
-      "latest_commit": "d86b793 Fix: YAML syntax in GitHub Actions workflow"
+      "latest_commit": "24162be some testruns"
     },
-    "last_updated": "2026-02-19",
-    "version": "1.1.0",
+    "last_updated": "2026-02-21",
+    "version": "1.2.0",
     "language": "de/en (bilingual project)",
     "ci_cd": {
       "platform": "GitHub Actions",
@@ -36,6 +36,8 @@
       "Familienmodul als anthropologische Konstante",
       "Mythos & Verwaltung als Strukturierungs-Pattern",
       "Gedächtnistopologie für strukturelle Analyse",
+      "Narrativökologie als Herzmodul",
+      "Humormodul als Resonanz-Indikator",
       "Crisis Analysis für prädisruptive Spannungsperioden",
       "Knowledge-Base mit archäoastronomischen Orten",
       "Human Cartography für individuelle Perspektiven"
@@ -164,6 +166,60 @@
         "transformation_links.json (Transformationsverbindungen)"
       ],
       "note": "Strukturelle Analyse von Bruchlinien, Übergängen und Resonanzen"
+    },
+    "modules_narrative_ecology": {
+      "description": "Narrativökologie - Herzmodul zur Analyse von Narrativen als ökologische Systeme",
+      "index_file": "modules/narrative_ecology/index.json",
+      "module_id": "NE-001-narrative-ecology",
+      "status": "draft",
+      "created": "2026-02-18",
+      "modes": {
+        "analysis": "Strukturelle Beobachtung von Narrativen (Vogelperspektive)",
+        "experiential": "Persönliche Auseinandersetzung mit Narrativen (Innenperspektive)"
+      },
+      "files": {
+        "analysis": [
+          "narrative_archetypes.json",
+          "feedback_loops.json",
+          "power_mechanisms.json",
+          "institutionalization_paths.json",
+          "dominance_cycles.json"
+        ],
+        "experiential": [
+          "resonance_triggers.json",
+          "self_narrative_mapping.json",
+          "conflict_mirrors.json",
+          "exit_experiments.json",
+          "field_notes_template.md"
+        ],
+        "schema": [
+          "narrative_node.schema.json",
+          "narrative_edge.schema.json"
+        ],
+        "vocab": [
+          "narrative_tags.json",
+          "narrative_types.json"
+        ]
+      },
+      "inspiration_nodes": [
+        "ART-HIMMELSSCHEIBE-NEBRA"
+      ],
+      "principles": [
+        "Wegweiser steht Richtung Klarheit; Outcome bleibt frei",
+        "Strukturbeobachtend, nicht normativ",
+        "Keine politische Agenda",
+        "Ökologische Metapher: Myzel, Pfade, Lichtungen"
+      ]
+    },
+    "modules_humor": {
+      "description": "Humormodul zur Analyse von Humor als Resonanz- und Bruchlinien-Indikator",
+      "status": "prototype",
+      "files": [
+        "HUMOR_SPEC.md",
+        "README.md",
+        "artifacts/",
+        "examples/"
+      ]
     }
   },
   "data_structure": {
@@ -398,9 +454,9 @@
   },
   "shared_resources": {
     "candidates": {
-      "description": "17 Kandidaten (16 mythologische + 1 zeitgeistbezogener Knotenpunkt) für Mythos-Modul und Zeitzeugen",
+      "description": "16 Kandidaten (15 mythologische + 1 zeitgeistbezogener Knotenpunkt) für Mythos-Modul und Zeitzeugen",
       "directory": "shared/candidates/items/",
-      "count": 17,
+      "count": 16,
       "index": "shared/candidates/candidate_index.json",
       "template": "shared/candidates/template_candidate.json",
       "types": [
@@ -433,7 +489,6 @@
         "CAND-POPOLVUH-0001 (Popol Vuh)",
         "CAND-INKARRI-0001 (Inkarri)",
         "CAND-SUNDIATA-0001 (Sundiata)",
-        "CAND-BALDUR-0001 (Baldur)",
         "CAND-HIAWATHA-0001 (Hiawatha)",
         "CAND-REL-ECON-001 (Friedemann Voigt - Merkzettel/Knotenpunkt)",
         "CAND-TEMPORAL-CONVERGENCE-2012-0001 (2012 als temporaler Verdichtungsknoten)"
@@ -466,7 +521,7 @@
       ]
     },
     "markers": {
-      "description": "Marker für Resonanz- und Strukturanalyse (43 Marker)",
+      "description": "Marker für Resonanz- und Strukturanalyse (46 Marker)",
       "directory": "shared/markers/",
       "files": [
         "README.md",
@@ -499,6 +554,7 @@
         "items/MARK-DIAL-PROJ-ESCAL-001.json",
         "items/MARK-DIAL-PROJ-AGREE-001.json",
         "items/MARK-DIAL-PROJ-AFFECT-001.json",
+        "items/MARK-IMPERIAL-PRESENCE-0001.json",
         "items/MARK-MISSION-DECLARE-0001.json",
         "items/projection_container_atlantis.json",
         "items/MARK-NARRATIVE-CONDENSATION-0001.json"
@@ -509,6 +565,7 @@
         "symbolik_marker": 5,
         "projektions_cluster": 9,
         "dialog_projektionen": 7,
+        "imperial": 1,
         "mission": 1,
         "spezial": 2
       }
@@ -627,55 +684,57 @@
     }
   },
   "delta_since_last_update": {
-    "last_update_date": "2026-02-18",
-    "update_description": "Erweiterung um Gedaechtnistopologie-Modul, Crisis Analysis, neue Marker-Kategorien und 2012-Temporal-Convergence-Kandidat",
-    "git_commit": "f34c4b4f3ed621c7230acfdf3e2393c090e83b90",
+    "last_update_date": "2026-02-21",
+    "update_description": "Erweiterung um Narrativökologie-Modul, Humormodul-Prototype, und Korrekturen bei Kandidaten- und Marker-Zählung",
+    "git_commit": "24162be some testruns",
     "updated_sections": [
-      "meta: Datum auf 2026-02-18 aktualisiert",
-      "shared_resources.candidates: count auf 17 erhöht (neu: CAND-TEMPORAL-CONVERGENCE-2012-0001)",
-      "shared_resources.markers: 43 Marker mit neuen Kategorien (Übergangsmarker, Symbolik-Marker, Projektions-Cluster, Dialog-Projektionen, Mission, Spezial)",
-      "data_structure: data/crisis_analysis/pre_disruptive_tension_periods mit drei Perioden hinzugefügt",
-      "data_structure: data/lenses/pre_narrative_resonance hinzugefügt",
-      "data_structure: data/sources auf 13 Quellen erweitert (neu: Tzolkin-Transkript)",
-      "data_structure: knowledge/analysis mit Analyse-Dokumenten hinzugefügt",
-      "modules: modules_gedaechtnistopologie neu hinzugefügt",
-      "architecture_and_interface: DP-004, DP-005, DP-006 hinzugefügt"
+      "meta: Datum auf 2026-02-21 aktualisiert, Version auf 1.2.0 erhöht",
+      "meta: latest_commit auf 24162be aktualisiert",
+      "shared_resources.candidates: count auf 16 korrigiert (CAND-BALDUR entfernt)",
+      "shared_resources.markers: count auf 46 erhöht (neu: MARK-IMPERIAL-PRESENCE-0001)",
+      "modules: modules_narrative_ecology neu hinzugefügt (NE-001-narrative-ecology)",
+      "modules: modules_humor als Prototype hinzugefügt",
+      "project_status.focus_areas: Narrativökologie und Humormodul hinzugefügt"
     ],
     "new_modules": [
-      "modules/gedaechtnistopologie (Strukturelle Analyse von Ereignissen, Narrativen, Projektionen und Transformationen)",
-      "data/crisis_analysis/pre_disruptive_tension_periods (Drei historische Perioden: 1765-1794, 1925-1939, 1990-2001)",
-      "data/lenses/pre_narrative_resonance (Analyse pränarrativer Resonanzen)",
-      "knowledge/analysis (Analyse-Dokumente)"
+      "modules/narrative_ecology (Narrativökologie - Herzmodul mit Analyse- und Erfahrungsmodi)",
+      "modules/humor (Humormodul zur Analyse von Humor als Resonanz-Indikator, Prototype)"
     ],
     "updated_modules": [
-      "shared/candidates (CAND-TEMPORAL-CONVERGENCE-2012-0001 hinzugefügt)",
-      "shared/markers (43 Marker mit neuen Kategorien)",
-      "data/sources (13 Quellen, neu: SRC-TRANSCRIPT-DE-UNK-TZOLKIN-0001)",
-      "data/lenses/meta_patterns (L_ATTACHMENT-OSCILLATION-001, L_PROJECTION-CARTOGRAPHY-001 hinzugefügt)",
-      "architecture (DP-004, DP-005, DP-006 hinzugefügt)"
+      "shared/candidates (CAND-BALDUR-0001 entfernt, verbleibende 16 Kandidaten)",
+      "shared/markers (MARK-IMPERIAL-PRESENCE-0001 hinzugefügt, neue Kategorie 'imperial')"
     ],
     "new_marker_categories": {
-      "uebergangsmarker": 5,
-      "symbolik_marker": 5,
-      "projektions_cluster": 9,
-      "dialog_projektionen": 7,
-      "mission": 1,
-      "spezial": 2
+      "imperial": 1
     },
-    "new_data_areas": [
-      "modules/gedaechtnistopologie/ (factual_events.json, narrative_structures.json, projection_nodes.json, transformation_links.json)",
-      "data/crisis_analysis/pre_disruptive_tension_periods/ (drei Perioden mit vollständiger Struktur)",
-      "data/lenses/pre_narrative_resonance/",
-      "knowledge/analysis/ANA-TEMPORAL-CONVERGENCE-COMPARISON-0001.md"
-    ],
-    "new_cases": [
-      "CAND-TEMPORAL-CONVERGENCE-2012-0001 (2012 als temporaler Verdichtungsknoten)"
-    ],
-    "new_sources": [
-      "data/sources/transcripts/raw/SRC-TRANSCRIPT-DE-UNK-TZOLKIN-0001.txt (Tzolkin-Dokumentar-Transkript)",
-      "data/sources/transcripts/metadata/SRC-TRANSCRIPT-DE-UNK-TZOLKIN-0001.meta.json"
-    ],
-    "new_files_count": "43 Marker (erweitert von 15), 17 Kandidaten (erweitert von 16), 13 Quellen (erweitert von 12)",
-    "status": "chatgpt_project_overview.json ist vollständig aktualisiert mit allen Änderungen bis 2026-02-18"
+    "narrative_ecology_details": {
+      "modes": {
+        "analysis": "Strukturelle Beobachtung von Narrativen (Vogelperspektive) mit 5 Analyse-Dateien",
+        "experiential": "Persönliche Auseinandersetzung mit Narrativen (Innenperspektive) mit 5 Erfahrungs-Dateien"
+      },
+      "schema_files": [
+        "narrative_node.schema.json",
+        "narrative_edge.schema.json"
+      ],
+      "vocab_files": [
+        "narrative_tags.json",
+        "narrative_types.json"
+      ],
+      "inspiration_nodes": [
+        "ART-HIMMELSSCHEIBE-NEBRA"
+      ],
+      "principles": [
+        "Wegweiser steht Richtung Klarheit; Outcome bleibt frei",
+        "Strukturbeobachtend, nicht normativ",
+        "Keine politische Agenda",
+        "Ökologische Metapher: Myzel, Pfade, Lichtungen"
+      ]
+    },
+    "corrections": {
+      "candidates": "Anzahl von 17 auf 16 korrigiert (CAND-BALDUR-0001 entfernt)",
+      "markers": "Anzahl von 43 auf 46 aktualisiert (3 neue Marker hinzugezählt)"
+    },
+    "new_files_count": "46 Marker, 16 Kandidaten",
+    "status": "chatgpt_project_overview.json ist vollständig aktualisiert mit allen Änderungen bis 2026-02-21"
   }
 }

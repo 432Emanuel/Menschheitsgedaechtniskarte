@@ -642,15 +642,62 @@
         "status": "draft",
         "version": "0.1.0"
       }
+    },
+    {
+      "id": "META-PAT-010",
+      "lens_id": "L_PROGRESS_DISSONANCE_001",
+      "name": "Fortschritts-Dissonanz",
+      "aka": ["Progress Dissonance"],
+      "version": "1.0.0",
+      "status": "draft",
+      "created": "2026-02-21",
+      "type": "lens",
+      "subtype": "meta_lens",
+      "description": "Wenn materielle Hinterlassenschaften vergangener Kulturen das moderne Fortschrittsnarrativ irritieren, entsteht epistemische Spannung, die häufig durch Projektionsnarrative entlastet wird.",
+      "core_tension": [
+        "Fortschrittsnarrativ ↔ historische Komplexität",
+        "Erklärungsanspruch ↔ Erklärungsdefizit",
+        "lineare Entwicklung ↔ zivilisatorische Diskontinuität"
+      ],
+      "activation_sequence": [
+        "encounter_material_remains",
+        "somatic_awe_response",
+        "epistemic_disorientation",
+        "causal_gap_perception",
+        "narrative_compensation_or_open_inquiry"
+      ],
+      "typical_outcomes": [
+        "alienisierung",
+        "verlorenes_wissen_hochkulturhypothese",
+        "freie_energie_technikmythos",
+        "zivilisations_zyklusdenken"
+      ],
+      "related_markers": [
+        "MARK-BOUNDARY-OF-KNOWLEDGE-001",
+        "MARK-PROJECTIVE-CONTAINER-001",
+        "MARK-NARRATIVE-CONDENSATION-0001"
+      ],
+      "file": "L_PROGRESS_DISSONANCE_001.json",
+      "scope_notes": "Strukturell-beobachtende Lens zur Beschreibung von Spannungsdynamik; keine Wahrheitsprüfung.",
+      "examples": [
+        "Megalithische Bauwerke als Trigger für Erklärungsverschiebungen",
+        "Präzisionsartefakte als Auslöser konkurrierender Ursprungsnarrative",
+        "Monumentale Ruinen als Projektionsflächen für Zyklusmodelle"
+      ],
+      "metadata": {
+        "created": "2026-02-21",
+        "status": "draft",
+        "version": "1.0.0"
+      }
     }
   ],
   "metadata": {
     "module": "meta_patterns",
     "file": "patterns",
-    "version": "0.4.0",
+    "version": "0.5.0",
     "created": "2026-01-22",
-    "updated": "2026-02-04",
-    "description": "Wiederkehrende Meta-Patterns über Domains hinweg. Ink. META-PAT-009: Perspektiven-Verantwortung statt Welterlösung",
+    "updated": "2026-02-21",
+    "description": "Wiederkehrende Meta-Patterns über Domains hinweg. Ink. META-PAT-010: Fortschritts-Dissonanz",
     "schema_version": "1.0.0"
   }
 }

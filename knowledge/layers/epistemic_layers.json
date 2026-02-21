@@ -2,6 +2,13 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Epistemische Layer",
   "description": "Die vier epistemischen Layer der Menschheitsgedächtniskarte",
+  "related_layer_catalogs": [
+    {
+      "id": "regulation_layers",
+      "file": "regulation_layers.json",
+      "relation": "complementary_mechanistic_layer_catalog"
+    }
+  ],
   "layers": [
     {
       "id": "L1",

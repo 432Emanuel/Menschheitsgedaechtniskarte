@@ -22,6 +22,24 @@
       "status": "init",
       "created_by": "Emanuel",
       "intended_use": "abstraction_layer_for_multiple_domains"
+    },
+    {
+      "id": "MGK-UR-INTERFACE-001",
+      "file": "ur_interface_001.json",
+      "title": "Ur-Interface als physischer Resonanzraum vor Narrativbildung",
+      "type": "resonance_concept",
+      "status": "draft",
+      "created_by": "Codex",
+      "intended_use": "pre_narrative_spatial_trigger_model"
+    },
+    {
+      "id": "MGK-UR-INTERFACE-CANDIDATES-DE-001",
+      "file": "ur_interface_candidates_DE_0001.json",
+      "title": "Mitteleuropäische Ur-Interface-Kandidaten (kuratierte Shortlist)",
+      "type": "candidate_list",
+      "status": "draft",
+      "created_by": "Codex",
+      "intended_use": "pre_narrative_resonance_space_catalog"
     }
   ],
   "metadata": {
@@ -29,7 +47,7 @@
     "file": "index",
     "version": "1.0.0",
     "created": "2026-02-05",
-    "updated": "2026-02-05",
-    "description": "Index für Pre-Narrative Resonance Layer - Resonanzpunkte vor Narrativbildung"
+    "updated": "2026-02-21",
+    "description": "Index für Pre-Narrative Resonance Layer - Resonanzpunkte und Resonanzräume vor Narrativbildung"
   }
 }

@@ -1,0 +1,21 @@
+{
+  "type": "pattern",
+  "id": "PAT-UR-INTERFACE-0001",
+  "name": "Technologieprojektion",
+  "origin": "derived_from_case_or_lens",
+  "description": "Aktuelle technische Paradigmen werden als Deutungsrahmen auf vergangene Kontexte projiziert. Die Projektion wird im Material oder in Interpretationen an Indikatoren wie Bohrlöchern oder Fresko-Deutungen festgemacht. Die Struktur beschreibt eine Deutungsbewegung, keine Aussage über historische Tatsachen.",
+  "epistemic_status": "observational",
+  "applicability": [
+    "archaeological_sites",
+    "material_anomalies",
+    "historical_technology_interpretation"
+  ],
+  "risks": [
+    "anachronistic_projection",
+    "premature_explanatory_closure"
+  ],
+  "derived_from": [
+    "L-UR-INTERFACE-2026-001.json"
+  ],
+  "status": "draft"
+}
