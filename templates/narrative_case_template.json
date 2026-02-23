@@ -1,0 +1,229 @@
+{
+  "meta": {
+    "template_id": "MGK-NARRATIVE-CASE-TEMPLATE-001",
+    "template_version": "1.0.0",
+    "language": "de",
+    "notes": "Abstraktes Template für MGK-konforme Narrative-Fallstudien. Keine fallspezifischen Inhalte. Zitate: max. 1–2 Sätze, wörtlich, mit Quellenreferenz."
+  },
+  "trigger_event": {
+    "event_label": "<string>",
+    "event_date_range": {
+      "from": "<YYYY-MM-DD>",
+      "to": "<YYYY-MM-DD>"
+    },
+    "event_location": "<string>",
+    "institution": "<string>",
+    "primary_source_context": {
+      "motion_id": "<string|null>",
+      "motion_title": "<string|null>",
+      "applicant": "<string|null>",
+      "subject_area": "<string|null>",
+      "ak_recommendation": "<string|null>"
+    },
+    "quotes_by_topic": {
+      "procedural_context": [
+        {
+          "quote_id": "Q-PROC-001",
+          "topic": "<string>",
+          "quote": "<verbatim quote (max 1–2 sentences)>",
+          "source_ref": {
+            "source_id": "<SRC-ID>",
+            "pdf_page": null,
+            "printed_footer_page": null
+          }
+        }
+      ],
+      "mindestalter": [],
+      "schutz_bis_16": [],
+      "altersverifikation": [],
+      "sanktionen": [],
+      "ausnahmen": []
+    }
+  },
+  "event_reality_summary": {
+    "primary_source_findings": [
+      "<bullet string>"
+    ],
+    "secondary_discourse_claims": [
+      "<bullet string>"
+    ],
+    "consistency_notes": [
+      "<bullet string>"
+    ]
+  },
+  "media_framing_analysis": {
+    "data_basis": {
+      "source_id": "<SRC-ID>",
+      "note": "<string>"
+    },
+    "frames": [
+      {
+        "frame_id": "MF-01",
+        "label": "<string>",
+        "description": "<string>",
+        "observed_in_sources": [
+          "<SRC-ID>"
+        ],
+        "typical_keywords": [
+          "<string>"
+        ]
+      }
+    ]
+  },
+  "x_narrative_clusters": {
+    "data_basis": {
+      "source_id": "<SRC-ID>",
+      "note": "<string>"
+    },
+    "clusters": [
+      {
+        "cluster_id": "X-CL-01",
+        "label": "<string>",
+        "approx_share_percent": null,
+        "core_claim": "<string>",
+        "counter_claim": "<string>",
+        "dominant_emotions": [
+          "<string>"
+        ]
+      }
+    ],
+    "noted_language_shifts": [
+      {
+        "shift_id": "X-SHIFT-01",
+        "from": "<string>",
+        "to": "<string>",
+        "evidence": "<string>"
+      }
+    ]
+  },
+  "semantic_drift_table": [
+    {
+      "drift_id": "SD-01",
+      "source_anchor": "<string>",
+      "drift_variant": "<string>",
+      "drift_type": "<string>",
+      "discursive_function": "<string>",
+      "evidence_sources": [
+        "<SRC-ID>"
+      ],
+      "notes": "<string>"
+    }
+  ],
+  "emotional_intensity_curve": {
+    "time_window": {
+      "from": "<YYYY-MM-DD>",
+      "to": "<YYYY-MM-DD>"
+    },
+    "phases": [
+      {
+        "phase_id": "E-01",
+        "label": "<string>",
+        "time_hint": "<string>",
+        "intensity_0_100": null,
+        "dominant_mode": "<string>",
+        "source": "<SRC-ID>"
+      }
+    ]
+  },
+  "actor_amplification_map": {
+    "note": "<string>",
+    "actors": [
+      {
+        "actor_id": "ACT-01",
+        "label": "<string>",
+        "actor_type": "<string>",
+        "tends_to_amplify": [
+          "<cluster_id>"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "from_actor_id": "ACT-01",
+        "to_cluster_id": "X-CL-01",
+        "amplification_mode": "<string>"
+      }
+    ],
+    "coordination_assessment": {
+      "evidence_of_coordination": "<none_reported|suspected|observed>",
+      "notes": "<string>"
+    }
+  },
+  "narrative_mechanisms": [
+    {
+      "mechanism_id": "NM-01",
+      "name": "<string>",
+      "description": "<string>",
+      "evidence_sources": [
+        "<SRC-ID>"
+      ],
+      "mgk_hook": "<optional lens/marker id>"
+    }
+  ],
+  "divergence_notes": [
+    {
+      "divergence_id": "DIV-01",
+      "event_reality": "<string>",
+      "interpretive_reality": "<string>",
+      "impact": "<string>"
+    }
+  ],
+  "stabilization_patterns": [
+    {
+      "pattern_id": "STAB-01",
+      "label": "<string>",
+      "description": "<string>",
+      "evidence_sources": [
+        "<SRC-ID>"
+      ]
+    }
+  ],
+  "mgk_linkages": {
+    "linked_modules": [
+      {
+        "module_id": "<string>",
+        "rationale": "<string>"
+      }
+    ],
+    "linked_lenses": [
+      {
+        "lens_id": "<string>",
+        "path": "<path>",
+        "rationale": "<string>"
+      }
+    ],
+    "linked_markers": [
+      {
+        "marker_id": "<string>",
+        "path": "<path>",
+        "rationale": "<string>"
+      }
+    ],
+    "structure_theme_mapping": {
+      "order_powerlessness": [
+        "<string>"
+      ],
+      "bonding_unbonding": [
+        "<string>"
+      ],
+      "meaning_substitute": [
+        "<string>"
+      ],
+      "memory_forgetting": [
+        "<string>"
+      ]
+    }
+  },
+  "source_index": [
+    {
+      "source_id": "<SRC-ID>",
+      "label": "<string>",
+      "kind": "<primary_source|raw_analysis|secondary_article>",
+      "incoming_path": "<path>",
+      "final_path": "<path>",
+      "byte_size": null,
+      "sha256": "<hex>",
+      "notes": "<string>"
+    }
+  ]
+}

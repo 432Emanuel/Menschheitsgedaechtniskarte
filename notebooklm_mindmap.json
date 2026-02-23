@@ -1,0 +1,259 @@
+{
+  "version": "1.0",
+  "title": "Menschheitsgedächtniskarte - Mindmap",
+  "description": "Strukturierte Mindmap für NotebookLM zur Visualisierung der Menschheitsgedächtniskarte",
+  "structure": {
+    "central_node": {
+      "id": "MGK_ROOT",
+      "title": "Menschheitsgedächtniskarte",
+      "description": "Ein strukturelles Forschungsprojekt zur kollektiven Erinnerung der Menschheit",
+      "type": "root",
+      "focus": "Strukturen, Übergänge, Bruchlinien, Resonanzen",
+      "children": [
+        {
+          "id": "ZEITGEIST_MODULE",
+          "title": "🧠 Zeitgeist-Module",
+          "type": "category",
+          "description": "Zeitgenössische Muster und Phänomene als analytische Raster",
+          "children": [
+            {
+              "id": "ZG_001",
+              "title": "ZG-001: Memory Loss",
+              "description": "Verlust von kollektiver Erinnerung und Orientierung",
+              "keywords": ["Gedächtnisverlust", "Orientierungslosigkeit", "Kulturelles Amnesie"],
+              "ancient_mappings": ["Goseck"],
+              "modern_context": "Digitale Fragmentierung, Information Overload"
+            },
+            {
+              "id": "ZG_002",
+              "title": "ZG-002: Order & Powerlessness",
+              "description": "Spannung zwischen Ordnungssehnsucht und Ohnmachtserfahrung",
+              "keywords": ["Ordnung", "Ohnmacht", "Kontrolle", "Hierarchie"],
+              "ancient_mappings": ["Stonehenge", "Newgrange"],
+              "modern_context": "Bürokratisierung, Systemkonformität"
+            },
+            {
+              "id": "ZG_003",
+              "title": "ZG-003: Ritual Relief",
+              "description": "Ritual als Antwort auf Unsicherheit und Transition",
+              "keywords": ["Ritual", "Zeremonie", "Sicherheit", "Wiederholung"],
+              "ancient_mappings": ["Göbekli Tepe", "Carnac"],
+              "modern_context": "Moderne Rituale, Sport, Events"
+            },
+            {
+              "id": "ZG_004",
+              "title": "ZG-004: Transition & Initiation",
+              "description": "Übergangsriten und Initiation als gesellschaftliches Konstrukt",
+              "keywords": ["Initiation", "Übergang", "Schwelle", "Transformation"],
+              "ancient_mappings": ["Lascaux", "Silbury Hill"],
+              "modern_context": "Coming of Age, Lebensübergänge"
+            },
+            {
+              "id": "ZG_005",
+              "title": "ZG-005: Mythos Administration",
+              "description": "Verwaltung von Mythen und kollektiven Narrativen",
+              "keywords": ["Mythos", "Verwaltung", "Narrativ", "Legitimierung"],
+              "ancient_mappings": ["Uruk", "Akkadisches Reich"],
+              "modern_context": "Medien, Politik, Corporate Storytelling"
+            }
+          ]
+        },
+        {
+          "id": "FAMILY_MODULE",
+          "title": "👨‍👩‍👧‍👦 Familienmodul",
+          "type": "category",
+          "description": "Familie als anthropologische Konstante",
+          "children": [
+            {
+              "id": "FM_001",
+              "title": "FM-001: Family Core",
+              "description": "Familie als Stabilitätsfaktor, Bruchlinie und Initiationsraum",
+              "aspects": [
+                "Anthropologische Konstante",
+                "Stabilitätsfaktor",
+                "Bruchlinie",
+                "Initiationsraum"
+              ],
+              "contexts": {
+                "ancient": "Neolithische Familie",
+                "modern": "Moderne Familienstrukturen"
+              },
+              "dynamics": {
+                "fracture_patterns": "Familiäre Bruchmuster",
+                "resilience_vectors": "Resilienz-Vektoren"
+              }
+            }
+          ]
+        },
+        {
+          "id": "KNOWLEDGE_LAYERS",
+          "title": "📚 Wissensschichten",
+          "type": "category",
+          "description": "Strukturierte Ebenen für Wissen und Kontext",
+          "children": [
+            {
+              "id": "PLACES",
+              "title": "Orte & Orte-Expansion",
+              "description": "Physische und metaphorische Orte des kollektiven Gedächtnisses",
+              "examples": ["Goseck", "Stonehenge", "Newgrange", "Göbekli Tepe", "Lascaux"]
+            },
+            {
+              "id": "CULTURAL_CONTEXTS",
+              "title": "Kulturelle Kontexte",
+              "description": "Kulturspezifische Ausprägungen und Variationen"
+            },
+            {
+              "id": "SEMANTIC_LAYERS",
+              "title": "Semantische Schichten",
+              "description": "Bedeutungsebenen und Interpretationsmuster"
+            },
+            {
+              "id": "SCHEMA_DEFINITIONS",
+              "title": "Schema-Definitionen",
+              "description": "Strukturelle Definitionen und Validierungsmuster"
+            }
+          ]
+        },
+        {
+          "id": "CONTEMPORARY_CASES",
+          "title": "🔬 Zeitgenössische Fallbeispiele",
+          "type": "category",
+          "description": "Beobachtende Fallstudien ohne Wertung",
+          "principles": [
+            "Beobachtend statt wertend",
+            "Unterschiedliche Perspektiven offenhalten",
+            "Explizit Raum für Unsicherheit lassen"
+          ],
+          "examples": [
+            {
+              "id": "CB_DE_2020_01",
+              "title": "ZG-CB-DE-2020-01",
+              "region": "Deutschland",
+              "year": "2020",
+              "focus": "Frühe COVID-19-Phase"
+            },
+            {
+              "id": "CB_VE_2026_01",
+              "title": "ZG-CB-VE-2026-01",
+              "region": "Venezuela",
+              "year": "2026",
+              "focus": "Zeitzeuge/Beobachtung"
+            }
+          ]
+        },
+        {
+          "id": "ARCHITECTURE",
+          "title": "🏛️ Architektur",
+          "type": "category",
+          "description": "Anthropologische Erkenntnisarchitektur (DP-001)",
+          "children": [
+            {
+              "id": "BODY_LEVEL",
+              "title": "Körper-Ebene (MapView)",
+              "description": "Räumliche Verkörperung von Wissen",
+              "interface": "MapView"
+            },
+            {
+              "id": "MIND_LEVEL",
+              "title": "Geist-Ebene (GraphView)",
+              "description": "Strukturelle Vernetzung von Wissen",
+              "interface": "GraphView"
+            },
+            {
+              "id": "SOUL_LEVEL",
+              "title": "Seele-Ebene (ResonancePanel)",
+              "description": "Sinnliche Resonanz und individuelle Sinnbildung",
+              "interface": "ResonancePanel"
+            }
+          ]
+        },
+        {
+          "id": "DATA_STRUCTURE",
+          "title": "💾 Datenstruktur",
+          "type": "category",
+          "description": "Technische Organisation der Daten",
+          "children": [
+            {
+              "id": "DATA_MODULES",
+              "title": "data/modules/",
+              "description": "Analytische Module und Konzepte",
+              "subdirs": ["build_on_old/", "human_cartography/"]
+            },
+            {
+              "id": "SRC_TOOLS",
+              "title": "src/",
+              "description": "Validierung und Tools",
+              "subdirs": ["validate/", "tools/"]
+            },
+            {
+              "id": "ARCHITECTURE_DIR",
+              "title": "architecture/",
+              "description": "Designprinzipien und Meta-Rahmen"
+            },
+            {
+              "id": "INTERFACE_DIR",
+              "title": "interface/",
+              "description": "UI-Spezifikationen (Views)"
+            }
+          ]
+        },
+        {
+          "id": "RESEARCH_PRINCIPLES",
+          "title": "🎯 Forschungsprinzipien",
+          "type": "category",
+          "description": "Grundlegende Prinzipien des Projekts",
+          "principles": [
+            "Keine Business-Logik",
+            "Keine Datenvalidierung",
+            "Reine Datensammlung in JSON-Form",
+            "Modular und erweiterbar",
+            "Trennung von Erkenntnisarchitektur und Wissensschema"
+          ]
+        },
+        {
+          "id": "CONNECTIONS",
+          "title": "🔗 Querverbindungen",
+          "type": "category",
+          "description": "Resonanzen und Verbindungslinien zwischen Modulen",
+          "connection_types": [
+            "Historisch ↔ Modern",
+            "Anthropologisch ↔ Zeitgenössisch",
+            "Individuell ↔ Kollektiv",
+            "Ritual ↔ Struktur"
+          ]
+        }
+      ]
+    },
+    "metadata": {
+      "creation_date": "2026-02-21",
+      "project_status": {
+        "structure": "Grün - Strukturphase abgeschlossen",
+        "content": "Gelb - Inhalte im Aufbau",
+        "expansion": "Blau - Internationale Erweiterung geplant"
+      },
+      "license": {
+        "code": "MIT License",
+        "content": "CC BY 4.0"
+      }
+    }
+  },
+  "visualization_hints": {
+    "notebooklm_instructions": {
+      "mindmap_style": "Hierarchisch von zentral nach außen",
+      "color_scheme": {
+        "zeitgeist": "#FF6B6B",
+        "family": "#4ECDC4",
+        "knowledge": "#45B7D1",
+        "cases": "#FFA07A",
+        "architecture": "#98D8C8",
+        "data": "#F7DC6F"
+      },
+      "layout_suggestions": [
+        "Zentral: Menschheitsgedächtniskarte",
+        "Erste Ebene: Hauptkategorien mit Emoji",
+        "Zweite Ebene: Module und Konzepte",
+        "Dritte Ebene: Details und Beispiele"
+      ]
+    }
+  }
+}
